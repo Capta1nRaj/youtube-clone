@@ -30,12 +30,6 @@
     margin-left: 34px;
 }
 
-.serarch-icon,
-.voice-search-icon {
-    height: 24px;
-    cursor: pointer;
-}
-
 .left-section {
     display: flex;
     align-items: center;
@@ -50,6 +44,12 @@
     max-width: 500px;
 }
 
+.serarch-icon,
+.voice-search-icon {
+    height: 24px;
+    cursor: pointer;
+}
+
 .search-bar {
     flex: 1;
     max-width: 500px;
@@ -60,6 +60,65 @@
     border: 1px;
     border-style: solid;
     border-color: rgb(192,192,192);
+}
+
+.notifications-icon-container,
+.search-button,
+.upload-icon-container,
+.voice-search-button,
+.youtube-apps-container,
+.youtube-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notifications-icon-container .tooltip,
+.search-button .tooltip,
+.upload-icon-container .tooltip,
+.voice-search-button .tooltip,
+.youtube-apps-container .tooltip {
+    position: absolute;
+    background-color: grey;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -24px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.6s;
+}
+
+.notifications-icon-container .tooltip {
+    bottom: -52px;
+}
+
+.youtube-logo-container .tooltip {
+    position: absolute;
+    background-color: #3A3B3C;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    margin-top: 50px;
+    margin-left: 140px;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.6s;
+}
+
+.notifications-icon-container:hover .tooltip,
+.search-button:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.youtube-apps-container:hover .tooltip,
+.youtube-logo-container:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
 }
 
 .search-button {
@@ -86,11 +145,11 @@
     margin-right: 20px;
 }
 
-.notification-count{
+.notifications-icon-container {
     position: relative;
 }
 
-.total-notification{
+.notifications-count {
     position: absolute;
     top: -2px;
     right: -5px;
@@ -98,6 +157,10 @@
     color: white;
     font-family: Roboto, Arial;
     font-size: 11px;
-    border-radius: 10px;
     padding: 2px 5px;
+    border-radius: 10px;
+}
+
+@media (max-width:560px) {
+    
 }

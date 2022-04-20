@@ -32,73 +32,116 @@
                     class="hamburger-menu"
                     src="images/navigation-bar-buttons-icons/hamburger-menu.svg"
                     alt="">
-                <img
-                    class="youtube-logo"
-                    src="images/navigation-bar-buttons-icons/youtube-logo.svg"
-                    alt="">
+
+                <div class="youtube-logo-container">
+                    <img
+                        class="youtube-logo"
+                        src="images/navigation-bar-buttons-icons/youtube-logo.svg"
+                        alt="">
+                    <div class="tooltip">YouTube Home</div>
+                </div>
             </div>
 
             <div class="middle-section">
                 <input class="search-bar" type="text" placeholder="Search" name="" id="">
-                <button class="search-button"><img
-                    class="serarch-icon"
-                    src="images/navigation-bar-buttons-icons/search.svg"
-                    alt=""></button>
+
+                <button class="search-button">
+                    <img
+                        class="serarch-icon"
+                        src="images/navigation-bar-buttons-icons/search.svg"
+                        alt="">
+                    <div class="tooltip">Search</div>
+                </button>
+
                 <button class="voice-search-button"><img
                     class="voice-search-icon"
                     src="images/navigation-bar-buttons-icons/voice-search-icon.svg"
-                    alt=""></button>
+                    alt="">
+                    <div class="tooltip">Search with your voice</div>
+                </button>
             </div>
 
             <div class="right-section">
-                <img
-                    class="uplaod-icon"
-                    src="images/navigation-bar-buttons-icons/upload.svg"
-                    alt="">
-                <img
-                    class="youtube-apps-icon"
-                    src="images/navigation-bar-buttons-icons/youtube-apps.svg"
-                    alt="">
-                <div class="notification-count">
+                <div class="upload-icon-container">
+                    <img
+                        class="uplaod-icon"
+                        src="images/navigation-bar-buttons-icons/upload.svg"
+                        alt="">
+                    <div class="tooltip">Upload</div>
+                </div>
+
+                <div class="youtube-apps-container">
+                    <img
+                        class="youtube-apps-icon"
+                        src="images/navigation-bar-buttons-icons/youtube-apps.svg"
+                        alt="">
+                    <div class="tooltip">YouTube Apps</div>
+                </div>
+
+                <div class="notifications-icon-container">
                     <img
                         class="notifications-icon"
                         src="images/navigation-bar-buttons-icons/notifications.svg"
                         alt="">
-                    <div class="total-notification">3</div>
+                    <div class="notifications-count">3</div>
+                    <div class="tooltip">Notifications</div>
                 </div>
+
                 <img
                     class="my-channel-icon"
                     src="images/navigation-bar-buttons-icons/my-channel.jpeg"
                     alt="">
-
             </div>
 
         </div>
 
         <div class="side-bar-buttons">
-            <div class="home-button">
-                <img class="home-icon" src="images/sidebar/home.svg" alt="">
-                <div>Home</div>
+            <div class="home-button-container">
+                <div class="home-button">
+                    <img class="home-icon" src="images/sidebar/home.svg" alt="">
+                    <div>Home</div>
+                </div>
+                <div class="tooltip">Home</div>
             </div>
-            <div class="explore-button">
-                <img class="explore-icon" src="images/sidebar/explore.svg" alt="">
-                <div>Explorer</div>
+
+            <div class="explore-button-container">
+                <div class="explore-button">
+                    <img class="explore-icon" src="images/sidebar/explore.svg" alt="">
+                    <div>Explorer</div>
+                    <div class="tooltip">Explorer</div>
+                </div>
             </div>
-            <div class="subscriptions-button">
-                <img class="subscriptions-icon" src="images/sidebar/subscriptions.svg" alt="">
-                <div>Subscriptions</div>
+
+            <div class="subscriptions-button-container">
+                <div class="subscriptions-button">
+                    <img class="subscriptions-icon" src="images/sidebar/subscriptions.svg" alt="">
+                    <div>Subscriptions</div>
+                </div>
+                <div class="tooltip">Subscriptions</div>
             </div>
-            <div class="originals-button">
-                <img class="originals-icon" src="images/sidebar/originals.svg" alt="">
-                <div>Originals</div>
+
+            <div class="originals-button-container">
+                <div class="originals-button">
+                    <img class="originals-icon" src="images/sidebar/originals.svg" alt="">
+                    <div>Originals</div>
+                </div>
+                <div class="tooltip">Originals</div>
             </div>
-            <div class="youtube-music-button">
-                <img class="youtube-music-icon" src="images/sidebar/youtube-music.svg" alt="">
-                <div>YouTube Music</div>
+
+            <div class="youtube-music-button-container">
+                <div class="youtube-music-button">
+                    <img class="youtube-music-icon" src="images/sidebar/youtube-music.svg" alt="">
+                    <div>YouTube Music</div>
+                </div>
+                <div class="tooltip">YouTube Music</div>
             </div>
-            <div class="library-button">
-                <img class="library-icon" src="images/sidebar/library.svg" alt="">
-                <div>Library</div>
+
+            <div class="library-button-container">
+                <div class="library-button">
+                    <img class="library-icon" src="images/sidebar/library.svg" alt="">
+                    <div>Library</div>
+                </div>
+                <div class="tooltip">Library</div>
             </div>
         </div>
 
@@ -225,6 +268,7 @@
                         class="channel-link"
                         href="https://www.youtube.com/watch?v=4v8z5itl1Kc&t=466s">
                         <img class="thumbnail" src="images/videos-section/thumbnail-5.jpg" alt="">
+                        <div class="video-time">10:25</div>
                     </a>
                 </div>
 
@@ -253,6 +297,7 @@
                 <div class="thumbnail-section">
                     <a href="https://www.youtube.com/watch?v=ntLJmHOJ0ME">
                         <img class="thumbnail" src="images/videos-section/thumbnail-6.jpg" alt="">
+                        <div class="video-time">18:59</div>
                     </a>
                 </div>
 
@@ -279,6 +324,7 @@
                 <div class="thumbnail-section">
                     <a class="channel-link" href="https://www.youtube.com/watch?v=Trg3-Jiz6tI">
                         <img class="thumbnail" src="images/videos-section/thumbnail-7.jpg" alt="">
+                        <div class="video-time">1:08:02</div>
                     </a>
                 </div>
 
@@ -307,6 +353,7 @@
                         class="channel-link"
                         href="https://www.youtube.com/watch?v=aj1Q_BAqwa8&t=164s">
                         <img class="thumbnail" src="images/videos-section/thumbnail-8.jpg" alt="">
+                        <div class="video-time">4:40</div>
                     </a>
                 </div>
 
@@ -338,6 +385,7 @@
                 <div class="thumbnail-section">
                     <a href="https://www.youtube.com/watch?v=5NErG3iCZ4w&t=14s">
                         <img class="thumbnail" src="images/videos-section/thumbnail-9.jpg" alt="">
+                        <div class="video-time">9:08</div>
                     </a>
                 </div>
 
@@ -366,6 +414,7 @@
                 <div class="thumbnail-section">
                     <a href="https://www.youtube.com/watch?v=dSLI3MR2A_E">
                         <img class="thumbnail" src="images/videos-section/thumbnail-10.jpg" alt="">
+                        <div class="video-time">1:30</div>
                     </a>
                 </div>
 
@@ -395,6 +444,7 @@
                 <div class="thumbnail-section">
                     <a href="https://www.youtube.com/watch?v=xhwXy3d5WQg">
                         <img class="thumbnail" src="images/videos-section/thumbnail-11.jpg" alt="">
+                        <div class="video-time">23:37</div>
                     </a>
                 </div>
 
@@ -424,6 +474,7 @@
                 <div class="thumbnail-section">
                     <a href="https://www.youtube.com/watch?v=yob5AkDYLDI">
                         <img class="thumbnail" src="images/videos-section/thumbnail-12.jpg" alt="">
+                        <div class="video-time">1:27</div>
                     </a>
                 </div>
 
