@@ -162,5 +162,46 @@
 }
 
 @media (max-width:560px) {
-    
+    .left-section,
+    .middle-section,
+    .right-section {
+        visibility: hidden;
+    }
+
+    .left-section .youtube-logo {
+        visibility: visible;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+        margin-left: 15px;
+        z-index: 100;
+    }
+
+    .middle-section .serarch-icon {
+        visibility: visible;
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+        margin-right: 60px;
+        z-index: 100;
+    }
+
+    .right-section .my-channel-icon {
+        visibility: visible;
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+        margin-right: 20px;
+        z-index: 100;
+    }
 }
