@@ -22,23 +22,31 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,500&display=swap"
             rel="stylesheet">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
-    <body>
+    <body id="body">
 
         <!-- Navitagion Bar For PC And Tablet -->
 
         <div class="navigation-bar-buttons">
 
             <div class="left-section">
+
+                <button class="dark-mode-button" onclick="myFunction()">Dark Mode</button>
+
                 <img
                     class="hamburger-menu"
                     src="images/navigation-bar-buttons-icons/hamburger-menu.svg"
                     alt="">
-
                 <div class="youtube-logo-container">
                     <img
-                        class="youtube-logo"
-                        src="images/navigation-bar-buttons-icons/youtube-logo.svg"
+                        class="youtube-logo-left-side"
+                        src="images/navigation-bar-buttons-icons/youtube-left-side-logo.png"
+                        alt="">
+                    <img
+                        class="youtube-logo-right-side"
+                        src="images/navigation-bar-buttons-icons/youtube-right-side-logo.png"
                         alt="">
                     <div class="tooltip">YouTube Home</div>
                 </div>
@@ -49,7 +57,7 @@
 
                 <button class="search-button">
                     <img
-                        class="serarch-icon"
+                        class="search-icon"
                         src="images/navigation-bar-buttons-icons/search.svg"
                         alt="">
                     <div class="tooltip">Search</div>
@@ -99,10 +107,14 @@
 
         <!-- Side Bar Buttons -->
 
-        <div class="side-bar-buttons">
+        <div class="side-bar-buttons" id="side-bar-buttons">
             <div class="home-button-container">
                 <div class="home-button">
-                    <img class="home-icon" src="images/sidebar/home.svg" alt="">
+                    <img
+                        class="home-icon"
+                        id="sidebar-button-image-1"
+                        src="images/sidebar/home.svg"
+                        alt="">
                     <div>Home</div>
                 </div>
                 <div class="tooltip">Home</div>
@@ -110,7 +122,11 @@
 
             <div class="explore-button-container">
                 <div class="explore-button">
-                    <img class="explore-icon" src="images/sidebar/explore.svg" alt="">
+                    <img
+                        class="explore-icon"
+                        id="sidebar-button-image-2"
+                        src="images/sidebar/explore.svg"
+                        alt="">
                     <div>Explorer</div>
                     <div class="tooltip">Explorer</div>
                 </div>
@@ -118,7 +134,11 @@
 
             <div class="subscriptions-button-container">
                 <div class="subscriptions-button">
-                    <img class="subscriptions-icon" src="images/sidebar/subscriptions.svg" alt="">
+                    <img
+                        class="subscriptions-icon"
+                        id="sidebar-button-image-3"
+                        src="images/sidebar/subscriptions.svg"
+                        alt="">
                     <div>Subscriptions</div>
                 </div>
                 <div class="tooltip">Subscriptions</div>
@@ -126,7 +146,11 @@
 
             <div class="originals-button-container">
                 <div class="originals-button">
-                    <img class="originals-icon" src="images/sidebar/originals.svg" alt="">
+                    <img
+                        class="originals-icon"
+                        id="sidebar-button-image-4"
+                        src="images/sidebar/originals.svg"
+                        alt="">
                     <div>Originals</div>
                 </div>
                 <div class="tooltip">Originals</div>
@@ -134,7 +158,11 @@
 
             <div class="youtube-music-button-container">
                 <div class="youtube-music-button">
-                    <img class="youtube-music-icon" src="images/sidebar/youtube-music.svg" alt="">
+                    <img
+                        class="youtube-music-icon"
+                        id="sidebar-button-image-5"
+                        src="images/sidebar/youtube-music.svg"
+                        alt="">
                     <div>YouTube Music</div>
                 </div>
                 <div class="tooltip">YouTube Music</div>
@@ -142,7 +170,11 @@
 
             <div class="library-button-container">
                 <div class="library-button">
-                    <img class="library-icon" src="images/sidebar/library.svg" alt="">
+                    <img
+                        class="library-icon"
+                        id="sidebar-button-image-6"
+                        src="images/sidebar/library.svg"
+                        alt="">
                     <div>Library</div>
                 </div>
                 <div class="tooltip">Library</div>
@@ -505,5 +537,10 @@
                 </div>
             </div>
         </div>
+
+        <script src="javascript/main.js"></script>
+        <script src="javascript/side-bar-buttons-dark-mode.js"></script>
+        <script src="javascript/navigation-bar-buttons-dark-mode.js"></script>
+        <script src="javascript/videos-section.js"></script>
     </body>
 </html>

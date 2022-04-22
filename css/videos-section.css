@@ -77,6 +77,10 @@
     opacity: 0.78;
 }
 
+.video-title.change {
+    color: white;
+}
+
 @media (max-width:560px) {
     .videos-section {
         grid-template-columns: 1fr;

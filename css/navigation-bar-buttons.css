@@ -20,9 +20,16 @@
 .notifications-icon,
 .uplaod-icon,
 .youtube-apps-icon,
-.youtube-logo {
-    height: 30px;
+.youtube-logo-left-side,
+.youtube-logo-right-side {
+    height: 24px;
     cursor: pointer;
+}
+
+.youtube-logo-left-side {
+    margin-top: 2px;
+    margin-right: 2px;
+    height: 24px;
 }
 
 .my-channel-icon {
@@ -32,6 +39,7 @@
 .hamburger-menu {
     margin-right: 62px;
     margin-left: 34px;
+    filter: invert(0%);
 }
 
 .left-section {
@@ -48,7 +56,7 @@
     max-width: 500px;
 }
 
-.serarch-icon,
+.search-icon,
 .voice-search-icon {
     height: 24px;
     cursor: pointer;
@@ -165,6 +173,35 @@
     border-radius: 10px;
 }
 
+/* Dark Mode */
+
+.navigation-bar-buttons.change {
+    background-color: black;
+    border-bottom-color: rgb(255, 0, 0);
+}
+
+.hamburger-menu.change,
+.notifications-icon.change,
+.search-bar.change,
+.uplaod-icon.change,
+.voice-search-button.change,
+.youtube-apps-icon.change,
+.youtube-logo-right-side.change {
+    filter: invert(100%);
+}
+
+.search-icon.change {
+    filter: invert(100%);
+}
+
+.search-bar.change,
+.search-button.change {
+    background-color: black;
+    border-color: rgb(255, 0, 0);
+}
+
+/* Mobile Responsive */
+
 @media (max-width:560px) {
     .left-section,
     .middle-section,
@@ -172,7 +209,7 @@
         visibility: hidden;
     }
 
-    .left-section .youtube-logo {
+    /* .left-section .youtube-logo-left-side {
         visibility: visible;
         position: fixed;
         top: 0;
@@ -183,16 +220,55 @@
         margin-top: 25px;
         margin-left: 15px;
         z-index: 100;
+        height: 30px;
     }
 
-    .middle-section .serarch-icon {
+    .left-section .youtube-logo-right-side {
+        visibility: visible;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+        margin-left: 62px;
+        z-index: 100;
+    } */
+
+    .left-section .youtube-logo-left-side {
+        visibility: visible;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+        margin-left: 60px;
+        z-index: 100;
+        height: 30px;
+    }
+
+    .left-section .youtube-logo-right-side {
+        visibility: visible;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+        margin-left: 107px;
+        z-index: 100;
+    }
+
+    .middle-section .search-icon {
         visibility: visible;
         position: fixed;
         top: 0;
         right: 0;
         display: flex;
         justify-content: space-between;
-        margin-top: 25px;
+        margin-top: 27px;
         margin-right: 60px;
         z-index: 100;
     }
@@ -207,5 +283,19 @@
         margin-top: 25px;
         margin-right: 20px;
         z-index: 100;
+    }
+
+    .my-channel-icon,
+    .search-icon,
+    .youtube-logo-right-side {
+        height: 30px;
+    }
+
+    .search-icon.change {
+        filter: invert(100%);
+    }
+
+    .dark-mode-button{
+        visibility: visible;
     }
 }

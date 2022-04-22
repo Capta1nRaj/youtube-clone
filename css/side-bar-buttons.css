@@ -14,8 +14,6 @@
 .originals-icon,
 .subscriptions-icon,
 .youtube-music-icon {
-    margin-left: 24px;
-    margin-right: 24px;
     height: 24px;
 }
 
@@ -80,6 +78,29 @@
 .youtube-music-button-container:hover .tooltip {
     opacity: 1;
     visibility: visible;
+}
+
+#sidebar-button-image-1,
+#sidebar-button-image-2,
+#sidebar-button-image-3,
+#sidebar-button-image-4,
+#sidebar-button-image-5,
+#sidebar-button-image-6 {
+    filter: invert(0%);
+}
+
+#sidebar-button-image-1.change,
+#sidebar-button-image-2.change,
+#sidebar-button-image-3.change,
+#sidebar-button-image-4.change,
+#sidebar-button-image-5.change,
+#sidebar-button-image-6.change {
+    filter: invert(100%);
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
 }
 
 @media (max-width:560px) {
