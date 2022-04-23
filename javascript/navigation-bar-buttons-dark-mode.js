@@ -48,11 +48,6 @@ function navigationBarButtonColorChange() {
         .classList
         .toggle("change");
 
-    var element = document.getElementsByClassName("search-bar")[0];
-    element
-        .classList
-        .toggle("change");
-
     var element = document.getElementsByClassName("youtube-apps-icon")[0];
     element
         .classList

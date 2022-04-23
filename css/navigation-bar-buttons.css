@@ -74,6 +74,7 @@
     border-color: rgb(192,192,192);
 }
 
+.dark-mode-button-container,
 .notifications-icon-container,
 .search-button,
 .upload-icon-container,
@@ -85,6 +86,7 @@
     align-items: center;
 }
 
+.dark-mode-button-container .tooltip,
 .notifications-icon-container .tooltip,
 .search-button .tooltip,
 .upload-icon-container .tooltip,
@@ -106,6 +108,10 @@
     bottom: -52px;
 }
 
+.dark-mode-button-container .tooltip {
+    margin-left: -28px;
+}
+
 .youtube-logo-container .tooltip {
     position: absolute;
     background-color: #3A3B3C;
@@ -123,6 +129,7 @@
     transition: all 0.6s;
 }
 
+.dark-mode-button-container:hover .tooltip,
 .notifications-icon-container:hover .tooltip,
 .search-button:hover .tooltip,
 .upload-icon-container:hover .tooltip,
@@ -193,7 +200,6 @@
 .dark-mode-button-icon.change,
 .hamburger-menu.change,
 .notifications-icon.change,
-.search-bar.change,
 .uplaod-icon.change,
 .voice-search-button.change,
 .youtube-apps-icon.change,
@@ -205,10 +211,13 @@
     filter: invert(100%);
 }
 
-.search-bar.change,
+.search-bar.change {
+    background-color: black;
+}
+
 .search-button.change {
     background-color: black;
-    border-color: rgb(255, 0, 0);
+
 }
 
 /* Mobile Responsive */
@@ -217,6 +226,12 @@
     .left-section,
     .middle-section,
     .right-section {
+        visibility: hidden;
+    }
+
+    .dark-mode-button-container:hover .tooltip,
+    .search-button:hover .tooltip,
+    .youtube-logo-container:hover .tooltip {
         visibility: hidden;
     }
 
