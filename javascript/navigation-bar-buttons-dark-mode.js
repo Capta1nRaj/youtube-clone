@@ -28,7 +28,7 @@ function navigationBarButtonColorChange() {
         .classList
         .toggle("change");
 
-    var element = document.getElementsByClassName("voice-search-button")[0];
+    var element = document.getElementsByClassName("voice-search-icon")[0];
     element
         .classList
         .toggle("change");
