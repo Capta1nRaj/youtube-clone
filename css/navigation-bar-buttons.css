@@ -175,11 +175,22 @@
 
 /* Dark Mode */
 
+.dark-mode-button {
+    background-color: transparent;
+    border: none;
+    margin-top: 4px;
+}
+
+.dark-mode-button-icon {
+    height: 23px;
+}
+
 .navigation-bar-buttons.change {
     background-color: black;
     border-bottom-color: rgb(255, 0, 0);
 }
 
+.dark-mode-button-icon.change,
 .hamburger-menu.change,
 .notifications-icon.change,
 .search-bar.change,
@@ -209,7 +220,7 @@
         visibility: hidden;
     }
 
-    /* .left-section .youtube-logo-left-side {
+    .left-section .youtube-logo-left-side {
         visibility: visible;
         position: fixed;
         top: 0;
@@ -232,32 +243,6 @@
         justify-content: space-between;
         margin-top: 25px;
         margin-left: 62px;
-        z-index: 100;
-    } */
-
-    .left-section .youtube-logo-left-side {
-        visibility: visible;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        display: flex;
-        justify-content: space-between;
-        margin-top: 25px;
-        margin-left: 60px;
-        z-index: 100;
-        height: 30px;
-    }
-
-    .left-section .youtube-logo-right-side {
-        visibility: visible;
-        position: fixed;
-        top: 0;
-        left: 0;
-        display: flex;
-        justify-content: space-between;
-        margin-top: 25px;
-        margin-left: 107px;
         z-index: 100;
     }
 
@@ -285,6 +270,20 @@
         z-index: 100;
     }
 
+    .right-section .dark-mode-button,
+    .right-section .dark-mode-button-icon {
+        visibility: visible;
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 27px;
+        margin-right: 100px;
+        z-index: 100;
+        height: 30px;
+    }
+
     .my-channel-icon,
     .search-icon,
     .youtube-logo-right-side {
@@ -295,7 +294,7 @@
         filter: invert(100%);
     }
 
-    .dark-mode-button{
+    .dark-mode-button {
         visibility: visible;
     }
 }

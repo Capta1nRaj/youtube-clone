@@ -1,7 +1,12 @@
 Website Access Link:- https://capta1nraj.github.io/youtube-clone
 
-To add:-
-1. dark mode has been added but as a button, will be added soon in the expand section.
-2. click to expand sections for notification, and channel logo.
-3. video player for the video.
-4. suggest please.
+What I Have Made In This:-
+1. Clone Of YouTube.
+2. Dark Mode Button On Navigation Bar.
+3. Linked All Videos To The Original Video.
+4. Responsive Website.
+
+To Add:-
+
+1. Video Player Page.
+2. Suggest Something New For Me As A Begninner In HTML, CSS, and JavaScript.

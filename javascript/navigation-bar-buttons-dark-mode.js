@@ -57,4 +57,9 @@ function navigationBarButtonColorChange() {
     element
         .classList
         .toggle("change");
+
+    var element = document.getElementsByClassName("dark-mode-button-icon")[0];
+    element
+        .classList
+        .toggle("change");
 }
