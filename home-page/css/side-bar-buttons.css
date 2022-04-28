@@ -1,0 +1,110 @@
+.side-bar-buttons {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    margin-top: 80px;
+    background-color: white;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.explore-icon,
+.home-icon,
+.library-icon,
+.originals-icon,
+.subscriptions-icon,
+.youtube-music-icon {
+    height: 24px;
+}
+
+.explore-button,
+.home-button,
+.library-button,
+.originals-button,
+.subscriptions-button,
+.youtube-music-button {
+    height: 74px;
+    margin-bottom: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.side-bar-buttons div {
+    font-family: Roboto, Arial;
+    text-align: center;
+    font-size: 12px;
+}
+
+.explore-button-container,
+.home-button-container,
+.library-button-container,
+.originals-button-container,
+.subscriptions-button-container,
+.youtube-music-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.explore-button-container .tooltip,
+.home-button-container .tooltip,
+.library-button-container .tooltip,
+.originals-button-container .tooltip,
+.subscriptions-button-container .tooltip,
+.youtube-music-button-container .tooltip {
+    position: absolute;
+    background-color: grey;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    left: 56px;
+    margin-top: 20px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.6s;
+}
+
+.explore-button-container:hover .tooltip,
+.home-button-container:hover .tooltip,
+.library-button-container:hover:hover .tooltip,
+.originals-button-container:hover .tooltip,
+.subscriptions-button-container:hover .tooltip,
+.youtube-music-button-container:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+#sidebar-button-image-1,
+#sidebar-button-image-2,
+#sidebar-button-image-3,
+#sidebar-button-image-4,
+#sidebar-button-image-5,
+#sidebar-button-image-6 {
+    filter: invert(0%);
+}
+
+#sidebar-button-image-1.change,
+#sidebar-button-image-2.change,
+#sidebar-button-image-3.change,
+#sidebar-button-image-4.change,
+#sidebar-button-image-5.change,
+#sidebar-button-image-6.change {
+    filter: invert(100%);
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+@media (max-width:560px) {
+    .side-bar-buttons {
+        visibility: hidden;
+    }
+}

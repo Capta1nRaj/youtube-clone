@@ -1,0 +1,331 @@
+.navigation-bar-buttons {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(228,228,228);
+    background-color: white;
+    z-index: 100;
+}
+
+.hamburger-menu,
+.my-channel-icon,
+.notifications-icon,
+.uplaod-icon,
+.youtube-apps-icon,
+.youtube-logo-left-side,
+.youtube-logo-right-side {
+    height: 24px;
+    cursor: pointer;
+}
+
+.youtube-logo-left-side {
+    margin-top: 2px;
+    margin-right: 2px;
+    height: 24px;
+}
+
+.my-channel-icon {
+    border-radius: 100%;
+}
+
+.hamburger-menu {
+    margin-right: 62px;
+    margin-left: 34px;
+    filter: invert(0%);
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+}
+
+.middle-section {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 500px;
+}
+
+.search-icon,
+.voice-search-icon {
+    height: 24px;
+    cursor: pointer;
+}
+
+.search-bar {
+    flex: 1;
+    max-width: 500px;
+    width: 500px;
+    height: 17px;
+    padding: 10.4px;
+    width: 0;
+    border: 1px;
+    border-style: solid;
+    border-color: rgb(192,192,192);
+}
+
+.dark-mode-button-container,
+.notifications-icon-container,
+.search-button,
+.upload-icon-container,
+.voice-search-button,
+.youtube-apps-container,
+.youtube-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dark-mode-button-container .tooltip,
+.notifications-icon-container .tooltip,
+.search-button .tooltip,
+.upload-icon-container .tooltip,
+.youtube-apps-container .tooltip {
+    position: absolute;
+    background-color: grey;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -24px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.6s;
+}
+
+/* .voice-search-button .tooltip replaced with .search-with-your-voice */
+.search-with-your-voice {
+    position: absolute;
+    background-color: grey;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -24px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.6s;
+}
+
+.notifications-icon-container .tooltip {
+    bottom: -52px;
+}
+
+.dark-mode-button-container .tooltip {
+    margin-left: -28px;
+}
+
+.youtube-logo-container .tooltip {
+    position: absolute;
+    background-color: #3A3B3C;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    margin-top: 50px;
+    margin-left: 140px;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.6s;
+}
+
+.dark-mode-button-container:hover .tooltip,
+.notifications-icon-container:hover .tooltip,
+.search-button:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.youtube-apps-container:hover .tooltip,
+.youtube-logo-container:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+.search-button {
+    height: 40px;
+    width: 60px;
+    background-color: rgb(240,240,240);
+    border: 1px;
+    border-style: solid;
+    border-color: rgb(192,192,192);
+    margin-left: -1px;
+    margin-right: 10px;
+}
+
+.voice-search-button {
+    border: none;
+    height: 40px;
+    border-radius: 100px;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-right: 20px;
+}
+
+.notifications-icon-container {
+    position: relative;
+}
+
+.notifications-count {
+    position: absolute;
+    top: -2px;
+    right: -5px;
+    background-color: rgb(200, 0, 0);
+    color: white;
+    font-family: Roboto, Arial;
+    font-size: 11px;
+    padding: 2px 5px;
+    border-radius: 10px;
+}
+
+/* Dark Mode */
+
+.dark-mode-button {
+    background-color: transparent;
+    border: none;
+    margin-top: 4px;
+}
+
+.dark-mode-button-icon {
+    height: 23px;
+}
+
+.navigation-bar-buttons.change {
+    background-color: black;
+    border-bottom-color: rgb(255, 0, 0);
+}
+
+.dark-mode-button-icon.change,
+.hamburger-menu.change,
+.notifications-icon.change,
+.search-icon.change,
+.uplaod-icon.change,
+.youtube-apps-icon.change,
+.youtube-logo-right-side.change {
+    filter: invert(100%);
+}
+
+.voice-search-button.change {
+    background-color: rgb(16,16,16);
+}
+
+.voice-search-icon.change{
+    filter: invert(100%);
+}
+
+.search-bar.change {
+    background-color: black;
+}
+
+.search-button.change {
+    background-color: black;
+}
+
+/* Mobile Responsive */
+
+@media (max-width:560px) {
+    .left-section,
+    .middle-section,
+    .right-section {
+        visibility: hidden;
+    }
+
+    .dark-mode-button-container:hover .tooltip,
+    .search-button:hover .tooltip,
+    .youtube-logo-container:hover .tooltip {
+        visibility: hidden;
+    }
+
+    .left-section .youtube-logo-left-side {
+        visibility: visible;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+        margin-left: 15px;
+        z-index: 100;
+        height: 30px;
+    }
+
+    .left-section .youtube-logo-right-side {
+        visibility: visible;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+        margin-left: 62px;
+        z-index: 100;
+    }
+
+    .middle-section .search-icon {
+        visibility: visible;
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 27px;
+        margin-right: 60px;
+        z-index: 100;
+    }
+
+    .right-section .my-channel-icon {
+        visibility: visible;
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+        margin-right: 20px;
+        z-index: 100;
+    }
+
+    .right-section .dark-mode-button,
+    .right-section .dark-mode-button-icon {
+        visibility: visible;
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 27px;
+        margin-right: 100px;
+        z-index: 100;
+        height: 30px;
+    }
+
+    .my-channel-icon,
+    .search-icon,
+    .youtube-logo-right-side {
+        height: 30px;
+    }
+
+    .search-icon.change {
+        filter: invert(100%);
+    }
+
+    .dark-mode-button {
+        visibility: visible;
+    }
+}
