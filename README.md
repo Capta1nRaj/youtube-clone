@@ -1,10 +1,9 @@
-Website Access Link:- https://capta1nraj.github.io/youtube-clone
-
 What I Have Made In This:-
 1. Clone Of YouTube.
-2. Dark Mode Button On Navigation Bar.
+2. Dark Mode.
 3. Linked All Videos To The Original Video.
 4. Responsive Website.
+5. Added Dropdown Menu On Channel Icon.
 
 To Add:-
 

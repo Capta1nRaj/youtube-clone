@@ -76,7 +76,7 @@
             <div class="right-section">
 
                 <div class="dark-mode-button-container">
-                    <button class="dark-mode-button" onclick="myFunction()">
+                    <button class="dark-mode-button" onclick="dark_mode()">
                         <img
                             class="dark-mode-button-icon"
                             src="images/navigation-bar-buttons-icons/dark-mode-button.png"
@@ -110,10 +110,148 @@
                     <div class="tooltip">Notifications</div>
                 </div>
 
-                <img
-                    class="my-channel-icon"
-                    src="images/navigation-bar-buttons-icons/my-channel-2.jpeg"
-                    alt="">
+                <!-- <div> <button> <img class="my-channel-icon"
+                src="images/navigation-bar-buttons-icons/my-channel-2.jpeg" alt=""> </button>
+                </div> -->
+
+                <div class="my-channel-icon-dropdown-container">
+                    <button onclick="my_channel_icon_dropdown()" class="dropbtn"><img
+                        class="my-channel-icon"
+                        id="my-channel-icon"
+                        src="images/navigation-bar-buttons-icons/my-channel-2.jpeg"
+                        alt="">
+                        <div class="dropdown-content">
+
+                            <div>
+                                <a class="your-channel" href=""><img
+                                    class="your-channel-icon dropdown-image-dark-mode"
+                                    src="images/navigation-bar-buttons-icons/your-channel.png"
+                                    alt="">
+                                    <div class="dropdown-image-dark-mode">Your Channel</div>
+                                </a>
+                            </div>
+
+                            <div>
+                                <a class="your-channel" href=""><img
+                                    class="purchases-and-memberships dropdown-image-dark-mode"
+                                    src="images/navigation-bar-buttons-icons/purchases-and-memberships.png"
+                                    alt="">
+                                    <div class="dropdown-image-dark-mode">Purchases And Membership</div>
+                                </a>
+                            </div>
+
+                            <div>
+                                <a class="your-channel" href=""><img
+                                    class="youtube-studio dropdown-image-dark-mode"
+                                    src="images/navigation-bar-buttons-icons/youtube-studio.png"
+                                    alt="">
+                                    <div class="dropdown-image-dark-mode">YouTube Studio</div>
+                                </a>
+                            </div>
+
+                            <div>
+                                <a class="your-channel" href=""><img
+                                    class="switch-account dropdown-image-dark-mode"
+                                    src="images/navigation-bar-buttons-icons/switch-account.png"
+                                    alt="">
+                                    <div class="dropdown-image-dark-mode">Switch Account</div>
+                                </a>
+                            </div>
+
+                            <div>
+                                <a class="your-channel" href=""><img
+                                    class="sign-out dropdown-image-dark-mode"
+                                    src="images/navigation-bar-buttons-icons/sign-out.png"
+                                    alt="">
+                                    <div  class="dropdown-image-dark-mode">Sign Out</div>
+                                </a>
+                            </div>
+                            <hr>
+
+                            <div>
+                                <a class="your-channel" href=""><img
+                                    class="appearance dropdown-image-dark-mode"
+                                    src="images/navigation-bar-buttons-icons/appearance.png"
+                                    alt="">
+                                    <div  class="dropdown-image-dark-mode">Appearance: Device Theme</div>
+                                </a>
+                            </div>
+
+                            <div>
+                                <a class="your-channel" href=""><img
+                                    class="language dropdown-image-dark-mode"
+                                    src="images/navigation-bar-buttons-icons/language.png"
+                                    alt="">
+                                    <div class="dropdown-image-dark-mode">Language: English</div>
+                                </a>
+                            </div>
+
+                            <div>
+                                <a class="your-channel" href=""><img
+                                    class="location dropdown-image-dark-mode"
+                                    src="images/navigation-bar-buttons-icons/location.png"
+                                    alt="">
+                                    <div class="dropdown-image-dark-mode">Location: India</div>
+                                </a>
+                            </div>
+
+                            <div>
+                                <a class="your-channel" href=""><img
+                                    class="settings dropdown-image-dark-mode"
+                                    src="images/navigation-bar-buttons-icons/settings.png"
+                                    alt="">
+                                    <div class="dropdown-image-dark-mode">Settings</div>
+                                </a>
+                            </div>
+
+                            <div>
+                                <a class="your-channel" href=""><img
+                                    class="your-data-in-youtube dropdown-image-dark-mode"
+                                    src="images/navigation-bar-buttons-icons/your-data-in-youtube.png"
+                                    alt="">
+                                    <div class="dropdown-image-dark-mode">Your Data In YouTube</div>
+                                </a>
+                            </div>
+
+                            <div>
+                                <a class="your-channel" href="">
+                                    <img
+                                        class="help dropdown-image-dark-mode"
+                                        src="images/navigation-bar-buttons-icons/help.png"
+                                        alt="">
+                                    <div class="dropdown-image-dark-mode">Help</div>
+                                </a>
+                            </div>
+
+                            <div>
+                                <a class="your-channel" href=""><img
+                                    class="send-feedback dropdown-image-dark-mode"
+                                    src="images/navigation-bar-buttons-icons/send-feedback.png"
+                                    alt="">
+                                    <div class="dropdown-image-dark-mode">Send Feedback</div>
+                                </a>
+                            </div>
+
+                            <div>
+                                <a class="your-channel" href=""><img
+                                    class="keyboard-shortcuts dropdown-image-dark-mode"
+                                    src="images/navigation-bar-buttons-icons/keyboard-shortcuts.png"
+                                    alt="">
+                                    <div class="dropdown-image-dark-mode">Keyboard Shortcuts</div>
+                                </a>
+                            </div>
+                            <hr>
+                            <div>
+                                <a class="your-channel" href=""><img
+                                    class="keyboard-shortcuts dropdown-image-dark-mode"
+                                    src="images/navigation-bar-buttons-icons/restricted-mode.png"
+                                    alt="">
+                                    <div class="dropdown-image-dark-mode">Restricted Mode: Off</div>
+                                </a>
+                            </div>
+                        </div>
+                    </button>
+                </div>
             </div>
 
         </div>
@@ -557,5 +695,6 @@
         <script src="javascript/side-bar-buttons-dark-mode.js"></script>
         <script src="javascript/navigation-bar-buttons-dark-mode.js"></script>
         <script src="javascript/videos-section.js"></script>
+        <script src="javascript/my-channel-icon-dropdown.js"></script>
     </body>
 </html>

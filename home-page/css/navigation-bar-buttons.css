@@ -193,6 +193,73 @@
     border-radius: 10px;
 }
 
+/* My Channel Icon Drop Down Buton */
+
+.my-channel-icon-dropdown-container {
+    display: flex;
+    position: relative;
+}
+
+.dropbtn {
+    border: 0;
+    background-color: transparent;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 290px;
+    overflow: auto;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left: -265px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.dropdown-content .your-channel:hover {
+    background-color: lightgrey;
+    box-shadow: 10px 4px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+}
+
+.your-channel {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.appearance,
+.help,
+.keyboard-shortcuts,
+.language,
+.location,
+.purchases-and-memberships,
+.send-feedback,
+.settings,
+.sign-out,
+.switch-account,
+.your-channel-icon,
+.your-data-in-youtube,
+.youtube-studio {
+    height: 24px;
+    cursor: pointer;
+    margin-right: 12px;
+}
+
+.dropdown-content.show {
+    display: block;
+}
+
 /* Dark Mode */
 
 .dark-mode-button {
@@ -224,7 +291,7 @@
     background-color: rgb(16,16,16);
 }
 
-.voice-search-icon.change{
+.voice-search-icon.change {
     filter: invert(100%);
 }
 
@@ -234,6 +301,16 @@
 
 .search-button.change {
     background-color: black;
+}
+
+/* Dropdown Dark Mode */
+
+.dropdown-content.change {
+    background-color: black;
+}
+
+.dropdown-image-dark-mode.change {
+    filter: invert(100%);
 }
 
 /* Mobile Responsive */
@@ -327,5 +404,12 @@
 
     .dark-mode-button {
         visibility: visible;
+    }
+
+    .my-channel-icon-dropdown-container {
+        visibility: visible;
+        position: fixed;
+        top: 60px;
+        right: 40px;
     }
 }
