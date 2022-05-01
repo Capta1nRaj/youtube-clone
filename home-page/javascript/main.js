@@ -6,3 +6,5 @@ function dark_mode() {
     bodyTextColorChange();
     my_channel_icon_dropdown_dark_mode();
 }
+
+videosSectionRender();

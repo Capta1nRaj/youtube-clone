@@ -5,7 +5,6 @@ What I Have Made In This:-
 4. Responsive Website.
 5. Added Dropdown Menu On Channel Icon.
 
-To Add:-
-
-1. Video Player Page.
-2. Suggest Something New For Me As A Begninner In HTML, CSS, and JavaScript.
+02-05-2022:-
+1. Shifted All The Video Sections code to videos-section.js.
+2. This will reuse the code multiple times, for more information, read let uploaded_videos, and function videosSectionRender() in videos-section.js.
