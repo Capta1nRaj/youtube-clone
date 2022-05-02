@@ -135,7 +135,8 @@ let uploaded_videos = [
 ];
 
 function videosSectionRender() {
-    let videos_section = document.getElementById("videos-section");
+    let videos_section = document.getElementsByClassName("videos-section")[0];
+    console.log(videos_section);
     uploaded_videos.forEach(function (videos) {
         videos_section.innerHTML += `<div class="video-grid">
         <div class="thumbnail-section">

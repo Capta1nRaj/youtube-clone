@@ -36,16 +36,16 @@
             <div class="left-section">
 
                 <img
-                    class="hamburger-menu"
+                    class="hamburger-menu navigation-bar-buttons-icon"
                     src="images/navigation-bar-buttons-icons/hamburger-menu.svg"
                     alt="">
-                <div class="youtube-logo-container">
+                <div class="youtube-logo-container navigation-bar-tooltip-container">
                     <img
-                        class="youtube-logo-left-side"
+                        class="youtube-logo-left-side navigation-bar-buttons-icon"
                         src="images/navigation-bar-buttons-icons/youtube-left-side-logo.png"
                         alt="">
                     <img
-                        class="youtube-logo-right-side"
+                        class="youtube-logo-right-side navigation-bar-buttons-icon"
                         src="images/navigation-bar-buttons-icons/youtube-right-side-logo.png"
                         alt="">
                     <div class="tooltip">YouTube Home</div>
@@ -55,16 +55,16 @@
             <div class="middle-section">
                 <input class="search-bar" type="text" placeholder="Search" name="">
 
-                <button class="search-button">
+                <button class="search-button navigation-bar-tooltip-container">
                     <img
-                        class="search-icon"
+                        class="search-icon navigation-bar-buttons-icon"
                         src="images/navigation-bar-buttons-icons/search.svg"
                         alt="">
                     <div class="tooltip">Search</div>
                 </button>
 
                 <div class="voice-search-button-container">
-                    <button class="voice-search-button"><img
+                    <button class="voice-search-button navigation-bar-tooltip-container"><img
                         class="voice-search-icon"
                         src="images/navigation-bar-buttons-icons/voice-search-icon.svg"
                         alt="">
@@ -75,35 +75,35 @@
 
             <div class="right-section">
 
-                <div class="dark-mode-button-container">
+                <div class="dark-mode-button-container navigation-bar-tooltip-container">
                     <button class="dark-mode-button" onclick="dark_mode()">
                         <img
-                            class="dark-mode-button-icon"
+                            class="dark-mode-button-icon navigation-bar-buttons-icon"
                             src="images/navigation-bar-buttons-icons/dark-mode-button.png"
                             alt="">
                         <div class="tooltip">Dark Mode</div>
                     </button>
                 </div>
 
-                <div class="upload-icon-container">
+                <div class="upload-icon-container navigation-bar-tooltip-container">
                     <img
-                        class="uplaod-icon"
+                        class="uplaod-icon navigation-bar-buttons-icon"
                         src="images/navigation-bar-buttons-icons/upload.svg"
                         alt="">
                     <div class="tooltip">Upload</div>
                 </div>
 
-                <div class="youtube-apps-container">
+                <div class="youtube-apps-container navigation-bar-tooltip-container">
                     <img
-                        class="youtube-apps-icon"
+                        class="youtube-apps-icon navigation-bar-buttons-icon"
                         src="images/navigation-bar-buttons-icons/youtube-apps.svg"
                         alt="">
                     <div class="tooltip">YouTube Apps</div>
                 </div>
 
-                <div class="notifications-icon-container">
+                <div class="notifications-icon-container navigation-bar-tooltip-container">
                     <img
-                        class="notifications-icon"
+                        class="notifications-icon navigation-bar-buttons-icon"
                         src="images/navigation-bar-buttons-icons/notifications.svg"
                         alt="">
                     <div class="notifications-count">3</div>
@@ -116,8 +116,7 @@
 
                 <div class="my-channel-icon-dropdown-container">
                     <button onclick="my_channel_icon_dropdown()" class="dropbtn"><img
-                        class="my-channel-icon"
-                        id="my-channel-icon"
+                        class="my-channel-icon navigation-bar-buttons-icon"
                         src="images/navigation-bar-buttons-icons/my-channel-2.jpeg"
                         alt="">
                         <div class="dropdown-content">
@@ -258,75 +257,69 @@
 
         <!-- Side Bar Buttons -->
 
-        <div class="side-bar-buttons" id="side-bar-buttons">
-            <div class="home-button-container">
-                <div class="home-button">
+        <div class="side-bar-buttons">
+            <div class="home-button-container sidebar-tooltip-container">
+                <div class="home-button side-bar-buttons-icon">
                     <img
-                        class="home-icon"
-                        id="sidebar-button-image-1"
+                        class="home-icon side-bar-button-dark-mode"
                         src="images/sidebar/home.svg"
                         alt="">
-                    <div>Home</div>
+                    <div class="side-bar-button-dark-mode text-1">Home</div>
                 </div>
                 <div class="tooltip">Home</div>
             </div>
 
-            <div class="explore-button-container">
-                <div class="explore-button">
+            <div class="explore-button-container sidebar-tooltip-container">
+                <div class="explore-button side-bar-buttons-icon">
                     <img
-                        class="explore-icon"
-                        id="sidebar-button-image-2"
+                        class="explore-icon side-bar-button-dark-mode"
                         src="images/sidebar/explore.svg"
                         alt="">
-                    <div>Explorer</div>
+                    <div class="side-bar-button-dark-mode">Explorer</div>
                     <div class="tooltip">Explorer</div>
                 </div>
             </div>
 
-            <div class="subscriptions-button-container">
-                <div class="subscriptions-button">
+            <div class="subscriptions-button-container sidebar-tooltip-container">
+                <div class="subscriptions-button side-bar-buttons-icon">
                     <img
-                        class="subscriptions-icon"
-                        id="sidebar-button-image-3"
+                        class="subscriptions-icon side-bar-button-dark-mode"
                         src="images/sidebar/subscriptions.svg"
                         alt="">
-                    <div>Subscriptions</div>
+                    <div class="side-bar-button-dark-mode">Subscriptions</div>
                 </div>
                 <div class="tooltip">Subscriptions</div>
             </div>
 
-            <div class="originals-button-container">
-                <div class="originals-button">
+            <div class="originals-button-container sidebar-tooltip-container">
+                <div class="originals-button side-bar-buttons-icon">
                     <img
-                        class="originals-icon"
-                        id="sidebar-button-image-4"
+                        class="originals-icon side-bar-button-dark-mode"
                         src="images/sidebar/originals.svg"
                         alt="">
-                    <div>Originals</div>
+                    <div class="side-bar-button-dark-mode">Originals</div>
                 </div>
                 <div class="tooltip">Originals</div>
             </div>
 
-            <div class="youtube-music-button-container">
-                <div class="youtube-music-button">
+            <div class="youtube-music-button-container sidebar-tooltip-container">
+                <div class="youtube-music-button side-bar-buttons-icon">
                     <img
-                        class="youtube-music-icon"
-                        id="sidebar-button-image-5"
+                        class="youtube-music-icon side-bar-button-dark-mode"
                         src="images/sidebar/youtube-music.svg"
                         alt="">
-                    <div>YouTube Music</div>
+                    <div class="side-bar-button-dark-mode">YouTube Music</div>
                 </div>
                 <div class="tooltip">YouTube Music</div>
             </div>
 
-            <div class="library-button-container">
-                <div class="library-button">
+            <div class="library-button-container sidebar-tooltip-container">
+                <div class="library-button side-bar-buttons-icon">
                     <img
-                        class="library-icon"
-                        id="sidebar-button-image-6"
+                        class="library-icon side-bar-button-dark-mode"
                         src="images/sidebar/library.svg"
                         alt="">
-                    <div>Library</div>
+                    <div class="side-bar-button-dark-mode">Library</div>
                 </div>
                 <div class="tooltip">Library</div>
             </div>
@@ -334,7 +327,7 @@
 
         <!-- Videos Section -->
 
-        <div class="videos-section" id="videos-section"></div>
+        <div class="videos-section"></div>
 
         <!-- <div class="videos-section"> <div class="video-grid"> <div
         class="thumbnail-section"> <a

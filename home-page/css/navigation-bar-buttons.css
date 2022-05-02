@@ -15,13 +15,7 @@
     z-index: 100;
 }
 
-.hamburger-menu,
-.my-channel-icon,
-.notifications-icon,
-.uplaod-icon,
-.youtube-apps-icon,
-.youtube-logo-left-side,
-.youtube-logo-right-side {
+.navigation-bar-buttons-icon {
     height: 24px;
     cursor: pointer;
 }
@@ -74,23 +68,13 @@
     border-color: rgb(192,192,192);
 }
 
-.dark-mode-button-container,
-.notifications-icon-container,
-.search-button,
-.upload-icon-container,
-.voice-search-button,
-.youtube-apps-container,
-.youtube-logo-container {
+.navigation-bar-tooltip-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.dark-mode-button-container .tooltip,
-.notifications-icon-container .tooltip,
-.search-button .tooltip,
-.upload-icon-container .tooltip,
-.youtube-apps-container .tooltip {
+.navigation-bar-tooltip-container .tooltip {
     position: absolute;
     background-color: grey;
     color: white;
@@ -104,7 +88,7 @@
 }
 
 /* .voice-search-button .tooltip replaced with .search-with-your-voice */
-.search-with-your-voice {
+/* .search-with-your-voice {
     position: absolute;
     background-color: grey;
     color: white;
@@ -115,7 +99,7 @@
     visibility: hidden;
     opacity: 0;
     transition: all 0.6s;
-}
+} */
 
 .notifications-icon-container .tooltip {
     bottom: -52px;
@@ -142,13 +126,7 @@
     transition: all 0.6s;
 }
 
-.dark-mode-button-container:hover .tooltip,
-.notifications-icon-container:hover .tooltip,
-.search-button:hover .tooltip,
-.upload-icon-container:hover .tooltip,
-.voice-search-button:hover .tooltip,
-.youtube-apps-container:hover .tooltip,
-.youtube-logo-container:hover .tooltip {
+.navigation-bar-tooltip-container:hover .tooltip {
     opacity: 1;
     visibility: visible;
 }
@@ -238,19 +216,7 @@
     align-items: center;
 }
 
-.appearance,
-.help,
-.keyboard-shortcuts,
-.language,
-.location,
-.purchases-and-memberships,
-.send-feedback,
-.settings,
-.sign-out,
-.switch-account,
-.your-channel-icon,
-.your-data-in-youtube,
-.youtube-studio {
+.dropdown-image-dark-mode {
     height: 24px;
     cursor: pointer;
     margin-right: 12px;
@@ -277,13 +243,7 @@
     border-bottom-color: rgb(255, 0, 0);
 }
 
-.dark-mode-button-icon.change,
-.hamburger-menu.change,
-.notifications-icon.change,
-.search-icon.change,
-.uplaod-icon.change,
-.youtube-apps-icon.change,
-.youtube-logo-right-side.change {
+.navigation-bar-buttons-icon.change {
     filter: invert(100%);
 }
 
@@ -307,6 +267,10 @@
 
 .dropdown-content.change {
     background-color: black;
+}
+
+.dropdown-image-dark-mode {
+    font-weight: bold;
 }
 
 .dropdown-image-dark-mode.change {
