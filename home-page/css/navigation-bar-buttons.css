@@ -199,8 +199,13 @@
 }
 
 .dropdown-content .your-channel:hover {
-    background-color: lightgrey;
-    box-shadow: 10px 4px 16px 0 rgba(0, 0, 0, 0.2);
+    background-color: #d3d3d3;
+    box-shadow: 10px 0 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content .your-channel:hover.change {
+    background-color: #4b4848;
+    box-shadow: 10px 0 16px 10px rgba(255, 0, 0, 0.2);
 }
 
 .dropdown-content a {
@@ -255,12 +260,10 @@
     filter: invert(100%);
 }
 
-.search-bar.change {
-    background-color: black;
-}
-
+.search-bar.change,
 .search-button.change {
     background-color: black;
+    color: white;
 }
 
 /* Dropdown Dark Mode */

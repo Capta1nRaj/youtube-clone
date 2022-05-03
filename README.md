@@ -9,3 +9,7 @@ What I Have Made In This:-
 1. Shifted All The Video Sections code to videos-section.js.
 2. This will reuse the code multiple times, for more information, read let uploaded_videos, and function videosSectionRender() in videos-section.js.
 3. Optimized the HTML, and CSS codes, and remove all of the id elements, except body id tag because to change background color change.
+
+03-05-2022:-
+1. Changed box shadown of dropdown my channel icon for dark mode.
+2. When entering text in search box in dark mode the text color is black, so changed it to black.

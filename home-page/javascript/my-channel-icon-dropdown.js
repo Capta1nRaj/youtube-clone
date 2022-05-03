@@ -21,4 +21,17 @@ function my_channel_icon_dropdown_dark_mode() {
             .classList
             .toggle("change");
     }
+
+    var dark_mode_background_color = document
+        .getElementsByClassName(
+            "your-channel"
+        )
+        .length;
+
+    for (var i = 0; i < dark_mode_background_color; i++) {
+        var element1 = document.getElementsByClassName("your-channel")[i];
+        element1
+            .classList
+            .toggle("change");
+    }
 }
