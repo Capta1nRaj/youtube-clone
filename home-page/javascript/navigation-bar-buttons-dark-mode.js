@@ -63,3 +63,21 @@ function navigationBarButtonColorChange() {
         .classList
         .toggle("change");
 }
+
+function changeDarkModeButtonImageToLightMode() {
+    var Image_Id = document.getElementById('getImage');
+    if (Image_Id.src.match("images/navigation-bar-buttons-icons/dark-mode-button.png")) {
+        Image_Id.src = "images/navigation-bar-buttons-icons/light-mode-button.png";
+    } else {
+        Image_Id.src = "images/navigation-bar-buttons-icons/dark-mode-button.png";
+    }
+}
+
+function changeDarkModeTextToLightMode() {
+    var text = document.getElementsByClassName('dark-mode-text')[0];
+    if (text.innerHTML.match("Dark Mode")) {
+        text.innerHTML = "Light Mode";
+    } else {
+        text.innerHTML = "Dark Mode";
+    }
+}

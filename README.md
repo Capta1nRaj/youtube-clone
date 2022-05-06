@@ -13,3 +13,7 @@ What I Have Made In This:-
 03-05-2022:-
 1. Changed box shadown of dropdown my channel icon for dark mode.
 2. When entering text in search box in dark mode the text color is black, so changed it to black.
+
+04-05-2022:-
+1. Now when you click on dark mode icon, the icon will change to light mode, and vide-versa.
+2. After That The tooltip will also change the text, for eg:- if page is in light mode it will show dark mode, and it it is dark mode, it will show light mode.

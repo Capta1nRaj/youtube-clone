@@ -231,9 +231,26 @@
     display: block;
 }
 
+/* Switch Accounts Dropdown Container */
+
+.switch-account-dropdown {
+    display: inline-block;
+    margin-left: 90px;
+    font-weight: bolder;
+}
+
+/* Hover to dropdown the channel icon drop box */
+
+
+
+/* .my-channel-icon-dropdown-container:hover .dropdown-content{
+    display: block;
+} */
+
 /* Dark Mode */
 
 .dark-mode-button {
+    background-repeat: no-repeat;
     background-color: transparent;
     border: none;
     margin-top: 4px;
@@ -283,13 +300,10 @@
 /* Mobile Responsive */
 
 @media (max-width:560px) {
+    .dark-mode-button-container:hover .tooltip,
     .left-section,
     .middle-section,
-    .right-section {
-        visibility: hidden;
-    }
-
-    .dark-mode-button-container:hover .tooltip,
+    .right-section,
     .search-button:hover .tooltip,
     .youtube-logo-container:hover .tooltip {
         visibility: hidden;
