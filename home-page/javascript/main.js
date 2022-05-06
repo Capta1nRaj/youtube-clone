@@ -10,4 +10,3 @@ function dark_mode() {
 }
 
 videosSectionRender();
-switch_accounts_dropdown();
