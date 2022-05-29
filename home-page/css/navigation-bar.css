@@ -1,0 +1,224 @@
+/* Navigation Bar */
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.navigation-bar {
+    position: fixed;
+    width: 100%;
+    padding: 30px 0;
+    font-family: 'Mabook', sans-serif;
+    background: #191919;
+    color: white;
+    z-index: 1;
+}
+
+.navigation-bar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 20px;
+}
+
+.navigation-bar .max-width .left-section img {
+    width: 138px;
+    margin-top: 80px;
+}
+
+.navigation-bar .menu {
+    display: flex;
+    align-items: center;
+}
+
+.navigation-bar .menu li {
+    list-style: none;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 24px;
+    margin-right: 24px;
+}
+
+.navigation-bar .menu a {
+    color: white;
+}
+
+.navigation-bar .menu li a {
+    transition: all 0.3s ease-in-out;
+}
+
+.navigation-bar .menu li:hover a {
+    color: red;
+    text-decoration: underline;
+}
+
+.navigation-bar .menu .right-section-socials:hover {
+    color: white;
+}
+
+.navigation-bar .menu .right-section-socials {
+    border-radius: 100%;
+    border: 2px solid white;
+    margin: 4px;
+    transition: all 0.3s ease-in-out;
+}
+
+.navigation-bar .menu .right-section-socials a i {
+    color: white;
+}
+
+.navigation-bar .menu .right-section-socials .fa-brands:hover {
+    transition: all 0.3s ease-in-out;
+}
+
+.navigation-bar .menu .right-section-socials .fa-twitter {
+    padding: 6px;
+    border-radius: 100%;
+    background-color: #00ACEE;
+}
+
+.navigation-bar .menu .right-section-socials .fa-twitter:hover {
+    background-color: #0c6f96;
+}
+
+.navigation-bar .menu .right-section-socials .fa-instagram {
+    padding: 6px;
+    border-radius: 100%;
+    background-color: #DD2A7B;
+}
+
+.navigation-bar .menu .right-section-socials .fa-instagram:hover {
+    background-color: #a70e53;
+}
+
+.navigation-bar .menu .right-section-socials .fa-discord {
+    padding: 6px 4px;
+    border-radius: 100%;
+    background-color: #5865f2;
+}
+
+.navigation-bar .menu .right-section-socials .fa-discord:hover {
+    background-color: #1a28ca;
+}
+
+.navigation-bar .menu .text-shop a {
+    color: grey;
+    text-decoration: none;
+    cursor: default;
+}
+
+.navigation-bar .menu .text-shop a:hover {
+    color: grey;
+    text-decoration: none;
+}
+
+/* Menu Button */
+.menu-btn {
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Responsive */
+@media (max-width:874px) {
+    .navigation-bar .left-section {
+        z-index: 1;
+    }
+
+    .menu-btn {
+        display: block;
+        z-index: 1;
+    }
+
+    .navigation-bar .menu {
+        position: fixed;
+        background: #111;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease-in-out;
+        font-size: 40px;
+    }
+
+    .navigation-bar .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: -80px;
+    }
+
+    .navigation-bar .menu .menu-button,
+    .navigation-bar .menu .right-section-socials {
+        margin-top: -100px;
+    }
+
+    .navigation-bar .menu.active {
+        left: 0;
+    }
+
+    .navigation-bar .menu li {
+        display: block;
+        margin: 60px 0;
+    }
+
+    .navigation-bar .menu-btn i.active:before {
+        content: "\f00d";
+    }
+
+    .navigation-bar .menu .right-section-socials {
+        display: inline-block;
+        margin: 0 20px;
+    }
+
+    .navigation-bar .menu .menu-button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navigation-bar .menu .text-claim,
+    .navigation-bar .menu .text-home,
+    .navigation-bar .menu .text-news,
+    .navigation-bar .menu .text-shop {
+        margin-top: -10px;
+    }
+
+    .navigation-bar .menu .menu-button-text,
+    .navigation-bar .menu .right-section-socials {
+        font-size: 40px;
+    }
+
+    .navigation-bar .menu .social-buttons {
+        margin-left: 6px;
+    }
+
+    .navigation-bar .menu .right-section-socials .fa-discord {
+        padding: 12px 10px;
+    }
+
+    .navigation-bar .menu .right-section-socials .fa-instagram,
+    .navigation-bar .menu .right-section-socials .fa-twitter {
+        padding: 12px;
+    }
+}
+
+@media (max-width:560px) {
+    .navigation-bar .max-width .left-section img {
+        position: relative;
+        width: 80px;
+        top: 0;
+        left: 0;
+        margin: 0 -40px;
+    }
+
+    .navigation-bar .menu-btn {
+        position: relative;
+        right: 0;
+        margin: 0 -42px;
+    }
+}

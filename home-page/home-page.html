@@ -4,492 +4,91 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link
-            rel="icon"
-            href="images/title-logo/youtube-title-logo.png"
-            type="image/icon type">
-        <title>YouTube</title>
+        <title>Karafura</title>
 
         <link rel="stylesheet" href="css/body.css">
-        <link rel="stylesheet" href="css/videos-section.css">
-        <link rel="stylesheet" href="css/navigation-bar-buttons.css">
-        <link rel="stylesheet" href="css/side-bar-buttons.css">
+        <link rel="stylesheet" href="css/navigation-bar.css">
+        <link rel="stylesheet" href="css/first-section.css">
+        <link rel="stylesheet" href="css/second-section.css">
 
-        <link
-            rel="preconnect"
-            href="https://fonts.gstatic.com"
-            crossorigin="crossorigin">
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,500&display=swap"
-            rel="stylesheet">
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-        <script src="https://kit.fontawesome.com/c3cd9e48dc.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/e220dc7ba0.js" crossorigin="anonymous"></script>
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
     </head>
-    <body id="body">
-
-        <!-- Navitagion Bar For PC And Tablet -->
-
-        <div class="navigation-bar-buttons">
-
-            <div class="left-section">
-
-                <img
-                    class="hamburger-menu navigation-bar-buttons-icon"
-                    src="images/navigation-bar-buttons-icons/hamburger-menu.svg"
-                    alt="">
-                <div class="youtube-logo-container navigation-bar-tooltip-container">
-                    <img
-                        class="youtube-logo-left-side navigation-bar-buttons-icon"
-                        src="images/navigation-bar-buttons-icons/youtube-left-side-logo.png"
-                        alt="">
-                    <img
-                        class="youtube-logo-right-side navigation-bar-buttons-icon"
-                        src="images/navigation-bar-buttons-icons/youtube-right-side-logo.png"
-                        alt="">
-                    <div class="tooltip">YouTube Home</div>
-                </div>
-            </div>
-
-            <div class="middle-section">
-                <input class="search-bar" type="text" placeholder="Search" name="">
-
-                <button class="search-button navigation-bar-tooltip-container">
-                    <img
-                        class="search-icon navigation-bar-buttons-icon"
-                        src="images/navigation-bar-buttons-icons/search.svg"
-                        alt="">
-                    <div class="tooltip">Search</div>
-                </button>
-
-                <div class="voice-search-button-container">
-                    <button class="voice-search-button navigation-bar-tooltip-container"><img
-                        class="voice-search-icon"
-                        src="images/navigation-bar-buttons-icons/voice-search-icon.svg"
-                        alt="">
-                        <div class="tooltip search-with-your-voice">Search with your voice</div>
-                    </button>
-                </div>
-            </div>
-
-            <div class="right-section">
-
-                <div class="dark-mode-button-container navigation-bar-tooltip-container">
-                    <button class="dark-mode-button" onclick="dark_mode()">
-                        <img
-                            class="dark-mode-button-icon navigation-bar-buttons-icon"
-                            src="images/navigation-bar-buttons-icons/dark-mode-button.png"
-                            alt=""
-                            id="getImage">
-                        <div class="dark-mode-text tooltip">Dark Mode</div>
-                    </button>
-                </div>
-
-                <div class="upload-icon-container navigation-bar-tooltip-container">
-                    <img
-                        class="uplaod-icon navigation-bar-buttons-icon"
-                        src="images/navigation-bar-buttons-icons/upload.svg"
-                        alt=""
-                        id="getImage">
-                    <div class="tooltip">Upload</div>
-                </div>
-
-                <div class="youtube-apps-container navigation-bar-tooltip-container">
-                    <img
-                        class="youtube-apps-icon navigation-bar-buttons-icon"
-                        src="images/navigation-bar-buttons-icons/youtube-apps.svg"
-                        alt="">
-                    <div class="tooltip">YouTube Apps</div>
-                </div>
-
-                <div class="notifications-icon-container navigation-bar-tooltip-container">
-                    <img
-                        class="notifications-icon navigation-bar-buttons-icon"
-                        src="images/navigation-bar-buttons-icons/notifications.svg"
-                        alt="">
-                    <div class="notifications-count">3</div>
-                    <div class="tooltip">Notifications</div>
-                </div>
-
-                <!-- <div> <button> <img class="my-channel-icon"
-                src="images/navigation-bar-buttons-icons/my-channel-2.jpeg" alt=""> </button>
-                </div> -->
-
-                <div class="my-channel-icon-dropdown-container">
-                    <button onclick="my_channel_icon_dropdown()" class="dropbtn"><img
-                        class="my-channel-icon navigation-bar-buttons-icon"
-                        src="images/navigation-bar-buttons-icons/my-channel-2.jpeg"
-                        alt="">
-                        <div class="dropdown-content">
-
-                            <div>
-                                <a class="your-channel" href=""><img
-                                    class="your-channel-icon dropdown-image-dark-mode"
-                                    src="images/navigation-bar-buttons-icons/your-channel.png"
-                                    alt="">
-                                    <div class="dropdown-image-dark-mode">Your Channel</div>
-                                </a>
-                            </div>
-
-                            <div>
-                                <a class="your-channel" href=""><img
-                                    class="purchases-and-memberships dropdown-image-dark-mode"
-                                    src="images/navigation-bar-buttons-icons/purchases-and-memberships.png"
-                                    alt="">
-                                    <div class="dropdown-image-dark-mode">Purchases And Membership</div>
-                                </a>
-                            </div>
-
-                            <div>
-                                <a class="your-channel" href=""><img
-                                    class="youtube-studio dropdown-image-dark-mode"
-                                    src="images/navigation-bar-buttons-icons/youtube-studio.png"
-                                    alt="">
-                                    <div class="dropdown-image-dark-mode">YouTube Studio</div>
-                                </a>
-                            </div>
-
-                            <div class="switching-accounts-container">
-                                <a class="your-channel" href=""><img
-                                    class="switch-account dropdown-image-dark-mode"
-                                    src="images/navigation-bar-buttons-icons/switch-account.png"
-                                    alt="">
-                                    <div class="dropdown-image-dark-mode">Switch Account
-                                        <span class="switch-account-dropdown">&#62;</span></div>
-                                </a>
-                            </div>
-
-                            <div>
-                                <a class="your-channel" href=""><img
-                                    class="sign-out dropdown-image-dark-mode"
-                                    src="images/navigation-bar-buttons-icons/sign-out.png"
-                                    alt="">
-                                    <div class="dropdown-image-dark-mode">Sign Out</div>
-                                </a>
-                            </div>
-                            <hr>
-
-                            <div>
-                                <a class="your-channel" href=""><img
-                                    class="appearance dropdown-image-dark-mode"
-                                    src="images/navigation-bar-buttons-icons/appearance.png"
-                                    alt="">
-                                    <div class="dropdown-image-dark-mode">Appearance: Device Theme</div>
-                                </a>
-                            </div>
-
-                            <div>
-                                <a class="your-channel" href=""><img
-                                    class="language dropdown-image-dark-mode"
-                                    src="images/navigation-bar-buttons-icons/language.png"
-                                    alt="">
-                                    <div class="dropdown-image-dark-mode">Language: English</div>
-                                </a>
-                            </div>
-
-                            <div>
-                                <a class="your-channel" href=""><img
-                                    class="location dropdown-image-dark-mode"
-                                    src="images/navigation-bar-buttons-icons/location.png"
-                                    alt="">
-                                    <div class="dropdown-image-dark-mode">Location: India</div>
-                                </a>
-                            </div>
-
-                            <div>
-                                <a class="your-channel" href=""><img
-                                    class="settings dropdown-image-dark-mode"
-                                    src="images/navigation-bar-buttons-icons/settings.png"
-                                    alt="">
-                                    <div class="dropdown-image-dark-mode">Settings</div>
-                                </a>
-                            </div>
-
-                            <div>
-                                <a class="your-channel" href=""><img
-                                    class="your-data-in-youtube dropdown-image-dark-mode"
-                                    src="images/navigation-bar-buttons-icons/your-data-in-youtube.png"
-                                    alt="">
-                                    <div class="dropdown-image-dark-mode">Your Data In YouTube</div>
-                                </a>
-                            </div>
-
-                            <div>
-                                <a class="your-channel" href="">
-                                    <img
-                                        class="help dropdown-image-dark-mode"
-                                        src="images/navigation-bar-buttons-icons/help.png"
-                                        alt="">
-                                    <div class="dropdown-image-dark-mode">Help</div>
-                                </a>
-                            </div>
-
-                            <div>
-                                <a class="your-channel" href=""><img
-                                    class="send-feedback dropdown-image-dark-mode"
-                                    src="images/navigation-bar-buttons-icons/send-feedback.png"
-                                    alt="">
-                                    <div class="dropdown-image-dark-mode">Send Feedback</div>
-                                </a>
-                            </div>
-
-                            <div>
-                                <a class="your-channel" href=""><img
-                                    class="keyboard-shortcuts dropdown-image-dark-mode"
-                                    src="images/navigation-bar-buttons-icons/keyboard-shortcuts.png"
-                                    alt="">
-                                    <div class="dropdown-image-dark-mode">Keyboard Shortcuts</div>
-                                </a>
-                            </div>
-                            <hr>
-                            <div>
-                                <a class="your-channel" href=""><img
-                                    class="keyboard-shortcuts dropdown-image-dark-mode"
-                                    src="images/navigation-bar-buttons-icons/restricted-mode.png"
-                                    alt="">
-                                    <div class="dropdown-image-dark-mode">Restricted Mode: Off</div>
-                                </a>
-                            </div>
+    <body>
+        <section class="navigation-bar-section">
+            <div class="navigation-bar">
+                <div class="max-width">
+                    <div class="left-section">
+                        <img src="images/navigation-bar-logo.png" alt="">
+                    </div>
+                    <ul class="menu">
+                        <div class="menu-button">
+                            <li class="menu-button-text text-3d">
+                                <a href="https://3d.karafuru.io/">3D</a>
+                            </li>
+                            <li class="menu-button-text text-home">
+                                <a href="https://karafuru.io/">Home</a>
+                            </li>
+                            <li class="menu-button-text text-news">
+                                <a href="https://karafuru.io/news">News</a>
+                            </li>
+                            <li class="menu-button-text text-shop">
+                                <a href="">Shop</a>
+                            </li>
+                            <li class="menu-button-text text-claim">
+                                <a href="https://karafuru.io/claim">Claim</a>
+                            </li>
                         </div>
-                    </button>
+                        <div class="social-buttons">
+                            <li class="right-section-socials">
+                                <a href="https://www.twitter.com/karafuruNFT">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="right-section-socials">
+                                <a href="https://www.instagram.com/karafuruNFT">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="right-section-socials">
+                                <a href="https://discord.gg/karafuru">
+                                    <i class="fa-brands fa-discord"></i>
+                                </a>
+                            </li>
+                        </div>
+                    </ul>
+
+                    <!-- Menu Button -->
+                    <div class="menu-btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
                 </div>
             </div>
+        </section>
 
-        </div>
-
-        <!-- Side Bar Buttons -->
-
-        <div class="side-bar-buttons">
-            <div class="home-button-container sidebar-tooltip-container">
-                <div class="home-button side-bar-buttons-icon">
-                    <img
-                        class="home-icon side-bar-button-dark-mode"
-                        src="images/sidebar/home.svg"
-                        alt="">
-                    <div class="side-bar-button-dark-mode text-1">Home</div>
-                </div>
-                <div class="tooltip">Home</div>
+        <section class="first-section">
+            <div class="first-section-image">
+                <img src="images/first-section.jpg" alt="">
             </div>
+        </section>
 
-            <div class="explore-button-container sidebar-tooltip-container">
-                <div class="explore-button side-bar-buttons-icon">
-                    <img
-                        class="explore-icon side-bar-button-dark-mode"
-                        src="images/sidebar/explore.svg"
-                        alt="">
-                    <div class="side-bar-button-dark-mode">Explorer</div>
-                    <div class="tooltip">Explorer</div>
-                </div>
+        <section class="second-section">
+            <div class="second-section-text-scroll">
+                <marquee behavior="" direction="" scrollamount="8">5,555 generative NFTs • 12 bases • One Million Colors<span>5,555 generative NFTs • 12 bases • One Million Colors</span></marquee>
             </div>
-
-            <div class="subscriptions-button-container sidebar-tooltip-container">
-                <div class="subscriptions-button side-bar-buttons-icon">
-                    <img
-                        class="subscriptions-icon side-bar-button-dark-mode"
-                        src="images/sidebar/subscriptions.svg"
-                        alt="">
-                    <div class="side-bar-button-dark-mode">Subscriptions</div>
-                </div>
-                <div class="tooltip">Subscriptions</div>
+            <div class="second-section-image-1">
+                <img class="second-section-image" src="images/second-section-image.png" alt="">
             </div>
-
-            <div class="originals-button-container sidebar-tooltip-container">
-                <div class="originals-button side-bar-buttons-icon">
-                    <img
-                        class="originals-icon side-bar-button-dark-mode"
-                        src="images/sidebar/originals.svg"
-                        alt="">
-                    <div class="side-bar-button-dark-mode">Originals</div>
-                </div>
-                <div class="tooltip">Originals</div>
+            <div class="second-section-image-2">
+                <img
+                    class="second-section-image"
+                    src="images/second-section-text-scroll-image.png"
+                    alt="">
             </div>
-
-            <div class="youtube-music-button-container sidebar-tooltip-container">
-                <div class="youtube-music-button side-bar-buttons-icon">
-                    <img
-                        class="youtube-music-icon side-bar-button-dark-mode"
-                        src="images/sidebar/youtube-music.svg"
-                        alt="">
-                    <div class="side-bar-button-dark-mode">YouTube Music</div>
-                </div>
-                <div class="tooltip">YouTube Music</div>
-            </div>
-
-            <div class="library-button-container sidebar-tooltip-container">
-                <div class="library-button side-bar-buttons-icon">
-                    <img
-                        class="library-icon side-bar-button-dark-mode"
-                        src="images/sidebar/library.svg"
-                        alt="">
-                    <div class="side-bar-button-dark-mode">Library</div>
-                </div>
-                <div class="tooltip">Library</div>
-            </div>
-        </div>
-
-        <!-- Videos Section -->
-
-        <div class="videos-section"></div>
-
-        <!-- <div class="videos-section"> <div class="video-grid"> <div
-        class="thumbnail-section"> <a
-        href="https://www.youtube.com/watch?v=8--NHAz2xA4&t=305s"> <img
-        class="thumbnail" src="images/videos-section/thumbnail-1.jpg" alt=""> </a> <div
-        class="video-time">6:31</div> </div> <div class="video-info"> <div
-        class="channel-icon"> <a class="channel-link"
-        href="https://www.youtube.com/c/CaptainRaj"> <img class="channel-logo"
-        src="images/videos-section/channel-logo-1.jpg" alt=""> </a> </div> <div
-        class="about-video"> <a class="channel-link" target_="blank"
-        href="https://www.youtube.com/watch?v=8--NHAz2xA4&t=305s"> <p
-        class="video-title">Skye to Immortal (Flashes 💥💥😂)</p> </a> <a
-        class="channel-link" href="https://www.youtube.com/c/CaptainRaj"> <p
-        class="channel-name"> CaptainRaj </p> </a> <p class="videos-stats">68 views
-        &#xb7 8 days ago</p> </div> </div> </div> <div class="video-grid"> <div
-        class="thumbnail-section"> <a
-        href="https://www.youtube.com/watch?v=FUR9TsEYOIg&t=255s"> <img
-        class="thumbnail" src="images/videos-section/thumbnail-2.jpg" alt=""> </a> <div
-        class="video-time">8:31</div> </div> <div class="video-info"> <div
-        class="channel-icon"> <a href="https://www.youtube.com/c/BeastBoyShub"> <img
-        class="channel-logo" src="images/videos-section/channel-logo-2.jpg" alt=""> </a>
-        </div> <div class="about-video"> <a class="channel-link"
-        href="https://www.youtube.com/watch?v=FUR9TsEYOIg&t=255s"> <p
-        class="video-title">Where Have I Been?</p> </a> <a class="channel-link"
-        href="https://www.youtube.com/c/BeastBoyShub"> <p
-        class="channel-name">BeastBoyShub</p> </a> <p class="videos-stats">3.5M views
-        &#xb7 1 month ago</p> </div> </div> </div> <div class="video-grid"> <div
-        class="thumbnail-section"> <a
-        href="https://www.youtube.com/watch?v=G3e-cpL7ofc&t=15838s"> <img
-        class="thumbnail" src="images/videos-section/thumbnail-3.jpg" alt=""> </a> <div
-        class="video-time">6:31:24</div> </div> <div class="video-info"> <div
-        class="channel-icon"> <a href="https://www.youtube.com/c/SuperSimpleDev"> <img
-        class="channel-logo" src="images/videos-section/channel-logo-3.jpg" alt=""> </a>
-        </div> <div class="about-video"> <a class="channel-link"
-        href="https://www.youtube.com/watch?v=G3e-cpL7ofc&t=15838s"> <p
-        class="video-title">HTML & CSS Full Course - Beginner to Pro (2022)</p> </a> <a
-        class="channel-link" href="https://www.youtube.com/c/SuperSimpleDev"> <p
-        class="channel-name">SuperSimpleDev</p> </a> <p class="videos-stats">465K views
-        &#xb7 13 hours ago</p> </div> </div> </div> <div class="video-grid"> <div
-        class="thumbnail-section"> <a
-        href="https://www.youtube.com/watch?v=5qap5aO4i9A"> <img class="thumbnail"
-        src="images/videos-section/thumbnail-4.jpg" alt=""> </a> </div> <div
-        class="video-info"> <div class="channel-icon"> <a
-        href="https://www.youtube.com/c/LofiGirl"> <img class="channel-logo"
-        src="images/videos-section/channel-logo-4.jpg" alt=""> </a> </div> <div
-        class="about-video"> <a class="channel-link"
-        href="https://www.youtube.com/watch?v=5qap5aO4i9A"> <p class="video-title">lofi
-        hip hop radio - beats to relax/study to</p> </a> <a class="channel-link"
-        href="https://www.youtube.com/c/LofiGirl"> <p class="channel-name">Lofi Girl</p>
-        </a> <p class="videos-stats">20,518 watching now &#xb7 Started streaming on Feb
-        23, 2020</p> </div> </div> </div> <div class="video-grid"> <div
-        class="thumbnail-section"> <a class="channel-link"
-        href="https://www.youtube.com/watch?v=4v8z5itl1Kc&t=466s"> <img
-        class="thumbnail" src="images/videos-section/thumbnail-5.jpg" alt=""> <div
-        class="video-time">10:25</div> </a> </div> <div class="video-info"> <div
-        class="channel-icon"> <a href="https://www.youtube.com/c/Solomanan"> <img
-        class="channel-logo" src="images/videos-section/channel-logo-5.jpg" alt=""> </a>
-        </div> <div class="about-video"> <a class="channel-link"
-        href="https://www.youtube.com/watch?v=4v8z5itl1Kc&t=466s"> <p
-        class="video-title">Indian Streamer Solo Hacking in Valorant | Proof?</p> </a>
-        <a class="channel-link" href="https://www.youtube.com/c/Solomanan"> <p
-        class="channel-name">Solo</p> </a> <p class="videos-stats">100K views &#xb7 1
-        year ago</p> </div> </div> </div> <div class="video-grid"> <div
-        class="thumbnail-section"> <a
-        href="https://www.youtube.com/watch?v=ntLJmHOJ0ME"> <img class="thumbnail"
-        src="images/videos-section/thumbnail-6.jpg" alt=""> <div
-        class="video-time">18:59</div> </a> </div> <div class="video-info"> <div
-        class="channel-icon"> <a class="channel-link"
-        href="https://www.youtube.com/c/CodeWithHarry"> <img class="channel-logo"
-        src="images/videos-section/channel-logo-6.jpg" alt=""> </a> </div> <div
-        class="about-video"> <a class="channel-link"
-        href="https://www.youtube.com/watch?v=ntLJmHOJ0ME"> <p
-        class="video-title">Introduction to Java + Installing Java JDK and IntelliJ IDEA
-        for Java</p> </a> <a class="channel-link"
-        href="https://www.youtube.com/c/CodeWithHarry"> <p
-        class="channel-name">CodeWithHarry</p> </a> <p class="videos-stats">2.8M views
-        &#xb7 1 year ago</p> </div> </div> </div> <div class="video-grid"> <div
-        class="thumbnail-section"> <a class="channel-link"
-        href="https://www.youtube.com/watch?v=Trg3-Jiz6tI"> <img class="thumbnail"
-        src="images/videos-section/thumbnail-7.jpg" alt=""> <div
-        class="video-time">1:08:02</div> </a> </div> <div class="video-info"> <div
-        class="channel-icon"> <a class="channel-link"
-        href="https://www.youtube.com/c/AmaterasuOfficial"> <img class="channel-logo"
-        src="images/videos-section/channel-logo-7.jpg" alt=""> </a> </div> <div
-        class="about-video"> <a class="channel-link"
-        href="https://www.youtube.com/watch?v=Trg3-Jiz6tI"> <p class="video-title">True
-        Side of the Story</p> </a> <a class="channel-link"
-        href="https://www.youtube.com/c/AmaterasuOfficial"> <p
-        class="channel-name">Amaterasu</p> </a> <p class="videos-stats">237K views &#xb7
-        Streamed 11 months ago</p> </div> </div> </div> <div class="video-grid"> <div
-        class="thumbnail-section"> <a class="channel-link"
-        href="https://www.youtube.com/watch?v=aj1Q_BAqwa8&t=164s"> <img
-        class="thumbnail" src="images/videos-section/thumbnail-8.jpg" alt=""> <div
-        class="video-time">4:40</div> </a> </div> <div class="video-info"> <div
-        class="channel-icon"> <a class="channel-link"
-        href="https://www.youtube.com/user/Darkknight6749Return"> <img
-        class="channel-logo" src="images/videos-section/channel-logo-8.jpg" alt=""> </a>
-        </div> <div class="about-video"> <a class="channel-link"
-        href="https://www.youtube.com/watch?v=aj1Q_BAqwa8&t=164s"> <p
-        class="video-title">The Dark Knight Rises - Batman's First Appearance[HD]</p>
-        </a> <a class="channel-link"
-        href="https://www.youtube.com/user/Darkknight6749Return"> <p
-        class="channel-name">Darkknight6749Return</p> </a> <p class="videos-stats">18M
-        views &#xb7 9 years ago</p> </div> </div> </div> <div class="video-grid"> <div
-        class="thumbnail-section"> <a
-        href="https://www.youtube.com/watch?v=5NErG3iCZ4w&t=14s"> <img class="thumbnail"
-        src="images/videos-section/thumbnail-9.jpg" alt=""> <div
-        class="video-time">9:08</div> </a> </div> <div class="video-info"> <div
-        class="channel-icon"> <a class="channel-link"
-        href="https://www.youtube.com/c/humaramovie"> <img class="channel-logo"
-        src="images/videos-section/channel-logo-9.jpg" alt=""> </a> </div> <div
-        class="about-video"> <a class="channel-link"
-        href="https://www.youtube.com/watch?v=5NErG3iCZ4w&t=14s"> <p
-        class="video-title">Haircut | Short Film | By Anand Tiwari & Sumeet Vyas</p>
-        </a> <a class="channel-link" href="https://www.youtube.com/c/humaramovie"> <p
-        class="channel-name">humaramovie</p> </a> <p class="videos-stats">10M views
-        &#xb7 8 years ago</p> </div> </div> </div> <div class="video-grid"> <div
-        class="thumbnail-section"> <a
-        href="https://www.youtube.com/watch?v=dSLI3MR2A_E"> <img class="thumbnail"
-        src="images/videos-section/thumbnail-10.jpg" alt=""> <div
-        class="video-time">1:30</div> </a> </div> <div class="video-info"> <div
-        class="channel-icon"> <a class="channel-link"
-        href="www.youtube.com/c/AkshsStovia"> <img class="channel-logo"
-        src="images/videos-section/channel-logo-10.jpg" alt=""> </a> </div> <div
-        class="about-video"> <a class="channel-link"
-        href="https://www.youtube.com/watch?v=dSLI3MR2A_E"> <p class="video-title">Enemy
-        😈 Valorant Montage</p> </a> <a class="channel-link"
-        href="www.youtube.com/c/AkshsStovia"> <p class="channel-name">Aksh Stovia</p>
-        </a> <p class="videos-stats">111 views &#xb7 1 month ago</p> </div> </div>
-        </div> <div class="video-grid"> <div class="thumbnail-section"> <a
-        href="https://www.youtube.com/watch?v=xhwXy3d5WQg"> <img class="thumbnail"
-        src="images/videos-section/thumbnail-11.jpg" alt=""> <div
-        class="video-time">23:37</div> </a> </div> <div class="video-info"> <div
-        class="channel-icon"> <a class="channel-link" href="www.youtube.com/c/Mackleyt">
-        <img class="channel-logo" src="images/videos-section/channel-logo-11.jpg"
-        alt=""> </a> </div> <div class="about-video"> <a class="channel-link"
-        href="https://www.youtube.com/watch?v=xhwXy3d5WQg"> <p class="video-title">(84
-        Kill Game)We broke our own best Record</p> </a> <a class="channel-link"
-        href="www.youtube.com/c/Mackleyt"> <p class="channel-name">Mackle</p> </a> <p
-        class="videos-stats">7K views &#xb7 1 year ago</p> </div> </div> </div> <div
-        class="video-grid"> <div class="thumbnail-section"> <a
-        href="https://www.youtube.com/watch?v=yob5AkDYLDI"> <img class="thumbnail"
-        src="images/videos-section/thumbnail-12.jpg" alt=""> <div
-        class="video-time">1:27</div> </a> </div> <div class="video-info"> <div
-        class="channel-icon"> <a class="channel-link"
-        href="https://www.youtube.com/c/VELOCITYGAMING01"> <img class="channel-logo"
-        src="images/videos-section/channel-logo-12.jpg" alt=""> </a> </div> <div
-        class="about-video"> <a class="channel-link"
-        href="https://www.youtube.com/watch?v=yob5AkDYLDI"> <p
-        class="video-title">Welcome @RakaZone Gaming | WELCOME TO THE VLT FAMILY
-        #feelthevelocity #VLTRaka</p> </a> <a class="channel-link"
-        href="https://www.youtube.com/c/VELOCITYGAMING01"> <p
-        class="channel-name">VELOCITY GAMING</p> </a> <p class="videos-stats">96K views
-        &#xb7 1 month ago</p> </div> </div> </div> </div> -->
-
-        <script src="javascript/side-bar-buttons-dark-mode.js"></script>
-        <script src="javascript/navigation-bar-buttons-dark-mode.js"></script>
-        <script src="javascript/videos-section.js"></script>
-        <script src="javascript/my-channel-icon-dropdown.js"></script>
-        <script src="javascript/main.js"></script>
+        </section>
+        <script src="javascript/index.js"></script>
     </body>
 </html>
