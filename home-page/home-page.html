@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            rel="icon"
+            href="images/title-logo/youtube-title-logo.png"
+            type="image/icon type">
+        <title>YouTube</title>
+
+        <!-- CSS -->
+        <section id="css">
+            <link rel="stylesheet" href="css/body.css">
+            <link rel="stylesheet" href="css/videos-section.css">
+            <link rel="stylesheet" href="css/navigation-bar-buttons.css">
+            <link rel="stylesheet" href="css/side-bar-buttons.css">
+        </section>
+
+        <!-- Other Links -->
+        <section id="Others">
+            <link
+                rel="preconnect"
+                href="https://fonts.gstatic.com"
+                crossorigin="crossorigin">
+            <link
+                href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,500&display=swap"
+                rel="stylesheet">
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+            <script src="https://kit.fontawesome.com/c3cd9e48dc.js" crossorigin="anonymous"></script>
+        </section>
+    </head>
+    <body id="body">
+
+        <!-- Navitagion Bar For PC And Tablet -->
+
+        <section id="navigation-bar-buttons">
+            <div class="navigation-bar-buttons">
+
+                <div class="left-section">
+
+                    <img
+                        class="hamburger-menu navigation-bar-buttons-icon"
+                        src="images/navigation-bar-buttons-icons/hamburger-menu.svg"
+                        alt="">
+                    <div class="youtube-logo-container navigation-bar-tooltip-container">
+                        <img
+                            class="youtube-logo-left-side navigation-bar-buttons-icon"
+                            src="images/navigation-bar-buttons-icons/youtube-left-side-logo.png"
+                            alt="">
+                        <img
+                            class="youtube-logo-right-side navigation-bar-buttons-icon"
+                            src="images/navigation-bar-buttons-icons/youtube-right-side-logo.png"
+                            alt="">
+                        <div class="tooltip">YouTube Home</div>
+                    </div>
+                </div>
+
+                <div class="middle-section">
+                    <input class="search-bar" type="text" placeholder="Search" name="">
+
+                    <button class="search-button navigation-bar-tooltip-container">
+                        <img
+                            class="search-icon navigation-bar-buttons-icon"
+                            src="images/navigation-bar-buttons-icons/search.svg"
+                            alt="">
+                        <div class="tooltip">Search</div>
+                    </button>
+
+                    <div class="voice-search-button-container">
+                        <button class="voice-search-button navigation-bar-tooltip-container"><img
+                            class="voice-search-icon"
+                            src="images/navigation-bar-buttons-icons/voice-search-icon.svg"
+                            alt="">
+                            <div class="tooltip search-with-your-voice">Search with your voice</div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="right-section">
+
+                    <div class="dark-mode-button-container navigation-bar-tooltip-container">
+                        <button class="dark-mode-button" onclick="dark_mode()">
+                            <img
+                                class="dark-mode-button-icon navigation-bar-buttons-icon"
+                                src="images/navigation-bar-buttons-icons/dark-mode-button.png"
+                                alt=""
+                                id="getImage">
+                            <div class="dark-mode-text tooltip">Dark Mode</div>
+                        </button>
+                    </div>
+
+                    <div class="upload-icon-container navigation-bar-tooltip-container">
+                        <img
+                            class="uplaod-icon navigation-bar-buttons-icon"
+                            src="images/navigation-bar-buttons-icons/upload.svg"
+                            alt=""
+                            id="getImage">
+                        <div class="tooltip">Upload</div>
+                    </div>
+
+                    <div class="youtube-apps-container navigation-bar-tooltip-container">
+                        <img
+                            class="youtube-apps-icon navigation-bar-buttons-icon"
+                            src="images/navigation-bar-buttons-icons/youtube-apps.svg"
+                            alt="">
+                        <div class="tooltip">YouTube Apps</div>
+                    </div>
+
+                    <div class="notifications-icon-container navigation-bar-tooltip-container">
+                        <img
+                            class="notifications-icon navigation-bar-buttons-icon"
+                            src="images/navigation-bar-buttons-icons/notifications.svg"
+                            alt="">
+                        <div class="notifications-count">3</div>
+                        <div class="tooltip">Notifications</div>
+                    </div>
+
+                    <div class="my-channel-icon-dropdown-container">
+                        <button onclick="my_channel_icon_dropdown()" class="dropbtn"><img
+                            class="my-channel-icon navigation-bar-buttons-icon"
+                            src="images/navigation-bar-buttons-icons/my-channel-2.jpeg"
+                            alt="">
+                            <div class="dropdown-content">
+
+                                <div>
+                                    <a class="your-channel" href=""><img
+                                        class="your-channel-icon dropdown-image-dark-mode"
+                                        src="images/navigation-bar-buttons-icons/your-channel.png"
+                                        alt="">
+                                        <div class="dropdown-image-dark-mode">Your Channel</div>
+                                    </a>
+                                </div>
+
+                                <div>
+                                    <a class="your-channel" href=""><img
+                                        class="purchases-and-memberships dropdown-image-dark-mode"
+                                        src="images/navigation-bar-buttons-icons/purchases-and-memberships.png"
+                                        alt="">
+                                        <div class="dropdown-image-dark-mode">Purchases And Membership</div>
+                                    </a>
+                                </div>
+
+                                <div>
+                                    <a class="your-channel" href=""><img
+                                        class="youtube-studio dropdown-image-dark-mode"
+                                        src="images/navigation-bar-buttons-icons/youtube-studio.png"
+                                        alt="">
+                                        <div class="dropdown-image-dark-mode">YouTube Studio</div>
+                                    </a>
+                                </div>
+
+                                <div class="switching-accounts-container">
+                                    <a class="your-channel" href=""><img
+                                        class="switch-account dropdown-image-dark-mode"
+                                        src="images/navigation-bar-buttons-icons/switch-account.png"
+                                        alt="">
+                                        <div class="dropdown-image-dark-mode">Switch Account
+                                            <span class="switch-account-dropdown">&#62;</span></div>
+                                    </a>
+                                </div>
+
+                                <div>
+                                    <a class="your-channel" href=""><img
+                                        class="sign-out dropdown-image-dark-mode"
+                                        src="images/navigation-bar-buttons-icons/sign-out.png"
+                                        alt="">
+                                        <div class="dropdown-image-dark-mode">Sign Out</div>
+                                    </a>
+                                </div>
+                                <hr>
+
+                                <div>
+                                    <a class="your-channel" href=""><img
+                                        class="appearance dropdown-image-dark-mode"
+                                        src="images/navigation-bar-buttons-icons/appearance.png"
+                                        alt="">
+                                        <div class="dropdown-image-dark-mode">Appearance: Device Theme</div>
+                                    </a>
+                                </div>
+
+                                <div>
+                                    <a class="your-channel" href=""><img
+                                        class="language dropdown-image-dark-mode"
+                                        src="images/navigation-bar-buttons-icons/language.png"
+                                        alt="">
+                                        <div class="dropdown-image-dark-mode">Language: English</div>
+                                    </a>
+                                </div>
+
+                                <div>
+                                    <a class="your-channel" href=""><img
+                                        class="location dropdown-image-dark-mode"
+                                        src="images/navigation-bar-buttons-icons/location.png"
+                                        alt="">
+                                        <div class="dropdown-image-dark-mode">Location: India</div>
+                                    </a>
+                                </div>
+
+                                <div>
+                                    <a class="your-channel" href=""><img
+                                        class="settings dropdown-image-dark-mode"
+                                        src="images/navigation-bar-buttons-icons/settings.png"
+                                        alt="">
+                                        <div class="dropdown-image-dark-mode">Settings</div>
+                                    </a>
+                                </div>
+
+                                <div>
+                                    <a class="your-channel" href=""><img
+                                        class="your-data-in-youtube dropdown-image-dark-mode"
+                                        src="images/navigation-bar-buttons-icons/your-data-in-youtube.png"
+                                        alt="">
+                                        <div class="dropdown-image-dark-mode">Your Data In YouTube</div>
+                                    </a>
+                                </div>
+
+                                <div>
+                                    <a class="your-channel" href="">
+                                        <img
+                                            class="help dropdown-image-dark-mode"
+                                            src="images/navigation-bar-buttons-icons/help.png"
+                                            alt="">
+                                        <div class="dropdown-image-dark-mode">Help</div>
+                                    </a>
+                                </div>
+
+                                <div>
+                                    <a class="your-channel" href=""><img
+                                        class="send-feedback dropdown-image-dark-mode"
+                                        src="images/navigation-bar-buttons-icons/send-feedback.png"
+                                        alt="">
+                                        <div class="dropdown-image-dark-mode">Send Feedback</div>
+                                    </a>
+                                </div>
+
+                                <div>
+                                    <a class="your-channel" href=""><img
+                                        class="keyboard-shortcuts dropdown-image-dark-mode"
+                                        src="images/navigation-bar-buttons-icons/keyboard-shortcuts.png"
+                                        alt="">
+                                        <div class="dropdown-image-dark-mode">Keyboard Shortcuts</div>
+                                    </a>
+                                </div>
+                                <hr>
+                                <div>
+                                    <a class="your-channel" href=""><img
+                                        class="keyboard-shortcuts dropdown-image-dark-mode"
+                                        src="images/navigation-bar-buttons-icons/restricted-mode.png"
+                                        alt="">
+                                        <div class="dropdown-image-dark-mode">Restricted Mode: Off</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Side Bar Buttons -->
+
+        <section id="side-bar-buttons">
+            <div class="side-bar-buttons">
+                <div class="home-button-container sidebar-tooltip-container">
+                    <div class="home-button side-bar-buttons-icon">
+                        <img
+                            class="home-icon side-bar-button-dark-mode"
+                            src="images/sidebar/home.svg"
+                            alt="">
+                        <div class="side-bar-button-dark-mode text-1">Home</div>
+                    </div>
+                    <div class="tooltip">Home</div>
+                </div>
+
+                <div class="explore-button-container sidebar-tooltip-container">
+                    <div class="explore-button side-bar-buttons-icon">
+                        <img
+                            class="explore-icon side-bar-button-dark-mode"
+                            src="images/sidebar/explore.svg"
+                            alt="">
+                        <div class="side-bar-button-dark-mode">Explorer</div>
+                        <div class="tooltip">Explorer</div>
+                    </div>
+                </div>
+
+                <div class="subscriptions-button-container sidebar-tooltip-container">
+                    <div class="subscriptions-button side-bar-buttons-icon">
+                        <img
+                            class="subscriptions-icon side-bar-button-dark-mode"
+                            src="images/sidebar/subscriptions.svg"
+                            alt="">
+                        <div class="side-bar-button-dark-mode">Subscriptions</div>
+                    </div>
+                    <div class="tooltip">Subscriptions</div>
+                </div>
+
+                <div class="originals-button-container sidebar-tooltip-container">
+                    <div class="originals-button side-bar-buttons-icon">
+                        <img
+                            class="originals-icon side-bar-button-dark-mode"
+                            src="images/sidebar/originals.svg"
+                            alt="">
+                        <div class="side-bar-button-dark-mode">Originals</div>
+                    </div>
+                    <div class="tooltip">Originals</div>
+                </div>
+
+                <div class="youtube-music-button-container sidebar-tooltip-container">
+                    <div class="youtube-music-button side-bar-buttons-icon">
+                        <img
+                            class="youtube-music-icon side-bar-button-dark-mode"
+                            src="images/sidebar/youtube-music.svg"
+                            alt="">
+                        <div class="side-bar-button-dark-mode">YouTube Music</div>
+                    </div>
+                    <div class="tooltip">YouTube Music</div>
+                </div>
+
+                <div class="library-button-container sidebar-tooltip-container">
+                    <div class="library-button side-bar-buttons-icon">
+                        <img
+                            class="library-icon side-bar-button-dark-mode"
+                            src="images/sidebar/library.svg"
+                            alt="">
+                        <div class="side-bar-button-dark-mode">Library</div>
+                    </div>
+                    <div class="tooltip">Library</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Videos Section -->
+
+        <section id="videos-section">
+            <div class="videos-section"></div>
+        </section>
+
+        <!-- JavaScripts -->
+        <section id="JavaScripts">
+            <script src="javascript/side-bar-buttons-dark-mode.js"></script>
+            <script src="javascript/navigation-bar-buttons-dark-mode.js"></script>
+            <script src="javascript/videos-section.js"></script>
+            <script src="javascript/my-channel-icon-dropdown.js"></script>
+            <script src="javascript/main.js"></script>
+        </section>
+    </body>
+</html>

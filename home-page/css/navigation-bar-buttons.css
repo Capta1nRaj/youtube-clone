@@ -1,0 +1,380 @@
+.navigation-bar-buttons {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(228,228,228);
+    background-color: white;
+    z-index: 100;
+}
+
+.navigation-bar-buttons-icon {
+    height: 24px;
+    cursor: pointer;
+}
+
+.youtube-logo-left-side {
+    margin-top: 2px;
+    margin-right: 2px;
+    height: 24px;
+}
+
+.my-channel-icon {
+    border-radius: 100%;
+}
+
+.hamburger-menu {
+    margin-right: 62px;
+    margin-left: 34px;
+    filter: invert(0%);
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+}
+
+.middle-section {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 500px;
+}
+
+.search-icon,
+.voice-search-icon {
+    height: 24px;
+    cursor: pointer;
+}
+
+.search-bar {
+    flex: 1;
+    max-width: 500px;
+    width: 500px;
+    height: 17px;
+    padding: 10.4px;
+    width: 0;
+    border: 1px;
+    border-style: solid;
+    border-color: rgb(192,192,192);
+}
+
+.navigation-bar-tooltip-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation-bar-tooltip-container .tooltip {
+    position: absolute;
+    background-color: grey;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -24px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.6s;
+}
+
+.notifications-icon-container .tooltip {
+    bottom: -52px;
+}
+
+.dark-mode-button-container .tooltip {
+    margin-left: -28px;
+}
+
+.youtube-logo-container .tooltip {
+    position: absolute;
+    background-color: #3A3B3C;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    margin-top: 50px;
+    margin-left: 140px;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.6s;
+}
+
+.navigation-bar-tooltip-container:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+.search-button {
+    height: 40px;
+    width: 60px;
+    background-color: rgb(240,240,240);
+    border: 1px;
+    border-style: solid;
+    border-color: rgb(192,192,192);
+    margin-left: -1px;
+    margin-right: 10px;
+}
+
+.voice-search-button {
+    border: none;
+    height: 40px;
+    border-radius: 100px;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-right: 20px;
+}
+
+.notifications-icon-container {
+    position: relative;
+}
+
+.notifications-count {
+    position: absolute;
+    top: -2px;
+    right: -5px;
+    background-color: rgb(200, 0, 0);
+    color: white;
+    font-family: Roboto, Arial;
+    font-size: 11px;
+    padding: 2px 5px;
+    border-radius: 10px;
+}
+
+/* My Channel Icon Drop Down Buton */
+
+.my-channel-icon-dropdown-container {
+    display: flex;
+    position: relative;
+}
+
+.dropbtn {
+    border: 0;
+    background-color: transparent;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 290px;
+    overflow: auto;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left: -265px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.dropdown-content .your-channel:hover {
+    background-color: #d3d3d3;
+    box-shadow: 10px 0 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content .your-channel:hover.change {
+    background-color: #4b4848;
+    box-shadow: 10px 0 16px 10px rgba(255, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+}
+
+.your-channel {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.dropdown-image-dark-mode {
+    height: 24px;
+    cursor: pointer;
+    margin-right: 12px;
+}
+
+.dropdown-content.show {
+    display: block;
+}
+
+/* Switch Accounts Dropdown Container */
+
+.switch-account-dropdown {
+    display: inline-block;
+    margin-left: 90px;
+    font-weight: bolder;
+}
+
+/* Hover to dropdown the channel icon drop box */
+
+/* .my-channel-icon-dropdown-container:hover .dropdown-content{
+    display: block;
+} */
+
+/* Dark Mode */
+
+.dark-mode-button {
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    margin-top: 4px;
+}
+
+.dark-mode-button-icon {
+    height: 23px;
+}
+
+.navigation-bar-buttons.change {
+    background-color: black;
+    border-bottom-color: rgb(255, 0, 0);
+}
+
+.navigation-bar-buttons-icon.change {
+    filter: invert(100%);
+}
+
+.voice-search-button.change {
+    background-color: rgb(16,16,16);
+}
+
+.voice-search-icon.change {
+    filter: invert(100%);
+}
+
+.search-bar.change,
+.search-button.change {
+    background-color: black;
+    color: white;
+}
+
+/* Dropdown Dark Mode */
+
+.dropdown-content.change {
+    background-color: black;
+}
+
+.dropdown-image-dark-mode {
+    font-weight: bold;
+}
+
+.dropdown-image-dark-mode.change {
+    filter: invert(100%);
+}
+
+/* Mobile Responsive */
+
+@media (max-width:560px) {
+    .dark-mode-button-container:hover .tooltip,
+    .left-section,
+    .middle-section,
+    .right-section,
+    .search-button:hover .tooltip,
+    .youtube-logo-container:hover .tooltip {
+        visibility: hidden;
+    }
+
+    .left-section .youtube-logo-left-side {
+        visibility: visible;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+        margin-left: 15px;
+        z-index: 100;
+        height: 30px;
+    }
+
+    .left-section .youtube-logo-right-side {
+        visibility: visible;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+        margin-left: 62px;
+        z-index: 100;
+    }
+
+    .middle-section .search-icon {
+        visibility: visible;
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 27px;
+        margin-right: 60px;
+        z-index: 100;
+    }
+
+    .right-section .my-channel-icon {
+        visibility: visible;
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+        margin-right: 20px;
+        z-index: 100;
+    }
+
+    .right-section .dark-mode-button,
+    .right-section .dark-mode-button-icon {
+        visibility: visible;
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 27px;
+        margin-right: 100px;
+        z-index: 100;
+        height: 30px;
+    }
+
+    .my-channel-icon,
+    .search-icon,
+    .youtube-logo-right-side {
+        height: 30px;
+    }
+
+    .search-icon.change {
+        filter: invert(100%);
+    }
+
+    .dark-mode-button {
+        visibility: visible;
+    }
+
+    .my-channel-icon-dropdown-container {
+        visibility: visible;
+        position: fixed;
+        top: 60px;
+        right: 40px;
+    }
+}
