@@ -1,0 +1,16 @@
+.third-section-image img {
+    width: 100%;
+    margin-top: -66px;
+}
+
+@media (max-width:800px) {
+    .third-section-image img {
+        display: none;
+    }
+    .third-section-image {
+        background: url("../images/third-section-responsive.jpg") no-repeat center;
+        min-height: 600px;
+        background-size: cover;
+        margin-top: -66px;
+    }
+}
