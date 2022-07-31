@@ -1,1 +1,2 @@
 # youtube-clone
+Starting making it again as I want to add new features but the main reason was to make the code reusable for myself, you can check my old YouTube Clone project here:- https://github.com/Capta1nRaj/YouTube-Clone-Old

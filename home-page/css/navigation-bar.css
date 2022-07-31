@@ -1,0 +1,110 @@
+/* Main CSS */
+.navigation-bar-fixed-menu {
+    position: fixed;
+    left: 0;
+    right: 0;
+    display: flex;
+    background-color: white;
+    padding-top: 21px;
+    padding-left: 34px;
+    padding-bottom: 20px;
+    justify-content: space-between;
+}
+
+/* Left Side CSS */
+.navigation-bar-fixed-menu .left-side-navigation-bar-menu {
+    display: flex;
+    align-items: center;
+}
+
+.navigation-bar-fixed-menu .left-side-navigation-bar-menu .hamburger-menu-with-youtube-logo {
+    display: flex;
+}
+
+.navigation-bar-fixed-menu .left-side-navigation-bar-menu .navigation-bar-left-side-icons {
+    height: 24px;
+    cursor: pointer;
+}
+
+.navigation-bar-fixed-menu .left-side-navigation-bar-menu .hamburger-menu-with-youtube-logo .youtube-left-side-logo {
+    margin-left: 62px;
+    margin-right: 2px;
+    margin-top: 1px;
+}
+
+.middle-side-naviagtion-bar-menu {
+    display: flex;
+}
+
+/* Middle Side CSS */
+.navigation-bar-fixed-menu .middle-side-naviagtion-bar-menu {
+    display: flex;
+    flex: 1;
+    max-width: 500px;
+    margin: 0 20px;
+    align-items: center;
+}
+
+.navigation-bar-fixed-menu .middle-side-naviagtion-bar-menu .search-box {
+    flex: 1;
+    width: 0;
+    padding: 11px;
+}
+
+.navigation-bar-fixed-menu .middle-side-naviagtion-bar-menu .search-button,
+.navigation-bar-fixed-menu .middle-side-naviagtion-bar-menu .voice-search-button {
+    padding: 4.6px;
+    cursor: pointer;
+}
+
+.navigation-bar-fixed-menu .middle-side-naviagtion-bar-menu .search-button {
+    margin-left: -1px;
+    margin-right: 12px;
+    padding: 4.6px 20px;
+}
+
+.navigation-bar-fixed-menu .middle-side-naviagtion-bar-menu .search-icon,
+.navigation-bar-fixed-menu .middle-side-naviagtion-bar-menu .voice-search-icon {
+    height: 24px;
+}
+
+.navigation-bar-fixed-menu .middle-side-naviagtion-bar-menu .voice-search-button {
+    border-radius: 100%;
+    border: 0;
+}
+
+.navigation-bar-fixed-menu .middle-side-naviagtion-bar-menu button,
+.navigation-bar-fixed-menu .middle-side-naviagtion-bar-menu input {
+    border: 1px rgb(192,192,192) solid;
+}
+/* Right Side CSS */
+.navigation-bar-fixed-menu .right-side-naviagtion-bar-menu {
+    display: flex;
+    margin-right: 28px;
+    align-items: center;
+    gap: 22px;
+}
+.navigation-bar-fixed-menu .right-side-naviagtion-bar-menu .navigation-bar-right-side-icons {
+    height: 24px;
+    cursor: pointer;
+}
+
+.navigation-bar-fixed-menu .right-side-naviagtion-bar-menu .my-channel-icon {
+    border-radius: 100%;
+}
+
+.navigation-bar-fixed-menu .right-side-naviagtion-bar-menu .notification-icon-tooltip-container {
+    position: relative;
+    display: flex;
+}
+
+.navigation-bar-fixed-menu .right-side-naviagtion-bar-menu .notification-icon-tooltip-container .tooltip-text {
+    position: absolute;
+    background-color: rgb(200, 0, 0);
+    padding: 2px 5px;
+    border-radius: 100%;
+    top: -2px;
+    right: -5px;
+    font-size: 12px;
+    color: white;
+}
