@@ -75,7 +75,7 @@
 
 .navigation-bar-fixed-menu .middle-side-naviagtion-bar-menu button,
 .navigation-bar-fixed-menu .middle-side-naviagtion-bar-menu input {
-    border: 1px rgb(192,192,192) solid;
+    border: 1px rgb(192, 192, 192) solid;
 }
 /* Right Side CSS */
 .navigation-bar-fixed-menu .right-side-naviagtion-bar-menu {
@@ -109,7 +109,7 @@
     color: white;
 }
 
-@media (max-width:650px) {
+@media (max-width: 650px) {
     .navigation-bar-fixed-menu .left-side-navigation-bar-menu .hamburger-menu,
     .navigation-bar-fixed-menu .middle-side-naviagtion-bar-menu,
     .navigation-bar-fixed-menu .right-side-naviagtion-bar-menu .notification-icon-tooltip-container,
@@ -128,25 +128,35 @@
     }
 
     .navigation-bar-fixed-menu .middle-side-naviagtion-bar-menu .search-icon {
+        position: fixed;
         visibility: visible;
         top: 26px;
         right: 32px;
         height: 30px;
+        cursor: none;
     }
 
-    .navigation-bar-fixed-menu .middle-side-naviagtion-bar-menu .search-icon,
-    .navigation-bar-fixed-menu .right-side-naviagtion-bar-menu .dark-mode-button,
     .navigation-bar-fixed-menu .right-side-naviagtion-bar-menu .my-channel-icon {
         position: fixed;
-    }
-
-    .navigation-bar-fixed-menu .right-side-naviagtion-bar-menu .my-channel-icon {
         right: 4px;
     }
 
     .navigation-bar-fixed-menu .right-side-naviagtion-bar-menu .dark-mode-button {
+        position: fixed;
         margin-right: 11px;
         right: 55px;
         height: 30px;
+        top: 27px;
     }
+}
+
+/* Dark Mode */
+.navigation-bar-fixed-menu .left-side-navigation-bar-menu .hamburger-menu.dark-mode,
+.navigation-bar-fixed-menu .middle-side-naviagtion-bar-menu.dark-mode,
+.navigation-bar-fixed-menu .right-side-naviagtion-bar-menu .navigation-bar-right-side-icons.dark-mode {
+    filter: invert(100%);
+}
+
+.navigation-bar-fixed-menu.dark-mode {
+    background-color: black;
 }
