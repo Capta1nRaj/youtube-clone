@@ -3,47 +3,47 @@ function switchBetweenLightModeAndDarkMode() {
 }
 
 // Navigation Bar Dark Mode
-
 function navigationBarFixedMenu() {
-    // Background
+    // Navigation Bar
     document
         .getElementsByClassName("navigation-bar-fixed-menu")[0]
         .classList
         .toggle("dark-mode");
 
-    // Hamburger Icon
+    // Hamburger Button
     document
         .getElementsByClassName("hamburger-menu")[0]
         .classList
         .toggle("dark-mode");
 
-    // Middle Side Search Bar With Icons
-    var searchBar = document
-        .getElementsByClassName(
-            "middle-side-naviagtion-bar-menu"
-        )
-        .length;
+    // YouTube Logo
+    document
+        .getElementsByClassName("youtube-right-side-logo")[0]
+        .classList
+        .toggle("dark-mode");
 
-    for (let i = 0; i < searchBar; i++) {
-        document
-            .getElementsByClassName("middle-side-naviagtion-bar-menu")[i]
-            .classList
-            .toggle("dark-mode");
-    }
+    // Middle Section
+    document
+        .getElementsByClassName("middle-side-naviagtion-bar-menu")[0]
+        .classList
+        .toggle("dark-mode");
 
+    // Search Logo
     document
         .getElementsByClassName("search-icon")[0]
         .classList
-        .toggle("align-at-right-place");
-    // Right Side Icons
-    var rightSideIcon = document
+        .toggle("set-position");
+
+    // Right Section
+    var rightSectionLength = document
         .getElementsByClassName(
             "navigation-bar-right-side-icons"
         )
         .length;
-    for (let i = 0; i < rightSideIcon - 1; i++) {
-        document.getElementsByClassName("navigation-bar-right-side-icons")
-        [i]
+
+    for (i = 0; i < rightSectionLength - 1; i++) {
+        document
+            .getElementsByClassName("navigation-bar-right-side-icons")[i]
             .classList
             .toggle("dark-mode");
     }

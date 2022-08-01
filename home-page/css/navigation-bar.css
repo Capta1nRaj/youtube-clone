@@ -109,8 +109,30 @@
     color: white;
 }
 
+/* Dark Mode */
+.navigation-bar-fixed-menu.dark-mode {
+    background-color: black;
+}
+
+.navigation-bar-fixed-menu .hamburger-menu-with-youtube-logo .hamburger-menu.dark-mode {
+    filter: invert(100%);
+}
+
+.navigation-bar-fixed-menu .hamburger-menu-with-youtube-logo .youtube-right-side-logo.dark-mode {
+    filter: invert(100%);
+}
+
+.navigation-bar-fixed-menu .middle-side-naviagtion-bar-menu.dark-mode {
+    filter: invert(100%);
+}
+
+.navigation-bar-fixed-menu .right-side-naviagtion-bar-menu .navigation-bar-right-side-icons.dark-mode {
+    filter: invert(100%);
+}
+
+/* Responsive */
 @media (max-width: 650px) {
-    .navigation-bar-fixed-menu .left-side-navigation-bar-menu .hamburger-menu,
+    .navigation-bar-fixed-menu .left-side-navigation-bar-menu .hamburger-menu-with-youtube-logo .hamburger-menu,
     .navigation-bar-fixed-menu .middle-side-naviagtion-bar-menu,
     .navigation-bar-fixed-menu .right-side-naviagtion-bar-menu .notification-icon-tooltip-container,
     .navigation-bar-fixed-menu .right-side-naviagtion-bar-menu .upload-icon,
@@ -118,45 +140,45 @@
         visibility: hidden;
     }
 
-    .navigation-bar-fixed-menu .left-side-navigation-bar-menu .youtube-left-side-logo {
-        position: fixed;
-        left: -58px;
-    }
-
-    .navigation-bar-fixed-menu .left-side-navigation-bar-menu .youtube-right-side-logo {
-        margin-left: -16px;
-    }
-
-    .navigation-bar-fixed-menu .middle-side-naviagtion-bar-menu .search-icon {
-        position: fixed;
+    .navigation-bar-fixed-menu .left-side-navigation-bar-menu .hamburger-menu-with-youtube-logo .youtube-left-side-logo,
+    .navigation-bar-fixed-menu .left-side-navigation-bar-menu .hamburger-menu-with-youtube-logo .youtube-right-side-logo {
+        position: relative;
         visibility: visible;
-        top: 26px;
-        right: 32px;
-        height: 30px;
-        cursor: none;
+        left: -110px;
     }
 
-    .navigation-bar-fixed-menu .right-side-naviagtion-bar-menu .my-channel-icon {
+    .navigation-bar-fixed-menu {
+        display: flex;
+        align-items: center;
+    }
+
+    .navigation-bar-fixed-menu .right-side-naviagtion-bar-menu {
         position: fixed;
-        right: 4px;
+        right: -20px;
+        gap: 0;
     }
 
     .navigation-bar-fixed-menu .right-side-naviagtion-bar-menu .dark-mode-button {
-        position: fixed;
-        margin-right: 11px;
-        right: 55px;
-        height: 30px;
-        top: 27px;
+        position: relative;
+        right: -34px;
+        margin-top: 2px;
     }
-}
 
-/* Dark Mode */
-.navigation-bar-fixed-menu .left-side-navigation-bar-menu .hamburger-menu.dark-mode,
-.navigation-bar-fixed-menu .middle-side-naviagtion-bar-menu.dark-mode,
-.navigation-bar-fixed-menu .right-side-naviagtion-bar-menu .navigation-bar-right-side-icons.dark-mode {
-    filter: invert(100%);
-}
+    .navigation-bar-fixed-menu .middle-side-naviagtion-bar-menu .search-icon {
+        visibility: visible;
+        position: fixed;
+        top: 3px;
+        right: -25px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 27px;
+        margin-right: 64px;
+        z-index: 100;
+    }
 
-.navigation-bar-fixed-menu.dark-mode {
-    background-color: black;
+    /* Dark Mode Responsive*/
+    .navigation-bar-fixed-menu .middle-side-naviagtion-bar-menu .search-icon.set-position {
+        margin-right: 42px;
+        margin-top: 6px;
+    }
 }
