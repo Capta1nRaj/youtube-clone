@@ -96,6 +96,7 @@
 .navigation-bar-fixed-menu .right-side-naviagtion-bar-menu .notification-icon-tooltip-container {
     position: relative;
     display: flex;
+    cursor: pointer;
 }
 
 .navigation-bar-fixed-menu .right-side-naviagtion-bar-menu .notification-icon-tooltip-container .tooltip-text {
@@ -145,6 +146,7 @@
         position: relative;
         visibility: visible;
         left: -110px;
+        cursor: none;
     }
 
     .navigation-bar-fixed-menu {
@@ -162,6 +164,7 @@
         position: relative;
         right: -34px;
         margin-top: 2px;
+        cursor: none;
     }
 
     .navigation-bar-fixed-menu .middle-side-naviagtion-bar-menu .search-icon {
@@ -174,8 +177,12 @@
         margin-top: 27px;
         margin-right: 64px;
         z-index: 100;
+        cursor: none;
     }
 
+    .navigation-bar-fixed-menu .right-side-naviagtion-bar-menu .my-channel-icon {
+        cursor: none;
+    }
     /* Dark Mode Responsive*/
     .navigation-bar-fixed-menu .middle-side-naviagtion-bar-menu .search-icon.set-position {
         margin-right: 42px;

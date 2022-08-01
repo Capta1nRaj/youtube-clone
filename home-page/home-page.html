@@ -6,7 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Document</title>
         <link rel="stylesheet" href="css/body.css"/>
-        <link rel="stylesheet" href="css/navigation-bar.css"/>
+        <link rel="stylesheet" href="css/navigation-bar-icons.css"/>
+        <link rel="stylesheet" href="css/side-bar-icons.css"/>
     </head>
     <body>
         <section class="navigation-bar-fixed-menu">
@@ -14,15 +15,15 @@
                 <div class="hamburger-menu-with-youtube-logo">
                     <img
                         class="navigation-bar-left-side-icons hamburger-menu"
-                        src="images/hamburger-menu.svg"
+                        src="images/navigation-bar-icons/hamburger-menu.svg"
                         alt=""/>
                     <img
                         class="navigation-bar-left-side-icons youtube-left-side-logo"
-                        src="images/youtube-left-side-logo.png"
+                        src="images/navigation-bar-icons/youtube-left-side-logo.png"
                         alt=""/>
                     <img
                         class="navigation-bar-left-side-icons youtube-right-side-logo"
-                        src="images/youtube-right-side-logo.png"
+                        src="images/navigation-bar-icons/youtube-right-side-logo.png"
                         alt=""/>
                 </div>
             </div>
@@ -30,43 +31,73 @@
                 <input
                     class="navigation-bar-middle-side-icons search-box"
                     type="text"
-                    placeholder="Search">
-                <button class="search-button" type="button"><img
-                    class="navigation-bar-middle-side-icons search-icon"
-                    src="images/search.svg"
-                    alt=""></button>
-                <button class="voice-search-button" type="button"><img
-                    class="navigation-bar-middle-side-icons voice-search-icon"
-                    src="images/voice-search-icon.svg"
-                    alt=""></button>
+                    placeholder="Search"/>
+                <button class="search-button" type="button">
+                    <img
+                        class="navigation-bar-middle-side-icons search-icon"
+                        src="images/navigation-bar-icons/search.svg"
+                        alt=""/>
+                </button>
+                <button class="voice-search-button" type="button">
+                    <img
+                        class="navigation-bar-middle-side-icons voice-search-icon"
+                        src="images/navigation-bar-icons/voice-search-icon.svg"
+                        alt=""/>
+                </button>
             </div>
             <div class="right-side-naviagtion-bar-menu">
                 <img
                     onclick="switchBetweenLightModeAndDarkMode()"
                     class="navigation-bar-right-side-icons dark-mode-button"
-                    src="images/dark-mode-button.png"
-                    alt="">
+                    src="images/navigation-bar-icons/dark-mode-button.png"
+                    alt=""/>
                 <img
                     class="navigation-bar-right-side-icons upload-icon"
-                    src="images/upload.svg"
-                    alt="">
+                    src="images/navigation-bar-icons/upload.svg"
+                    alt=""/>
                 <img
                     class="navigation-bar-right-side-icons youtube-apps-icon"
-                    src="images/youtube-apps.svg"
-                    alt="">
+                    src="images/navigation-bar-icons/youtube-apps.svg"
+                    alt=""/>
                 <div class="notification-icon-tooltip-container">
                     <img
                         class="navigation-bar-right-side-icons notifications-icon"
-                        src="images/notifications.svg"
-                        alt="">
+                        src="images/navigation-bar-icons/notifications.svg"
+                        alt=""/>
                     <div class="tooltip-text">3</div>
                 </div>
                 <img
                     class="navigation-bar-right-side-icons my-channel-icon"
-                    src="images/my-channel.jpeg"
-                    alt="">
+                    src="images/navigation-bar-icons/my-channel.jpeg"
+                    alt=""/>
             </div>
             <script src="javascript/dark-mode.js"></script>
         </section>
+
+        <!-- <section class="side-bar-fixed-menu">
+            <div class="sidebar-icons">
+                <div><img class="sidebar-icons-images" src="images/sidebar-icons/home.svg" alt=""/></div>
+                <div><img
+                    class="sidebar-icons-images explorer-icon"
+                    src="images/sidebar-icons/explore.svg"
+                    alt=""/></div>
+                <div><img
+                    class="sidebar-icons-images subscriptions-icon"
+                    src="images/sidebar-icons/subscriptions.svg"
+                    alt=""/></div>
+                <div><img
+                    class="sidebar-icons-images originals-icon"
+                    src="images/sidebar-icons/originals.svg"
+                    alt=""/></div>
+                <div><img
+                    class="sidebar-icons-images youtube-music-icon"
+                    src="images/sidebar-icons/youtube-music.svg"
+                    alt=""/></div>
+                <div><img
+                    class="sidebar-icons-images library-icon"
+                    src="images/sidebar-icons/library.svg"
+                    alt=""/></div>
+            </div>
+        </section> -->
     </body>
 </html>
