@@ -108,3 +108,45 @@
     font-size: 12px;
     color: white;
 }
+
+@media (max-width:650px) {
+    .navigation-bar-fixed-menu .left-side-navigation-bar-menu .hamburger-menu,
+    .navigation-bar-fixed-menu .middle-side-naviagtion-bar-menu,
+    .navigation-bar-fixed-menu .right-side-naviagtion-bar-menu .notification-icon-tooltip-container,
+    .navigation-bar-fixed-menu .right-side-naviagtion-bar-menu .upload-icon,
+    .navigation-bar-fixed-menu .right-side-naviagtion-bar-menu .youtube-apps-icon {
+        visibility: hidden;
+    }
+
+    .navigation-bar-fixed-menu .left-side-navigation-bar-menu .youtube-left-side-logo {
+        position: fixed;
+        left: -58px;
+    }
+
+    .navigation-bar-fixed-menu .left-side-navigation-bar-menu .youtube-right-side-logo {
+        margin-left: -16px;
+    }
+
+    .navigation-bar-fixed-menu .middle-side-naviagtion-bar-menu .search-icon {
+        visibility: visible;
+        top: 26px;
+        right: 32px;
+        height: 30px;
+    }
+
+    .navigation-bar-fixed-menu .middle-side-naviagtion-bar-menu .search-icon,
+    .navigation-bar-fixed-menu .right-side-naviagtion-bar-menu .dark-mode-button,
+    .navigation-bar-fixed-menu .right-side-naviagtion-bar-menu .my-channel-icon {
+        position: fixed;
+    }
+
+    .navigation-bar-fixed-menu .right-side-naviagtion-bar-menu .my-channel-icon {
+        right: 4px;
+    }
+
+    .navigation-bar-fixed-menu .right-side-naviagtion-bar-menu .dark-mode-button {
+        margin-right: 11px;
+        right: 55px;
+        height: 30px;
+    }
+}
