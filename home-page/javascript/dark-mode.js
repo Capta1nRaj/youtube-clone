@@ -1,6 +1,7 @@
 function switchBetweenLightModeAndDarkMode() {
     navigationBarFixedMenu();
     sideBarFixedMenu();
+    swtichDarkModeIconToLightMode();
 }
 
 // Navigation Bar Dark Mode
@@ -79,5 +80,18 @@ function sideBarFixedMenu() {
         [i]
             .classList
             .toggle("dark-mode");
+    }
+}
+
+// Switch Dark Mode Icon To Light Mode
+function swtichDarkModeIconToLightMode() {
+    var myDarkModeIconHTML = document.querySelectorAll(
+        ".navigation-bar-fixed-menu .right-side-naviagtion-bar-menu .dark-mode-button"
+    )[0];
+
+    if (myDarkModeIconHTML.src.match("images/navigation-bar-icons/dark-mode-button.png")) {
+        myDarkModeIconHTML.src = "images/navigation-bar-icons/light-mode-button.png";
+    } else {
+        myDarkModeIconHTML.src = "images/navigation-bar-icons/dark-mode-button.png";
     }
 }
