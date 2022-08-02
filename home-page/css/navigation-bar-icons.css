@@ -44,9 +44,14 @@
 
 /* ToolTip Text */
 .navigation-bar-fixed-menu .left-side-navigation-bar-menu .hamburger-menu-with-youtube-logo .youtube-home-tooltip-text {
-    visibility: hidden;
+    visibility: visible;
     position: absolute;
     display: flex;
+    margin-top: 33px;
+    padding: 2px;
+    background-color: #3A3B3C;
+    color: white;
+    border: 1px black solid;
 }
 
 /* Middle Side CSS */

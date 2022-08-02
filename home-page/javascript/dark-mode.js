@@ -42,7 +42,7 @@ function navigationBarFixedMenu() {
         )
         .length;
 
-    for (i = 0; i < rightSectionLength - 1; i++) {
+    for (let i = 0; i < rightSectionLength - 1; i++) {
         document.getElementsByClassName("navigation-bar-right-side-icons")
         [i]
             .classList
