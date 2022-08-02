@@ -9,6 +9,10 @@
     padding-left: 34px;
     padding-bottom: 20px;
     justify-content: space-between;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(228,228,228);
+    z-index: 1000;
 }
 
 /* Left Side CSS */
@@ -113,6 +117,7 @@
 /* Dark Mode */
 .navigation-bar-fixed-menu.dark-mode {
     background-color: black;
+    border-bottom-color: red;
 }
 
 .navigation-bar-fixed-menu .hamburger-menu-with-youtube-logo .hamburger-menu.dark-mode {

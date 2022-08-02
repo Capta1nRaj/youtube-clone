@@ -1,5 +1,6 @@
 function switchBetweenLightModeAndDarkMode() {
     navigationBarFixedMenu();
+    sideBarFixedMenu();
 }
 
 // Navigation Bar Dark Mode
@@ -42,8 +43,38 @@ function navigationBarFixedMenu() {
         .length;
 
     for (i = 0; i < rightSectionLength - 1; i++) {
-        document
-            .getElementsByClassName("navigation-bar-right-side-icons")[i]
+        document.getElementsByClassName("navigation-bar-right-side-icons")
+        [i]
+            .classList
+            .toggle("dark-mode");
+    }
+}
+
+// Side Bar Dark Mode
+function sideBarFixedMenu() {
+    // Side Bar Background
+    document
+        .querySelector(".side-bar-fixed-menu")
+        .classList
+        .toggle("dark-mode");
+
+    // Side Bar Icons And Text
+    var sideBarIconsLength = document
+        .querySelectorAll(
+            ".side-bar-fixed-menu .sidebar-icons .sidebar-icons-images"
+        )
+        .length;
+
+    for (let i = 0; i < sideBarIconsLength; i++) {
+        document.querySelectorAll(
+            ".side-bar-fixed-menu .sidebar-icons .sidebar-icons-images"
+        )
+        [i]
+            .classList
+            .toggle("dark-mode");
+
+        document.querySelectorAll(".side-bar-fixed-menu .sidebar-icons .text")
+        [i]
             .classList
             .toggle("dark-mode");
     }

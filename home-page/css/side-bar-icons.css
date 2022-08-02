@@ -1,13 +1,37 @@
-/* .side-bar-fixed-menu {
-    background-color: red;
+.side-bar-fixed-menu {
+    background-color: white;
     position: fixed;
     display: flex;
-    margin-top: 20px;
+    flex-direction: column;
     top: 0;
     bottom: 0;
-    padding-right: 40px;
-    z-index: -1;
+    left: 0;
+    margin-top: 80px;
+    padding: 0 11px;
+    text-align: center;
 }
+
 .side-bar-fixed-menu .sidebar-icons .sidebar-icons-images {
+    margin-top: 40px;
     height: 24px;
-} */
+    cursor: pointer;
+}
+
+.side-bar-fixed-menu .sidebar-icons .home-icon {
+    margin-top: 20px;
+}
+
+.side-bar-fixed-menu .sidebar-icons .text {
+    font-size: 12px;
+    cursor: pointer;
+}
+
+/* Dark Mode */
+.side-bar-fixed-menu.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.side-bar-fixed-menu .sidebar-icons .sidebar-icons-images.dark-mode {
+    filter: invert(100%);
+}
