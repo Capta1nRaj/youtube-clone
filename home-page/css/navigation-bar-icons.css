@@ -7,12 +7,13 @@
     background-color: white;
     padding-top: 21px;
     padding-left: 34px;
-    padding-bottom: 20px;
+    padding-bottom: 26px;
     justify-content: space-between;
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: rgb(228,228,228);
     z-index: 1000;
+    transition: all ease-in-out 0.5s;
 }
 
 /* Left Side CSS */
@@ -37,6 +38,14 @@
 }
 
 .middle-side-naviagtion-bar-menu {
+    display: flex;
+    transition: all ease-in-out 0.5s;
+}
+
+/* ToolTip Text */
+.navigation-bar-fixed-menu .left-side-navigation-bar-menu .hamburger-menu-with-youtube-logo .youtube-home-tooltip-text {
+    visibility: hidden;
+    position: absolute;
     display: flex;
 }
 
@@ -81,6 +90,7 @@
 .navigation-bar-fixed-menu .middle-side-naviagtion-bar-menu input {
     border: 1px rgb(192, 192, 192) solid;
 }
+
 /* Right Side CSS */
 .navigation-bar-fixed-menu .right-side-naviagtion-bar-menu {
     display: flex;

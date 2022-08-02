@@ -13,18 +13,28 @@
         <section class="navigation-bar-fixed-menu">
             <div class="left-side-navigation-bar-menu">
                 <div class="hamburger-menu-with-youtube-logo">
-                    <img
-                        class="navigation-bar-left-side-icons hamburger-menu"
-                        src="images/navigation-bar-icons/hamburger-menu.svg"
-                        alt=""/>
-                    <img
-                        class="navigation-bar-left-side-icons youtube-left-side-logo"
-                        src="images/navigation-bar-icons/youtube-left-side-logo.png"
-                        alt=""/>
-                    <img
-                        class="navigation-bar-left-side-icons youtube-right-side-logo"
-                        src="images/navigation-bar-icons/youtube-right-side-logo.png"
-                        alt=""/>
+                    <div>
+                        <img
+                            onclick="hamburgerMenuExpand()"
+                            class="navigation-bar-left-side-icons hamburger-menu"
+                            src="images/navigation-bar-icons/hamburger-menu.svg"
+                            alt=""/>
+                    </div>
+
+                    <div>
+                        <img
+                            class="navigation-bar-left-side-icons youtube-left-side-logo"
+                            src="images/navigation-bar-icons/youtube-left-side-logo.png"
+                            alt=""/>
+                    </div>
+
+                    <div>
+                        <img
+                            class="navigation-bar-left-side-icons youtube-right-side-logo"
+                            src="images/navigation-bar-icons/youtube-right-side-logo.png"
+                            alt=""/>
+                        <div class="youtube-home-tooltip-text">YouTube Home</div>
+                    </div>
                 </div>
             </div>
             <div class="middle-side-naviagtion-bar-menu">
@@ -81,7 +91,7 @@
                         src="images/sidebar-icons/home.svg"
                         alt=""/>
                     </div>
-                    <div class="text">Home</div>
+                    <div class="sidebar-icons-text">Home</div>
                 </div>
 
                 <div>
@@ -90,7 +100,7 @@
                         src="images/sidebar-icons/explore.svg"
                         alt=""/>
                     </div>
-                    <div class="text">Explorer</div>
+                    <div class="sidebar-icons-text">Explorer</div>
                 </div>
 
                 <div>
@@ -99,7 +109,7 @@
                         src="images/sidebar-icons/subscriptions.svg"
                         alt=""/>
                     </div>
-                    <div class="text">Subscriptions</div>
+                    <div class="sidebar-icons-text">Subscriptions</div>
                 </div>
 
                 <div>
@@ -108,7 +118,7 @@
                         src="images/sidebar-icons/originals.svg"
                         alt=""/>
                     </div>
-                    <div class="text">Originals</div>
+                    <div class="sidebar-icons-text">Originals</div>
                 </div>
 
                 <div>
@@ -117,7 +127,7 @@
                         src="images/sidebar-icons/youtube-music.svg"
                         alt=""/>
                     </div>
-                    <div class="text">Music</div>
+                    <div class="sidebar-icons-text">Music</div>
                 </div>
                 <div>
                     <div><img
@@ -125,10 +135,11 @@
                         src="images/sidebar-icons/library.svg"
                         alt=""/>
                     </div>
-                    <div class="text">Library</div>
+                    <div class="sidebar-icons-text">Library</div>
                 </div>
             </div>
         </section>
         <script src="javascript/dark-mode.js"></script>
+        <script src="javascript/hamburger-menu-expand.js"></script>
     </body>
 </html>

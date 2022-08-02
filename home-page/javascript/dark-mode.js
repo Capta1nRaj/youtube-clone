@@ -73,7 +73,9 @@ function sideBarFixedMenu() {
             .classList
             .toggle("dark-mode");
 
-        document.querySelectorAll(".side-bar-fixed-menu .sidebar-icons .text")
+        document.querySelectorAll(
+            ".side-bar-fixed-menu .sidebar-icons .sidebar-icons-text"
+        )
         [i]
             .classList
             .toggle("dark-mode");
