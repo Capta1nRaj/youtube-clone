@@ -1,3 +1,4 @@
+/* Main CSS */
 .side-bar-fixed-menu {
     background-color: white;
     position: fixed;
@@ -24,6 +25,13 @@
 .side-bar-fixed-menu .sidebar-icons .text {
     font-size: 12px;
     cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 650px) {
+    .side-bar-fixed-menu {
+        display: none;
+    }
 }
 
 /* Dark Mode */
