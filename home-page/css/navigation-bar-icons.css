@@ -28,11 +28,13 @@
 }
 
 .navigation-bar-fixed-menu .left-side-navigation-bar-menu .navigation-bar-left-side-icons {
+    display: flex;
     height: 24px;
     cursor: pointer;
 }
 
-.navigation-bar-fixed-menu .left-side-navigation-bar-menu .hamburger-menu-with-youtube-logo .youtube-left-side-logo {
+.navigation-bar-fixed-menu .left-side-navigation-bar-menu .hamburger-menu-with-youtube-logo .youtube-home-tooltip-text-container {
+    display: flex;
     margin-left: 62px;
     margin-right: 2px;
     margin-top: 1px;
@@ -44,8 +46,12 @@
 }
 
 /* ToolTip Text */
-.navigation-bar-fixed-menu .left-side-navigation-bar-menu .hamburger-menu-with-youtube-logo .youtube-home-tooltip-text {
-    visibility: visible;
+.youtube-home-tooltip-text-container {
+    display: flex;
+}
+
+.navigation-bar-fixed-menu .left-side-navigation-bar-menu .youtube-home-tooltip-text-container .youtube-home-tooltip-text {
+    /* visibility: visible;
     position: absolute;
     display: flex;
     margin-top: 33px;
@@ -53,6 +59,23 @@
     background-color: #3A3B3C;
     color: white;
     border: 1px black solid;
+    opacity: 1;
+    transition: ease-in-out 1s; */
+    display: none;
+    padding: 4px;
+    background-color: #3A3B3C;
+    color: white;
+    border: 1px black solid;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.navigation-bar-fixed-menu .left-side-navigation-bar-menu .youtube-home-tooltip-text-container:hover .youtube-home-tooltip-text {
+    /* visibility: visible;
+    opacity: 1; */
+    display: block;
+    position: fixed;
+    overflow: hidden;
 }
 
 /* Middle Side CSS */
