@@ -33,49 +33,11 @@
     cursor: pointer;
 }
 
-.navigation-bar-fixed-menu .left-side-navigation-bar-menu .hamburger-menu-with-youtube-logo .youtube-home-tooltip-text-container {
+.navigation-bar-fixed-menu .left-side-navigation-bar-menu .hamburger-menu-with-youtube-logo .youtube-logo-container {
     display: flex;
     margin-left: 62px;
     margin-right: 2px;
     margin-top: 1px;
-}
-
-.middle-side-naviagtion-bar-menu {
-    display: flex;
-    transition: all ease-in-out 0.5s;
-}
-
-/* ToolTip Text */
-.youtube-home-tooltip-text-container {
-    display: flex;
-}
-
-.navigation-bar-fixed-menu .left-side-navigation-bar-menu .youtube-home-tooltip-text-container .youtube-home-tooltip-text {
-    /* visibility: visible;
-    position: absolute;
-    display: flex;
-    margin-top: 33px;
-    padding: 2px;
-    background-color: #3A3B3C;
-    color: white;
-    border: 1px black solid;
-    opacity: 1;
-    transition: ease-in-out 1s; */
-    display: none;
-    padding: 4px;
-    background-color: #3A3B3C;
-    color: white;
-    border: 1px black solid;
-    cursor: pointer;
-    font-size: 12px;
-}
-
-.navigation-bar-fixed-menu .left-side-navigation-bar-menu .youtube-home-tooltip-text-container:hover .youtube-home-tooltip-text {
-    /* visibility: visible;
-    opacity: 1; */
-    display: block;
-    position: fixed;
-    overflow: hidden;
 }
 
 /* Middle Side CSS */
@@ -85,6 +47,7 @@
     max-width: 500px;
     margin: 0 20px;
     align-items: center;
+    transition: all ease-in-out 0.5s;
 }
 
 .navigation-bar-fixed-menu .middle-side-naviagtion-bar-menu .search-box {
@@ -142,7 +105,7 @@
     cursor: pointer;
 }
 
-.navigation-bar-fixed-menu .right-side-naviagtion-bar-menu .notification-icon-tooltip-container .tooltip-text {
+.navigation-bar-fixed-menu .right-side-naviagtion-bar-menu .notification-icon-tooltip-container .notifications-count {
     position: absolute;
     background-color: rgb(200, 0, 0);
     padding: 2px 5px;
@@ -151,28 +114,6 @@
     right: -5px;
     font-size: 12px;
     color: white;
-}
-
-/* Dark Mode */
-.navigation-bar-fixed-menu.dark-mode {
-    background-color: black;
-    border-bottom-color: red;
-}
-
-.navigation-bar-fixed-menu .hamburger-menu-with-youtube-logo .hamburger-menu.dark-mode {
-    filter: invert(100%);
-}
-
-.navigation-bar-fixed-menu .hamburger-menu-with-youtube-logo .youtube-right-side-logo.dark-mode {
-    filter: invert(100%);
-}
-
-.navigation-bar-fixed-menu .middle-side-naviagtion-bar-menu.dark-mode {
-    filter: invert(100%);
-}
-
-.navigation-bar-fixed-menu .right-side-naviagtion-bar-menu .navigation-bar-right-side-icons.dark-mode {
-    filter: invert(100%);
 }
 
 /* Responsive */
@@ -232,4 +173,67 @@
         margin-right: 42px;
         margin-top: 6px;
     }
+}
+
+/* Tooltip Text */
+/* Tooltip For YouTube Logo */
+.youtube-logo-container {
+    display: flex;
+}
+
+.navigation-bar-fixed-menu .left-side-navigation-bar-menu .youtube-logo-container .tooltip-text {
+    display: none;
+    position: absolute;
+    padding: 4px;
+    background-color: #3A3B3C;
+    color: white;
+    border: 1px black solid;
+    font-size: 12px;
+    z-index: 1000;
+}
+
+.navigation-bar-fixed-menu .left-side-navigation-bar-menu .youtube-logo-container:hover .tooltip-text {
+    display: block;
+    position: absolute;
+    overflow: hidden;
+}
+
+/* Tooltop For Search Button */
+.navigation-bar-fixed-menu .middle-side-naviagtion-bar-menu .search-button-cotainer .tooltip-text {
+    display: none;
+    position: absolute;
+    padding: 4px;
+    background-color: #3A3B3C;
+    color: white;
+    border: 1px black solid;
+    font-size: 12px;
+    z-index: 1000;
+}
+
+.navigation-bar-fixed-menu .middle-side-naviagtion-bar-menu .search-button-cotainer:hover .tooltip-text {
+    display: block;
+    position: fixed;
+    overflow: hidden;
+}
+
+/* Dark Mode */
+.navigation-bar-fixed-menu.dark-mode {
+    background-color: black;
+    border-bottom-color: red;
+}
+
+.navigation-bar-fixed-menu .hamburger-menu-with-youtube-logo .hamburger-menu.dark-mode {
+    filter: invert(100%);
+}
+
+.navigation-bar-fixed-menu .hamburger-menu-with-youtube-logo .youtube-right-side-logo.dark-mode {
+    filter: invert(100%);
+}
+
+.navigation-bar-fixed-menu .middle-side-naviagtion-bar-menu.dark-mode {
+    filter: invert(100%);
+}
+
+.navigation-bar-fixed-menu .right-side-naviagtion-bar-menu .navigation-bar-right-side-icons.dark-mode {
+    filter: invert(100%);
 }

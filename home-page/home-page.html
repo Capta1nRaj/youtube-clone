@@ -13,133 +13,136 @@
         <section class="navigation-bar-fixed-menu">
             <div class="left-side-navigation-bar-menu">
                 <div class="hamburger-menu-with-youtube-logo">
-                    <div>
+                    <div class="hamburger-menu-container">
                         <img
                             onclick="hamburgerMenuExpand()"
                             class="navigation-bar-left-side-icons hamburger-menu"
                             src="images/navigation-bar-icons/hamburger-menu.svg"
                             alt=""/>
                     </div>
-                    <div class="youtube-home-tooltip-text-container">
+                    <div class="youtube-logo-container">
                         <div>
                             <img
                                 class="navigation-bar-left-side-icons youtube-left-side-logo"
                                 src="images/navigation-bar-icons/youtube-left-side-logo.png"
                                 alt=""/>
                         </div>
-
-                        <img
-                            class="navigation-bar-left-side-icons youtube-right-side-logo"
-                            src="images/navigation-bar-icons/youtube-right-side-logo.png"
-                            alt=""/>
-                        <div class="youtube-home-tooltip-text">YouTube Home</div>
+                        <div>
+                            <img
+                                class="navigation-bar-left-side-icons youtube-right-side-logo"
+                                src="images/navigation-bar-icons/youtube-right-side-logo.png"
+                                alt=""/>
+                            <div class="tooltip-text youtube-home-tooltip-text">YouTube Home</div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="middle-side-naviagtion-bar-menu">
-            <input
-                class="navigation-bar-middle-side-icons search-box"
-                type="text"
-                placeholder="Search"/>
-            <button class="search-button" type="button">
+            <div class="middle-side-naviagtion-bar-menu">
+                <input
+                    class="navigation-bar-middle-side-icons search-box"
+                    type="text"
+                    placeholder="Search"/>
+                <div class="search-button-cotainer">
+                    <button class="search-button" type="button">
+                        <img
+                            class="navigation-bar-middle-side-icons search-icon"
+                            src="images/navigation-bar-icons/search.svg"
+                            alt=""/>
+                        <div class="tooltip-text tooltip-text-for-search">Search</div>
+                    </button>
+                </div>
+                <button class="voice-search-button" type="button">
+                    <img
+                        class="navigation-bar-middle-side-icons voice-search-icon"
+                        src="images/navigation-bar-icons/voice-search-icon.svg"
+                        alt=""/>
+                </button>
+            </div>
+            <div class="right-side-naviagtion-bar-menu">
                 <img
-                    class="navigation-bar-middle-side-icons search-icon"
-                    src="images/navigation-bar-icons/search.svg"
+                    onclick="switchBetweenLightModeAndDarkMode()"
+                    class="navigation-bar-right-side-icons dark-mode-button"
+                    src="images/navigation-bar-icons/dark-mode-button.png"
                     alt=""/>
-            </button>
-            <button class="voice-search-button" type="button">
                 <img
-                    class="navigation-bar-middle-side-icons voice-search-icon"
-                    src="images/navigation-bar-icons/voice-search-icon.svg"
+                    class="navigation-bar-right-side-icons upload-icon"
+                    src="images/navigation-bar-icons/upload.svg"
                     alt=""/>
-            </button>
-        </div>
-        <div class="right-side-naviagtion-bar-menu">
-            <img
-                onclick="switchBetweenLightModeAndDarkMode()"
-                class="navigation-bar-right-side-icons dark-mode-button"
-                src="images/navigation-bar-icons/dark-mode-button.png"
-                alt=""/>
-            <img
-                class="navigation-bar-right-side-icons upload-icon"
-                src="images/navigation-bar-icons/upload.svg"
-                alt=""/>
-            <img
-                class="navigation-bar-right-side-icons youtube-apps-icon"
-                src="images/navigation-bar-icons/youtube-apps.svg"
-                alt=""/>
-            <div class="notification-icon-tooltip-container">
                 <img
-                    class="navigation-bar-right-side-icons notifications-icon"
-                    src="images/navigation-bar-icons/notifications.svg"
+                    class="navigation-bar-right-side-icons youtube-apps-icon"
+                    src="images/navigation-bar-icons/youtube-apps.svg"
                     alt=""/>
-                <div class="tooltip-text">3</div>
+                <div class="notification-icon-tooltip-container">
+                    <img
+                        class="navigation-bar-right-side-icons notifications-icon"
+                        src="images/navigation-bar-icons/notifications.svg"
+                        alt=""/>
+                    <div class="notifications-count">3</div>
+                </div>
+                <img
+                    class="navigation-bar-right-side-icons my-channel-icon"
+                    src="images/navigation-bar-icons/my-channel.jpeg"
+                    alt=""/>
             </div>
-            <img
-                class="navigation-bar-right-side-icons my-channel-icon"
-                src="images/navigation-bar-icons/my-channel.jpeg"
-                alt=""/>
-        </div>
-    </section>
+        </section>
 
-    <section class="side-bar-fixed-menu">
-        <div class="sidebar-icons">
-            <div>
-                <div><img
-                    class="sidebar-icons-images home-icon"
-                    src="images/sidebar-icons/home.svg"
-                    alt=""/>
+        <section class="side-bar-fixed-menu">
+            <div class="sidebar-icons">
+                <div>
+                    <div><img
+                        class="sidebar-icons-images home-icon"
+                        src="images/sidebar-icons/home.svg"
+                        alt=""/>
+                    </div>
+                    <div class="sidebar-icons-text">Home</div>
                 </div>
-                <div class="sidebar-icons-text">Home</div>
-            </div>
 
-            <div>
-                <div><img
-                    class="sidebar-icons-images explorer-icon"
-                    src="images/sidebar-icons/explore.svg"
-                    alt=""/>
+                <div>
+                    <div><img
+                        class="sidebar-icons-images explorer-icon"
+                        src="images/sidebar-icons/explore.svg"
+                        alt=""/>
+                    </div>
+                    <div class="sidebar-icons-text">Explorer</div>
                 </div>
-                <div class="sidebar-icons-text">Explorer</div>
-            </div>
 
-            <div>
-                <div><img
-                    class="sidebar-icons-images subscriptions-icon"
-                    src="images/sidebar-icons/subscriptions.svg"
-                    alt=""/>
+                <div>
+                    <div><img
+                        class="sidebar-icons-images subscriptions-icon"
+                        src="images/sidebar-icons/subscriptions.svg"
+                        alt=""/>
+                    </div>
+                    <div class="sidebar-icons-text">Subscriptions</div>
                 </div>
-                <div class="sidebar-icons-text">Subscriptions</div>
-            </div>
 
-            <div>
-                <div><img
-                    class="sidebar-icons-images originals-icon"
-                    src="images/sidebar-icons/originals.svg"
-                    alt=""/>
+                <div>
+                    <div><img
+                        class="sidebar-icons-images originals-icon"
+                        src="images/sidebar-icons/originals.svg"
+                        alt=""/>
+                    </div>
+                    <div class="sidebar-icons-text">Originals</div>
                 </div>
-                <div class="sidebar-icons-text">Originals</div>
-            </div>
 
-            <div>
-                <div><img
-                    class="sidebar-icons-images youtube-music-icon"
-                    src="images/sidebar-icons/youtube-music.svg"
-                    alt=""/>
+                <div>
+                    <div><img
+                        class="sidebar-icons-images youtube-music-icon"
+                        src="images/sidebar-icons/youtube-music.svg"
+                        alt=""/>
+                    </div>
+                    <div class="sidebar-icons-text">Music</div>
                 </div>
-                <div class="sidebar-icons-text">Music</div>
-            </div>
-            <div>
-                <div><img
-                    class="sidebar-icons-images library-icon"
-                    src="images/sidebar-icons/library.svg"
-                    alt=""/>
+                <div>
+                    <div><img
+                        class="sidebar-icons-images library-icon"
+                        src="images/sidebar-icons/library.svg"
+                        alt=""/>
+                    </div>
+                    <div class="sidebar-icons-text">Library</div>
                 </div>
-                <div class="sidebar-icons-text">Library</div>
             </div>
-        </div>
-    </section>
-    <script src="javascript/dark-mode.js"></script>
-    <script src="javascript/hamburger-menu-expand.js"></script>
-</body>
+        </section>
+        <script src="javascript/dark-mode.js"></script>
+        <script src="javascript/hamburger-menu-expand.js"></script>
+    </body>
 </html>
