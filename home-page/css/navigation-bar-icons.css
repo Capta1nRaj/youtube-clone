@@ -13,6 +13,7 @@
     border-bottom-color: rgb(228,228,228);
     background-color: white;
     z-index: 1000;
+    transition: ease-in-out 0.4s;
 }
 
 /* Left Side CSS */
@@ -186,6 +187,12 @@
     }
 
     /* Left Side Icons */
+    .left-side-navigation-bar .youtube-logo-container {
+        position: fixed;
+        display: flex;
+        margin: 0 0 1px 0 !important;
+    }
+
     .left-side-navigation-bar .youtube-logo-container .youtube-left-side-icon {
         visibility: visible;
         position: fixed;
@@ -193,17 +200,65 @@
         top: 0;
         left: 0;
         margin-top: 25px !important;
-        margin-left: 15px;
+        margin-left: 15px !important;
     }
 
     .left-side-navigation-bar .youtube-logo-container .youtube-right-side-icon {
         visibility: visible;
         position: fixed;
+        display: flex;
+        left: 12px;
+        margin-left: 50px !important;
+    }
+
+    /* Middle And Right Side Icons LTR*/
+    .right-side-navigation-bar .my-channel-icon-container .my-channel-icon {
+        visibility: visible;
+        position: fixed;
         top: 0;
-        left: 0;
+        right: 0;
         display: flex;
         margin-top: 25px;
-        margin-left: 50px;
+        margin-right: 20px;
+    }
+
+    .middle-side-navigation-bar .search-icon-container {
+        position: fixed;
+        display: flex;
+        top: 0;
+        right: 0;
+        margin: 0 !important;
+    }
+
+    .middle-side-navigation-bar .search-icon-container .search-icon {
+        visibility: visible;
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: flex;
+        margin-top: 27px;
+        margin-right: 60px !important;
+    }
+
+    .right-side-navigation-bar .dark-mode-icon-container .dark-mode-icon {
+        visibility: visible;
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: flex;
+        margin-top: 27px;
+        margin-right: 100px;
+        height: 25px;
+    }
+
+    /* Icons Size */
+    .left-side-navigation-bar .youtube-logo-container .youtube-left-side-icon,
+    .left-side-navigation-bar .youtube-logo-container .youtube-right-side-icon,
+    .middle-side-navigation-bar .search-icon-container .search-icon,
+    .right-side-navigation-bar .dark-mode-icon-container .dark-mode-icon,
+    .right-side-navigation-bar .my-channel-icon-container .my-channel-icon {
+        height: 30px !important;
+        cursor: none;
     }
 }
 
@@ -211,6 +266,7 @@
 /* Navigation Bar Background Dark Mode */
 .navigation-bar.dark-mode {
     background-color: black;
+    border-bottom: 1px solid red;
 }
 
 /* Left Side Dark Mode */
