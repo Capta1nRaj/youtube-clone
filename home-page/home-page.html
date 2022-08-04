@@ -7,6 +7,7 @@
         <title>Document</title>
         <link rel="stylesheet" href="css/body.css">
         <link rel="stylesheet" href="css/navigation-bar-icons.css">
+        <link rel="stylesheet" href="css/side-bar-icons.css">
     </head>
     <body>
         <section class="navigation-bar-fixed-menu">
@@ -15,7 +16,7 @@
                     <div class="hamburger-menu-container">
                         <img
                             class="hamburger-menu-icon"
-                            onclick="switchBetweenLightModeAndDarkMode()"
+                            onclick="hamburgerMenuExpand()"
                             src="images/navigation-bar-icons/hamburger-menu.svg"
                             alt="">
                         <div class="tooltip-text">Menu</div>
@@ -61,10 +62,13 @@
                             class="right-side-icon dark-mode-icon"
                             src="images/navigation-bar-icons/dark-mode-button.png"
                             alt="">
-                            <div class="tooltip-text">Dark Mode</div>
+                        <div class="tooltip-text dark-mode-tooltip-text">Dark Mode</div>
                     </div>
                     <div class="upload-icon-container">
-                        <img class="right-side-icon upload-icon" src="images/navigation-bar-icons/upload.svg" alt="">
+                        <img
+                            class="right-side-icon upload-icon"
+                            src="images/navigation-bar-icons/upload.svg"
+                            alt="">
                         <div class="tooltip-text">Upload</div>
                     </div>
                     <div class="youtube-apps-icon-container">
@@ -72,14 +76,14 @@
                             class="right-side-icon youtube-apps-icon"
                             src="images/navigation-bar-icons/youtube-apps.svg"
                             alt="">
-                            <div class="tooltip-text">YouTube Apps</div>
+                        <div class="tooltip-text">YouTube Apps</div>
                     </div>
                     <div class="notifications-icon-container">
                         <img
                             class="right-side-icon notifications-icon"
                             src="images/navigation-bar-icons/notifications.svg"
                             alt="">
-                            <div class="tooltip-text">Notifications</div>
+                        <div class="tooltip-text">Notifications</div>
                     </div>
                     <div class="my-channel-icon-container">
                         <img
@@ -90,7 +94,56 @@
                 </div>
             </div>
         </section>
+
+        <section class="side-bar-fixed-menu">
+            <div class="side-bar-menu">
+                <div class="side-bar-home-container">
+                    <div class="side-bar-home-image-container"><img
+                        class="side-bar-home-icon side-bar-icons"
+                        src="images/sidebar-icons/home.svg"
+                        alt="">
+                    </div>
+                    <div class="side-bar-home-text side-bar-text">Home</div>
+                </div>
+                <div class="side-bar-explorer-container">
+                    <div class="side-bar-explorer-image-container"><img
+                        class="side-bar-explorer-icon side-bar-icons"
+                        src="images/sidebar-icons/explore.svg"
+                        alt=""></div>
+                    <div class="side-bar-explorer-text side-bar-text">Explorer</div>
+                </div>
+                <div class="side-bar-subscriptions-container">
+                    <div class="side-bar-subscriptions-image-container"><img
+                        class="side-bar-subscriptions-icon side-bar-icons"
+                        src="images/sidebar-icons/subscriptions.svg"
+                        alt=""></div>
+                    <div class="side-bar-subscriptions-text side-bar-text">Subscriptions</div>
+                </div>
+                <div class="side-bar-originals-container">
+                    <div class="side-bar-originals-image-container"><img
+                        class="side-bar-originals-icon side-bar-icons"
+                        src="images/sidebar-icons/originals.svg"
+                        alt=""></div>
+                    <div class="side-bar-originals-text side-bar-text">Originals</div>
+                </div>
+                <div class="side-bar-music-container">
+                    <div class="side-bar-music-image-container"><img
+                        class="side-bar-music-icon side-bar-icons"
+                        src="images/sidebar-icons/music.svg"
+                        alt=""></div>
+                    <div class="side-bar-music-text side-bar-text">Music</div>
+                </div>
+                <div class="side-bar-library-container">
+                    <div class="side-bar-library-image-container"><img
+                        class="side-bar-library-icon side-bar-icons"
+                        src="images/sidebar-icons/library.svg"
+                        alt=""></div>
+                    <div class="side-bar-library-text side-bar-text">Library</div>
+                </div>
+            </div>
+        </section>
         <script src="javascript/dark-mode.js"></script>
         <script src="javascript/hamburger-menu-expand.js"></script>
+        <script src="javascript/tooltip.js"></script>
     </body>
 </html>

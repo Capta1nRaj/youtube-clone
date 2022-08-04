@@ -1,8 +1,13 @@
 function switchBetweenLightModeAndDarkMode() {
+    // Navigation Bar Color And Text Change
     navigationBarBackgroundColorChange();
     navigationBarLeftSideIcons();
     navigationBarMiddleSideIcons();
     navigationBarRightSideIcons();
+    // Dark Mode Icon Change
+    change_Dark_Mode_Button_Image_And_Text_To_Light_Mode();
+    // Side Bar Color And Text Change
+    sideBarIconsAndText();
 }
 
 // Navigation Bar Navigation Bar Background Color Change
@@ -46,7 +51,7 @@ function navigationBarMiddleSideIcons() {
 
 // Right Side Icons
 function navigationBarRightSideIcons() {
-    var rightSideIconsCount = document
+    const rightSideIconsCount = document
         .getElementsByClassName("right-side-icon")
         .length;
 
@@ -55,5 +60,23 @@ function navigationBarRightSideIcons() {
             .getElementsByClassName("right-side-icon")[i]
             .classList
             .toggle("dark-mode");
+    }
+}
+
+function change_Dark_Mode_Button_Image_And_Text_To_Light_Mode() {
+    // Change Image
+    const Image_Id = document.getElementsByClassName('dark-mode-icon')[0];
+    if (Image_Id.src.match("images/navigation-bar-icons/dark-mode-button.png")) {
+        Image_Id.src = "images/navigation-bar-icons/light-mode-button.png";
+    } else {
+        Image_Id.src = "images/navigation-bar-icons/dark-mode-button.png";
+    }
+
+    // Change Text
+    const innerText = document.getElementsByClassName("dark-mode-tooltip-text")[0];
+    if (innerText.innerHTML.match("Dark Mode")) {
+        innerText.innerHTML = "Light Mode";
+    } else {
+        innerText.innerHTML = "Dark Mode";
     }
 }

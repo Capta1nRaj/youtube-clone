@@ -1,17 +1,42 @@
-/* function hamburgerMenuExpand() {
-  document
-    .querySelectorAll(".side-bar-fixed-menu")[0]
-    .classList.toggle("expand");
-} */
+// Hamburger Menu Expand
+function hamburgerMenuExpand() {
+    document
+        .querySelectorAll(".side-bar-menu")[0]
+        .classList
+        .toggle("expand");
+}
 
-// Trial Mouse Hover
-var tooltips = document.querySelectorAll('.tooltip-text');
+// Side Bar Dark Mode, Function Executed In dark-mode.js
+function sideBarIconsAndText() {
+    // Background Color Change
+    document
+        .getElementsByClassName("side-bar-menu")[0]
+        .classList
+        .toggle("dark-mode");
 
-window.onmousemove = function (e) {
-    var x = (e.clientX + 10) + 'px',
-        y = (e.clientY + 15) + 'px';
-    for (var i = 0; i < tooltips.length; i++) {
-        tooltips[i].style.top = y;
-        tooltips[i].style.left = x;
+    // Icons Lenth Count
+    const sideBarIconsCount = document
+        .getElementsByClassName("side-bar-icons")
+        .length;
+
+    // Text Length Count
+    const sideBarTextCount = document
+        .getElementsByClassName("side-bar-text")
+        .length;
+
+    // Icons Color Change
+    for (var i = 0; i < sideBarIconsCount; i++) {
+        document
+            .getElementsByClassName("side-bar-icons")[i]
+            .classList
+            .toggle("dark-mode");
     }
-};
+
+    // Text Color Change
+    for (var i = 0; i < sideBarTextCount; i++) {
+        document
+            .getElementsByClassName("side-bar-text")[i]
+            .classList
+            .toggle("dark-mode");
+    }
+}

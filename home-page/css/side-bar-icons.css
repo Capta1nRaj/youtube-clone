@@ -1,57 +1,65 @@
-/* Main CSS */
-.side-bar-fixed-menu {
-    background-color: white;
+.side-bar-menu {
     position: fixed;
     display: flex;
     flex-direction: column;
     top: 0;
+    left: -100px;
     bottom: 0;
-    left: -102px;
     margin-top: 80px;
-    padding: 0 11px;
+    padding: 10px;
     text-align: center;
-    border-right-width: 1px;
-    border-right-style: solid;
-    border-right-color: rgb(228,228,228);
-    transition: all ease-in-out 0.5s;
-    font-weight: bolder;
+    background-color: white;
+    border-right: 2px solid white;
+    transition: all 2s;
 }
 
-.side-bar-fixed-menu.expand {
-    left: 0;
+.side-bar-explorer-container,
+.side-bar-home-container,
+.side-bar-library-container,
+.side-bar-music-container,
+.side-bar-originals-container,
+.side-bar-subscriptions-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 74px;
+    font-weight: bold;
 }
 
-.side-bar-fixed-menu .sidebar-icons .sidebar-icons-images {
-    margin-top: 40px;
+.side-bar-explorer-text,
+.side-bar-home-text,
+.side-bar-library-text,
+.side-bar-music-text,
+.side-bar-originals-text,
+.side-bar-subscriptions-text {
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.side-bar-icons {
     height: 24px;
     cursor: pointer;
 }
 
-.side-bar-fixed-menu .sidebar-icons .home-icon {
-    margin-top: 20px;
+/* Hamburger Menu Expand */
+.side-bar-menu.expand {
+    left: 0;
 }
 
-.side-bar-fixed-menu .sidebar-icons .sidebar-icons-text {
-    font-size: 12px;
-    cursor: pointer;
-}
-
-/* Responsive */
-@media (max-width: 650px) {
-    .side-bar-fixed-menu {
-        display: none;
-    }
-}
-
-/* Dark Mode */
-.side-bar-fixed-menu.dark-mode {
+/* Side Bar Dark Mode */
+.side-bar-menu.dark-mode {
     background-color: black;
-    color: white;
-    border-right-width: 1px;
-    border-right-style: solid;
-    border-right-color: red;
+    border-right: 2px solid red;
 }
 
-.side-bar-fixed-menu .sidebar-icons .sidebar-icons-images.dark-mode {
+.side-bar-explorer-text.dark-mode,
+.side-bar-home-text.dark-mode,
+.side-bar-icons.dark-mode,
+.side-bar-library-text.dark-mode,
+.side-bar-music-text.dark-mode,
+.side-bar-originals-text.dark-mode,
+.side-bar-subscriptions-text.dark-mode {
     filter: invert(100%);
 }
