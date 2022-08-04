@@ -1,8 +1,8 @@
-function hamburgerMenuExpand() {
+/* function hamburgerMenuExpand() {
   document
     .querySelectorAll(".side-bar-fixed-menu")[0]
     .classList.toggle("expand");
-}
+} */
 
 // Trial Mouse Hover
 var tooltips = document.querySelectorAll('.tooltip-text');

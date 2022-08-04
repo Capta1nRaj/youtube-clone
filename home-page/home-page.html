@@ -1,144 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8"/>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <link rel="stylesheet" href="css/body.css"/>
-        <link rel="stylesheet" href="css/navigation-bar-icons.css"/>
-        <link rel="stylesheet" href="css/side-bar-icons.css"/>
+        <link rel="stylesheet" href="css/body.css">
+        <link rel="stylesheet" href="css/navigation-bar-icons.css">
     </head>
     <body>
         <section class="navigation-bar-fixed-menu">
-            <div class="left-side-navigation-bar-menu">
-                <div class="hamburger-menu-with-youtube-logo">
+            <div class="navigation-bar">
+                <div class="left-side-navigation-bar">
                     <div class="hamburger-menu-container">
                         <img
-                            onclick="hamburgerMenuExpand()"
-                            class="navigation-bar-left-side-icons hamburger-menu"
+                            class="hamburger-menu-icon"
+                            onclick="switchBetweenLightModeAndDarkMode()"
                             src="images/navigation-bar-icons/hamburger-menu.svg"
-                            alt=""/>
+                            alt="">
+                        <div class="tooltip-text">Menu</div>
                     </div>
                     <div class="youtube-logo-container">
-                        <div>
+                        <div class="youtube-left-side-logo">
                             <img
-                                class="navigation-bar-left-side-icons youtube-left-side-logo"
+                                class="youtube-left-side-icon"
                                 src="images/navigation-bar-icons/youtube-left-side-logo.png"
-                                alt=""/>
+                                alt="">
                         </div>
-                        <div>
+                        <div class="youtube-right-side-logo">
                             <img
-                                class="navigation-bar-left-side-icons youtube-right-side-logo"
+                                class="youtube-right-side-icon"
                                 src="images/navigation-bar-icons/youtube-right-side-logo.png"
-                                alt=""/>
-                            <div class="tooltip-text youtube-home-tooltip-text">YouTube Home</div>
+                                alt="">
                         </div>
+                        <div class="tooltip-text">YouTube Home</div>
                     </div>
                 </div>
-            </div>
-            <div class="middle-side-naviagtion-bar-menu">
-                <input
-                    class="navigation-bar-middle-side-icons search-box"
-                    type="text"
-                    placeholder="Search"/>
-                <div class="search-button-cotainer">
-                    <button class="search-button" type="button">
+
+                <div class="middle-side-navigation-bar">
+                    <div class="search-input-container">
+                        <input class="search-input" type="text" placeholder="Search">
+                    </div>
+                    <div class="search-icon-container">
+                        <button class="search-icon-button"><img class="search-icon" src="images/navigation-bar-icons/search.svg" alt=""></button>
+                        <div class="tooltip-text">Search</div>
+                    </div>
+                    <div class="voice-search-icon-container">
+                        <button class="voice-search-icon-button"><img
+                            class="voice-search-icon"
+                            src="images/navigation-bar-icons/voice-search-icon.svg"
+                            alt=""></button>
+                        <div class="tooltip-text">Voice Search</div>
+                    </div>
+                </div>
+
+                <div class="right-side-navigation-bar">
+                    <div class="dark-mode-icon-container">
                         <img
-                            class="navigation-bar-middle-side-icons search-icon"
-                            src="images/navigation-bar-icons/search.svg"
-                            alt=""/>
-                        <div class="tooltip-text tooltip-text-for-search">Search</div>
-                    </button>
-                </div>
-                <button class="voice-search-button" type="button">
-                    <img
-                        class="navigation-bar-middle-side-icons voice-search-icon"
-                        src="images/navigation-bar-icons/voice-search-icon.svg"
-                        alt=""/>
-                </button>
-            </div>
-            <div class="right-side-naviagtion-bar-menu">
-                <img
-                    onclick="switchBetweenLightModeAndDarkMode()"
-                    class="navigation-bar-right-side-icons dark-mode-button"
-                    src="images/navigation-bar-icons/dark-mode-button.png"
-                    alt=""/>
-                <img
-                    class="navigation-bar-right-side-icons upload-icon"
-                    src="images/navigation-bar-icons/upload.svg"
-                    alt=""/>
-                <img
-                    class="navigation-bar-right-side-icons youtube-apps-icon"
-                    src="images/navigation-bar-icons/youtube-apps.svg"
-                    alt=""/>
-                <div class="notification-icon-tooltip-container">
-                    <img
-                        class="navigation-bar-right-side-icons notifications-icon"
-                        src="images/navigation-bar-icons/notifications.svg"
-                        alt=""/>
-                    <div class="notifications-count">3</div>
-                </div>
-                <img
-                    class="navigation-bar-right-side-icons my-channel-icon"
-                    src="images/navigation-bar-icons/my-channel.jpeg"
-                    alt=""/>
-            </div>
-        </section>
-
-        <section class="side-bar-fixed-menu">
-            <div class="sidebar-icons">
-                <div>
-                    <div><img
-                        class="sidebar-icons-images home-icon"
-                        src="images/sidebar-icons/home.svg"
-                        alt=""/>
+                            onclick="switchBetweenLightModeAndDarkMode()"
+                            class="right-side-icon dark-mode-icon"
+                            src="images/navigation-bar-icons/dark-mode-button.png"
+                            alt="">
+                            <div class="tooltip-text">Dark Mode</div>
                     </div>
-                    <div class="sidebar-icons-text">Home</div>
-                </div>
-
-                <div>
-                    <div><img
-                        class="sidebar-icons-images explorer-icon"
-                        src="images/sidebar-icons/explore.svg"
-                        alt=""/>
+                    <div class="upload-icon-container">
+                        <img class="right-side-icon upload-icon" src="images/navigation-bar-icons/upload.svg" alt="">
+                        <div class="tooltip-text">Upload</div>
                     </div>
-                    <div class="sidebar-icons-text">Explorer</div>
-                </div>
-
-                <div>
-                    <div><img
-                        class="sidebar-icons-images subscriptions-icon"
-                        src="images/sidebar-icons/subscriptions.svg"
-                        alt=""/>
+                    <div class="youtube-apps-icon-container">
+                        <img
+                            class="right-side-icon youtube-apps-icon"
+                            src="images/navigation-bar-icons/youtube-apps.svg"
+                            alt="">
+                            <div class="tooltip-text">YouTube Apps</div>
                     </div>
-                    <div class="sidebar-icons-text">Subscriptions</div>
-                </div>
-
-                <div>
-                    <div><img
-                        class="sidebar-icons-images originals-icon"
-                        src="images/sidebar-icons/originals.svg"
-                        alt=""/>
+                    <div class="notifications-icon-container">
+                        <img
+                            class="right-side-icon notifications-icon"
+                            src="images/navigation-bar-icons/notifications.svg"
+                            alt="">
+                            <div class="tooltip-text">Notifications</div>
                     </div>
-                    <div class="sidebar-icons-text">Originals</div>
-                </div>
-
-                <div>
-                    <div><img
-                        class="sidebar-icons-images youtube-music-icon"
-                        src="images/sidebar-icons/youtube-music.svg"
-                        alt=""/>
+                    <div class="my-channel-icon-container">
+                        <img
+                            class="right-side-icon my-channel-icon"
+                            src="images/navigation-bar-icons/my-channel.jpeg"
+                            alt="">
                     </div>
-                    <div class="sidebar-icons-text">Music</div>
-                </div>
-                <div>
-                    <div><img
-                        class="sidebar-icons-images library-icon"
-                        src="images/sidebar-icons/library.svg"
-                        alt=""/>
-                    </div>
-                    <div class="sidebar-icons-text">Library</div>
                 </div>
             </div>
         </section>
