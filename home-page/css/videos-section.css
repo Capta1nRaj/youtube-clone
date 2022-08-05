@@ -1,0 +1,98 @@
+/* Videos Section */
+.videos-section {
+    display: grid;
+    row-gap: 20px;
+    column-gap: 12px;
+    margin-left: 10px;
+    /* margin-left: 120px; */
+    margin-top: 94px;
+    margin-right: 10px;
+}
+
+.video-grid .thumbnail-image-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4px;
+}
+
+.video-grid .thumbnail-image-container .thumbnail-image-source {
+    display: block;
+    width: 100%;
+}
+
+.video-grid .video-info-container {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    margin-top: 4px;
+}
+
+.video-grid .video-info-container .channe-logo-container .channel-logo {
+    border-radius: 100%;
+    width: 36px;
+    cursor: pointer;
+}
+
+.video-grid .video-info-container .channel-name,
+.video-grid .video-info-container .video-stats,
+.video-grid .video-info-container .video-title {
+    transition: all 1s ease-in-out;
+}
+
+.video-grid .video-info-container .video-title {
+    font-weight: bold;
+    color: black;
+}
+
+.video-grid .video-info-container .channel-name {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    color: gray;
+}
+
+.video-grid .video-info-container .video-stats {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: gray;
+}
+
+/* Responsive */
+@media (min-width: 1000px) {
+    .videos-section {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 751px) and (max-width: 999px) {
+    .videos-section {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 561px) and (max-width: 750px) {
+    .videos-section {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 560px) {
+    .videos-section {
+        margin: 82px 0 0;
+        grid-template-columns: 1fr;
+    }
+
+    .video-grid .video-info-container {
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: black;
+}
+
+.video-grid .video-info-container .channel-name.dark-mode,
+.video-grid .video-info-container .video-stats.dark-mode,
+.video-grid .video-info-container .video-title.dark-mode {
+    color: white;
+}

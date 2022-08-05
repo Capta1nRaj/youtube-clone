@@ -213,6 +213,7 @@
         display: flex;
         left: 12px;
         margin-left: 50px !important;
+        margin-top: -15px !important;
     }
 
     /* Middle And Right Side Icons LTR*/
@@ -240,7 +241,7 @@
         top: 0;
         right: 0;
         display: flex;
-        margin-top: 27px;
+        margin-top: 25px;
         margin-right: 60px !important;
     }
 
@@ -250,7 +251,7 @@
         top: 0;
         right: 0;
         display: flex;
-        margin-top: 27px;
+        margin-top: 25px;
         margin-right: 100px;
         height: 25px;
     }

@@ -8,6 +8,8 @@ function switchBetweenLightModeAndDarkMode() {
     change_Dark_Mode_Button_Image_And_Text_To_Light_Mode();
     // Side Bar Color And Text Change
     sideBarIconsAndText();
+    // Video Section Background And Text Color Change
+    backgroundAndTextColorChange();
 }
 
 // Navigation Bar Navigation Bar Background Color Change
