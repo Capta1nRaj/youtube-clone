@@ -19,3 +19,11 @@ function backgroundAndTextColorChange() {
             .toggle("dark-mode");
     }
 }
+
+// Change Margin Of Video Section
+function change_Margin_Of_Videos_Section_When_Clicked_On_Hamburger_Menu() {
+    document
+        .getElementsByClassName("videos-section")[0]
+        .classList
+        .toggle("change");
+}

@@ -10,7 +10,7 @@
     text-align: center;
     background-color: white;
     border-right: 2px solid white;
-    transition: all 1s;
+    transition: all 1s ease-in-out;
 }
 
 .side-bar-explorer-container,
@@ -62,4 +62,10 @@
 .side-bar-originals-text.dark-mode,
 .side-bar-subscriptions-text.dark-mode {
     filter: invert(100%);
+}
+
+@media (max-width:560px) {
+    .side-bar-menu {
+        opacity: 0;
+    }
 }

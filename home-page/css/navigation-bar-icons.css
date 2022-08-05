@@ -11,7 +11,7 @@
     border-bottom: 1px solid rgb(228,228,228);
     background-color: white;
     z-index: 1000;
-    transition: ease-in-out 1s;
+    transition: all ease-in-out 1s;
 }
 
 /* Left Side CSS */
@@ -35,7 +35,7 @@
 .navigation-bar .left-side-navigation-bar .youtube-logo-container {
     display: flex;
     cursor: pointer;
-    transition: ease-in-out 1s;
+    transition: all ease-in-out 1s;
 }
 
 .navigation-bar .left-side-navigation-bar .youtube-logo-container .youtube-left-side-logo,
@@ -76,7 +76,7 @@
     flex: 1;
     align-items: center;
     max-width: 500px;
-    transition: ease-in-out 1s;
+    transition: all ease-in-out 1s;
 }
 
 .search-input {
@@ -105,14 +105,14 @@
     padding: 0 20px;
     margin-left: -1px;
     cursor: pointer;
-    transition: ease-in-out 1s;
+    transition: all ease-in-out 1s;
 }
 
 .voice-search-icon-container button {
     border: none;
     border-radius: 100%;
     cursor: pointer;
-    transition: ease-in-out 1s;
+    transition: all ease-in-out 1s;
 }
 
 /* Right Side CSS */
@@ -126,7 +126,7 @@
     display: flex;
     height: 20px;
     cursor: pointer;
-    transition: ease-in-out 1s;
+    transition: all ease-in-out 1s;
 }
 
 .my-channel-icon,
@@ -135,7 +135,7 @@
 .youtube-apps-icon {
     display: flex;
     height: 24px;
-    transition: ease-in-out 1s;
+    transition: all ease-in-out 1s;
 }
 
 .my-channel-icon {
@@ -159,8 +159,9 @@
     color: white;
     font-size: 12px;
     opacity: 0;
-    /* transition: opacity 0.2s ease-in-out; */
+    transition: opacity 0.2s ease-in-out;
     z-index: 1000;
+    white-space: nowrap;
 }
 
 .dark-mode-icon-container:hover .tooltip-text,
@@ -241,7 +242,7 @@
         top: 0;
         right: 0;
         display: flex;
-        margin-top: 25px;
+        margin-top: 27px;
         margin-right: 60px !important;
     }
 
@@ -251,7 +252,7 @@
         top: 0;
         right: 0;
         display: flex;
-        margin-top: 25px;
+        margin-top: 27px;
         margin-right: 100px;
         height: 25px;
     }

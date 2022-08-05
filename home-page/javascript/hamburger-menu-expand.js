@@ -1,9 +1,13 @@
 // Hamburger Menu Expand
 function hamburgerMenuExpand() {
+    // Expand Side Bar Menu
     document
         .querySelectorAll(".side-bar-menu")[0]
         .classList
         .toggle("expand");
+
+    // Change Margin Of Video Section
+    change_Margin_Of_Videos_Section_When_Clicked_On_Hamburger_Menu()
 }
 
 // Side Bar Dark Mode, Function Executed In dark-mode.js
