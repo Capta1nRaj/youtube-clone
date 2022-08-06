@@ -135,6 +135,7 @@ body.dark-mode {
 
 /* Form */
 .form {
+    margin-left: 10px;
     transition: all 1s ease-in-out;
 }
 

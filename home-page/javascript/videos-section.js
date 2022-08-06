@@ -124,7 +124,7 @@ function addVideo(thumbnail, video_time, channel_logo, title, channel_name, vide
 
 // Form To Submit The Custom Uploaded Videos Without Getting Refresh
 form.addEventListener("submit", function (e) {
-  e.preventDefault();
+  e.preventDefault(); // This Don't Refresh The Page Which Allow Us To Upload The Video In The Array
   const form = new FormData(e.target);
 
   const thumbnail = form.get("thumbnail");
@@ -137,4 +137,6 @@ form.addEventListener("submit", function (e) {
   const channel_link = form.get("channel_link");
 
   addVideo(thumbnail, video_time, channel_logo, channel_title, channel_name, video_views, video_link, channel_link);
+  // Clear Form After Clicking The Submit Button
+  document.getElementById("form").reset();
 });
