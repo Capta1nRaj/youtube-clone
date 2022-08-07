@@ -87,8 +87,20 @@ var uploaded_videos = [
 
 // Render Uplaoded Videos
 var videos_section = document.getElementsByClassName("videos-section")[0];
+
+function testing1() {
+  let data = JSON.parse(localStorage.getItem("local_storage_for_videos"));
+  uploaded_videos.push(data);
+}
+
+testing1();
+
 uploaded_videos.forEach(function (videos) {
-  addVideo(videos.thumbnail, videos.video_time, videos.channel_logo, videos.title, videos.channel_name, videos.video_views, videos.video_link, videos.channel_link);
+  let { thumbnail, video_time, channel_logo, channel_title, channel_name, video_views, video_link, channel_link } = videos;
+
+  if (thumbnail && video_time && channel_logo && channel_title && channel_name && video_views && video_link && channel_link) {
+    addVideo(thumbnail, video_time, channel_logo, channel_title, channel_name, video_views, video_link, channel_link);
+  }
 });
 
 // Funtcion To Upload Custom Videos
@@ -136,7 +148,21 @@ form.addEventListener("submit", function (e) {
   const video_link = form.get("video_link");
   const channel_link = form.get("channel_link");
 
+  // Pushing The Data To The Object Of The Array
   addVideo(thumbnail, video_time, channel_logo, channel_title, channel_name, video_views, video_link, channel_link);
+  const pushing_Video_Details_In_Object_Of_The_Array = { thumbnail, video_time, channel_logo, channel_title, channel_name, video_views, video_link, channel_link };
+  uploaded_videos.push(pushing_Video_Details_In_Object_Of_The_Array);
+
+  // To Store The Pushed Data In Local Storage
+  localStorage.setItem("local_storage_for_videos", JSON.stringify(uploaded_videos));
+  localStorage.getItem("local_storage_for_videos");
+
+  // console.log(uploaded_videos);
+
   // Clear Form After Clicking The Submit Button
   document.getElementById("form").reset();
 });
+
+// sessionStorage.setItem("uploaded_videos", JSON.stringify(uploaded_videos));
+// var storedNames = JSON.parse(sessionStorage.getItem("uploaded_videos"));
+// console.log(storedNames);
