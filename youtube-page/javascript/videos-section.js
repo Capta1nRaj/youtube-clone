@@ -34,9 +34,9 @@ function rendering_Videos_After_Refresh() {
   if (data == null) {
     uploaded_videos = [
       {
-        thumbnail: "images/videos-section/thumbnail-1.jpg",
+        thumbnail: "../images/videos-section/thumbnail-1.jpg",
         video_time: "6:31",
-        channel_logo: "images/videos-section/channel-logo-1.jpg",
+        channel_logo: "../images/videos-section/channel-logo-1.jpg",
         title: "Skye to Immortal (Flashes 💥💥😂)",
         channel_name: "Captain Raj",
         video_views: "68 views &#xb7 8 days ago",
@@ -44,9 +44,9 @@ function rendering_Videos_After_Refresh() {
         channel_link: "https://www.youtube.com/captainraj",
       },
       {
-        thumbnail: "images/videos-section/thumbnail-2.jpg",
+        thumbnail: "../images/videos-section/thumbnail-2.jpg",
         video_time: "8:31",
-        channel_logo: "images/videos-section/channel-logo-2.jpg",
+        channel_logo: "../images/videos-section/channel-logo-2.jpg",
         title: "Where Have I Been?",
         channel_name: "BeastBoyShub",
         video_views: "3.5M views &#xb7 1 month ago",
@@ -54,9 +54,9 @@ function rendering_Videos_After_Refresh() {
         channel_link: "https://www.youtube.com/c/BeastBoyShub",
       },
       {
-        thumbnail: "images/videos-section/thumbnail-3.jpg",
+        thumbnail: "../images/videos-section/thumbnail-3.jpg",
         video_time: "6:31:24",
-        channel_logo: "images/videos-section/channel-logo-3.jpg",
+        channel_logo: "../images/videos-section/channel-logo-3.jpg",
         title: "HTML & CSS Full Course - Beginner to Pro (2022)",
         channel_name: "SuperSimpleDev",
         video_views: "465K views &#xb7 13 hours ago",
@@ -64,9 +64,9 @@ function rendering_Videos_After_Refresh() {
         channel_link: "https://www.youtube.com/c/SuperSimpleDev",
       },
       {
-        thumbnail: "images/videos-section/thumbnail-4.jpg",
+        thumbnail: "../images/videos-section/thumbnail-4.jpg",
         video_time: "Live",
-        channel_logo: "images/videos-section/channel-logo-4.jpg",
+        channel_logo: "../images/videos-section/channel-logo-4.jpg",
         title: "lofi hip hop radio - beats to relax/study to",
         channel_name: "Lofi Girl",
         video_views: "20,518 watching now &#xb7 Started streaming on Feb 23, 2020",
@@ -74,9 +74,9 @@ function rendering_Videos_After_Refresh() {
         channel_link: "https://www.youtube.com/c/LofiGirl",
       },
       {
-        thumbnail: "images/videos-section/thumbnail-5.jpg",
+        thumbnail: "../images/videos-section/thumbnail-5.jpg",
         video_time: "10:25",
-        channel_logo: "images/videos-section/channel-logo-5.jpg",
+        channel_logo: "../images/videos-section/channel-logo-5.jpg",
         title: "Indian Streamer Solo Hacking in Valorant | Proof?",
         channel_name: "Solo",
         video_views: "100K views &#xb7 1 year ago",
@@ -84,9 +84,9 @@ function rendering_Videos_After_Refresh() {
         channel_link: "https://www.youtube.com/c/Solomanan",
       },
       {
-        thumbnail: "images/videos-section/thumbnail-6.jpg",
+        thumbnail: "../images/videos-section/thumbnail-6.jpg",
         video_time: "6:31",
-        channel_logo: "images/videos-section/channel-logo-6.jpg",
+        channel_logo: "../images/videos-section/channel-logo-6.jpg",
         title: "Introduction to Java + Installing Java JDK and IntelliJ IDEA for Java",
         channel_name: "CodeWithHarry",
         video_views: "2.8M views &#xb7 1 year ago",
@@ -137,32 +137,3 @@ function addVideo(thumbnail, video_time, channel_logo, title, channel_name, vide
         </div>
     </div>`;
 }
-
-// Form To Submit The Custom Uploaded Videos Without Getting Refresh
-form.addEventListener("submit", function (e) {
-  e.preventDefault(); // This Don't Refresh The Page Which Allow Us To Upload The Video In The Array
-  const form = new FormData(e.target);
-
-  const thumbnail = form.get("thumbnail");
-  const video_time = form.get("video_time");
-  const channel_logo = form.get("channel_logo");
-  const title = form.get("title");
-  const channel_name = form.get("channel_name");
-  const video_views = form.get("video_views");
-  const video_link = form.get("video_link");
-  const channel_link = form.get("channel_link");
-
-  // Pushing The Data To The Object Of The Array
-  addVideo(thumbnail, video_time, channel_logo, title, channel_name, video_views, video_link, channel_link);
-  const pushing_Video_Details_In_Object_Of_The_Array = { thumbnail, video_time, channel_logo, title, channel_name, video_views, video_link, channel_link };
-  uploaded_videos.push(pushing_Video_Details_In_Object_Of_The_Array);
-
-  // To Store The Pushed Data In Local Storage
-  sessionStorage.setItem("local_storage_for_videos", JSON.stringify(uploaded_videos));
-  sessionStorage.getItem("local_storage_for_videos");
-
-  // console.log(uploaded_videos);
-
-  // Clear Form After Clicking The Submit Button
-  document.getElementById("form").reset();
-});
