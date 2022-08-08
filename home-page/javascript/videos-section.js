@@ -29,7 +29,7 @@ var videos_section = document.getElementsByClassName("videos-section")[0];
 
 // Render Video Even After Refresh
 function rendering_Videos_After_Refresh() {
-  let data = JSON.parse(localStorage.getItem("local_storage_for_videos"));
+  let data = JSON.parse(sessionStorage.getItem("local_storage_for_videos"));
 
   if (data == null) {
     uploaded_videos = [
@@ -158,8 +158,8 @@ form.addEventListener("submit", function (e) {
   uploaded_videos.push(pushing_Video_Details_In_Object_Of_The_Array);
 
   // To Store The Pushed Data In Local Storage
-  localStorage.setItem("local_storage_for_videos", JSON.stringify(uploaded_videos));
-  localStorage.getItem("local_storage_for_videos");
+  sessionStorage.setItem("local_storage_for_videos", JSON.stringify(uploaded_videos));
+  sessionStorage.getItem("local_storage_for_videos");
 
   // console.log(uploaded_videos);
 
