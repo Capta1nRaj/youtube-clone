@@ -22,85 +22,88 @@ function change_Margin_Of_Video_Upload_Section() {
 }
 
 // Pre-Uploaded Videos, and Arrays To Store The Upcoming Uploaded Videos
-var uploaded_videos = [
-  {
-    thumbnail: "images/videos-section/thumbnail-1.jpg",
-    video_time: "6:31",
-    channel_logo: "images/videos-section/channel-logo-1.jpg",
-    title: "Skye to Immortal (Flashes 💥💥😂)",
-    channel_name: "Captain Raj",
-    video_views: "68 views &#xb7 8 days ago",
-    video_link: "https://www.youtube.com/watch?v=8--NHAz2xA4&t=305s",
-    channel_link: "https://www.youtube.com/captainraj",
-  },
-  {
-    thumbnail: "images/videos-section/thumbnail-2.jpg",
-    video_time: "8:31",
-    channel_logo: "images/videos-section/channel-logo-2.jpg",
-    title: "Where Have I Been?",
-    channel_name: "BeastBoyShub",
-    video_views: "3.5M views &#xb7 1 month ago",
-    video_link: "https://www.youtube.com/watch?v=FUR9TsEYOIg&t=255s",
-    channel_link: "https://www.youtube.com/c/BeastBoyShub",
-  },
-  {
-    thumbnail: "images/videos-section/thumbnail-3.jpg",
-    video_time: "6:31:24",
-    channel_logo: "images/videos-section/channel-logo-3.jpg",
-    title: "HTML & CSS Full Course - Beginner to Pro (2022)",
-    channel_name: "SuperSimpleDev",
-    video_views: "465K views &#xb7 13 hours ago",
-    video_link: "https://www.youtube.com/watch?v=G3e-cpL7ofc&t=15838s",
-    channel_link: "https://www.youtube.com/c/SuperSimpleDev",
-  },
-  {
-    thumbnail: "images/videos-section/thumbnail-4.jpg",
-    video_time: "",
-    channel_logo: "images/videos-section/channel-logo-4.jpg",
-    title: "lofi hip hop radio - beats to relax/study to",
-    channel_name: "Lofi Girl",
-    video_views: "20,518 watching now &#xb7 Started streaming on Feb 23, 2020",
-    video_link: "https://www.youtube.com/watch?v=5qap5aO4i9A",
-    channel_link: "https://www.youtube.com/c/LofiGirl",
-  },
-  {
-    thumbnail: "images/videos-section/thumbnail-5.jpg",
-    video_time: "10:25",
-    channel_logo: "images/videos-section/channel-logo-5.jpg",
-    title: "Indian Streamer Solo Hacking in Valorant | Proof?",
-    channel_name: "Solo",
-    video_views: "100K views &#xb7 1 year ago",
-    video_link: "https://www.youtube.com/watch?v=4v8z5itl1Kc&t=466s",
-    channel_link: "https://www.youtube.com/c/Solomanan",
-  },
-  {
-    thumbnail: "images/videos-section/thumbnail-6.jpg",
-    video_time: "6:31",
-    channel_logo: "images/videos-section/channel-logo-6.jpg",
-    title: "Introduction to Java + Installing Java JDK and IntelliJ IDEA for Java",
-    channel_name: "CodeWithHarry",
-    video_views: "2.8M views &#xb7 1 year ago",
-    video_link: "https://www.youtube.com/watch?v=ntLJmHOJ0ME",
-    channel_link: "https://www.youtube.com/c/CodeWithHarry",
-  },
-];
+var uploaded_videos = [];
 
 // Render Uplaoded Videos
 var videos_section = document.getElementsByClassName("videos-section")[0];
 
-function testing1() {
+// To Print The Uploaded Videos Even After Refresh
+function render_video_after_refreshing_the_page() {
   let data = JSON.parse(localStorage.getItem("local_storage_for_videos"));
-  uploaded_videos.push(data);
-}
 
-testing1();
+  if (data == null) {
+    uploaded_videos = [
+      {
+        thumbnail: "images/videos-section/thumbnail-1.jpg",
+        video_time: "6:31",
+        channel_logo: "images/videos-section/channel-logo-1.jpg",
+        title: "Skye to Immortal (Flashes 💥💥😂)",
+        channel_name: "Captain Raj",
+        video_views: "68 views &#xb7 8 days ago",
+        video_link: "https://www.youtube.com/watch?v=8--NHAz2xA4&t=305s",
+        channel_link: "https://www.youtube.com/captainraj",
+      },
+      {
+        thumbnail: "images/videos-section/thumbnail-2.jpg",
+        video_time: "8:31",
+        channel_logo: "images/videos-section/channel-logo-2.jpg",
+        title: "Where Have I Been?",
+        channel_name: "BeastBoyShub",
+        video_views: "3.5M views &#xb7 1 month ago",
+        video_link: "https://www.youtube.com/watch?v=FUR9TsEYOIg&t=255s",
+        channel_link: "https://www.youtube.com/c/BeastBoyShub",
+      },
+      {
+        thumbnail: "images/videos-section/thumbnail-3.jpg",
+        video_time: "6:31:24",
+        channel_logo: "images/videos-section/channel-logo-3.jpg",
+        title: "HTML & CSS Full Course - Beginner to Pro (2022)",
+        channel_name: "SuperSimpleDev",
+        video_views: "465K views &#xb7 13 hours ago",
+        video_link: "https://www.youtube.com/watch?v=G3e-cpL7ofc&t=15838s",
+        channel_link: "https://www.youtube.com/c/SuperSimpleDev",
+      },
+      {
+        thumbnail: "images/videos-section/thumbnail-4.jpg",
+        video_time: "",
+        channel_logo: "images/videos-section/channel-logo-4.jpg",
+        title: "lofi hip hop radio - beats to relax/study to",
+        channel_name: "Lofi Girl",
+        video_views: "20,518 watching now &#xb7 Started streaming on Feb 23, 2020",
+        video_link: "https://www.youtube.com/watch?v=5qap5aO4i9A",
+        channel_link: "https://www.youtube.com/c/LofiGirl",
+      },
+      {
+        thumbnail: "images/videos-section/thumbnail-5.jpg",
+        video_time: "10:25",
+        channel_logo: "images/videos-section/channel-logo-5.jpg",
+        title: "Indian Streamer Solo Hacking in Valorant | Proof?",
+        channel_name: "Solo",
+        video_views: "100K views &#xb7 1 year ago",
+        video_link: "https://www.youtube.com/watch?v=4v8z5itl1Kc&t=466s",
+        channel_link: "https://www.youtube.com/c/Solomanan",
+      },
+      {
+        thumbnail: "images/videos-section/thumbnail-6.jpg",
+        video_time: "6:31",
+        channel_logo: "images/videos-section/channel-logo-6.jpg",
+        title: "Introduction to Java + Installing Java JDK and IntelliJ IDEA for Java",
+        channel_name: "CodeWithHarry",
+        video_views: "2.8M views &#xb7 1 year ago",
+        video_link: "https://www.youtube.com/watch?v=ntLJmHOJ0ME",
+        channel_link: "https://www.youtube.com/c/CodeWithHarry",
+      },
+    ];
+  } else {
+    data.forEach((element) => {
+      uploaded_videos.push(element);
+    });
+  }
+}
+render_video_after_refreshing_the_page();
 
 uploaded_videos.forEach(function (videos) {
-  let { thumbnail, video_time, channel_logo, channel_title, channel_name, video_views, video_link, channel_link } = videos;
-
-  if (thumbnail && video_time && channel_logo && channel_title && channel_name && video_views && video_link && channel_link) {
-    addVideo(thumbnail, video_time, channel_logo, channel_title, channel_name, video_views, video_link, channel_link);
-  }
+  addVideo(videos.thumbnail, videos.video_time, videos.channel_logo, videos.title, videos.channel_name, videos.video_views, videos.video_link, videos.channel_link);
 });
 
 // Funtcion To Upload Custom Videos
@@ -157,12 +160,8 @@ form.addEventListener("submit", function (e) {
   localStorage.setItem("local_storage_for_videos", JSON.stringify(uploaded_videos));
   localStorage.getItem("local_storage_for_videos");
 
-  // console.log(uploaded_videos);
+  console.log(uploaded_videos);
 
   // Clear Form After Clicking The Submit Button
   document.getElementById("form").reset();
 });
-
-// sessionStorage.setItem("uploaded_videos", JSON.stringify(uploaded_videos));
-// var storedNames = JSON.parse(sessionStorage.getItem("uploaded_videos"));
-// console.log(storedNames);
