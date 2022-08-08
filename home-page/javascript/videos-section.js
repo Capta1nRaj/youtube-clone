@@ -27,8 +27,8 @@ var uploaded_videos = [];
 // Render Uplaoded Videos
 var videos_section = document.getElementsByClassName("videos-section")[0];
 
-// To Print The Uploaded Videos Even After Refresh
-function render_video_after_refreshing_the_page() {
+// Render Video Even After Refresh
+function rendering_Videos_After_Refresh() {
   let data = JSON.parse(localStorage.getItem("local_storage_for_videos"));
 
   if (data == null) {
@@ -65,7 +65,7 @@ function render_video_after_refreshing_the_page() {
       },
       {
         thumbnail: "images/videos-section/thumbnail-4.jpg",
-        video_time: "",
+        video_time: "Live",
         channel_logo: "images/videos-section/channel-logo-4.jpg",
         title: "lofi hip hop radio - beats to relax/study to",
         channel_name: "Lofi Girl",
@@ -100,7 +100,8 @@ function render_video_after_refreshing_the_page() {
     });
   }
 }
-render_video_after_refreshing_the_page();
+
+rendering_Videos_After_Refresh();
 
 uploaded_videos.forEach(function (videos) {
   addVideo(videos.thumbnail, videos.video_time, videos.channel_logo, videos.title, videos.channel_name, videos.video_views, videos.video_link, videos.channel_link);
@@ -130,7 +131,7 @@ function addVideo(thumbnail, video_time, channel_logo, title, channel_name, vide
                 </div>
                 <div class="channel-name">
                     <a href="${channel_link}">${channel_name}</a>
-                </div> 
+                </div>
                 <div class="video-stats">${video_views}</div>
             </div>
         </div>
@@ -145,22 +146,22 @@ form.addEventListener("submit", function (e) {
   const thumbnail = form.get("thumbnail");
   const video_time = form.get("video_time");
   const channel_logo = form.get("channel_logo");
-  const channel_title = form.get("title");
+  const title = form.get("title");
   const channel_name = form.get("channel_name");
   const video_views = form.get("video_views");
   const video_link = form.get("video_link");
   const channel_link = form.get("channel_link");
 
   // Pushing The Data To The Object Of The Array
-  addVideo(thumbnail, video_time, channel_logo, channel_title, channel_name, video_views, video_link, channel_link);
-  const pushing_Video_Details_In_Object_Of_The_Array = { thumbnail, video_time, channel_logo, channel_title, channel_name, video_views, video_link, channel_link };
+  addVideo(thumbnail, video_time, channel_logo, title, channel_name, video_views, video_link, channel_link);
+  const pushing_Video_Details_In_Object_Of_The_Array = { thumbnail, video_time, channel_logo, title, channel_name, video_views, video_link, channel_link };
   uploaded_videos.push(pushing_Video_Details_In_Object_Of_The_Array);
 
   // To Store The Pushed Data In Local Storage
   localStorage.setItem("local_storage_for_videos", JSON.stringify(uploaded_videos));
   localStorage.getItem("local_storage_for_videos");
 
-  console.log(uploaded_videos);
+  // console.log(uploaded_videos);
 
   // Clear Form After Clicking The Submit Button
   document.getElementById("form").reset();
