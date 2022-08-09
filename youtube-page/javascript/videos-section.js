@@ -29,7 +29,7 @@ var videos_section = document.getElementsByClassName("videos-section")[0];
 
 // Render Video Even After Refresh
 function rendering_Videos_After_Refresh() {
-  let data = JSON.parse(sessionStorage.getItem("local_storage_for_videos"));
+  let data = JSON.parse(localStorage.getItem("local_storage_for_videos"));
 
   if (data == null) {
     uploaded_videos = [
