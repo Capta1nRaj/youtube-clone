@@ -46,3 +46,22 @@ document.querySelector("#myFileInput").addEventListener("change", function () {
   // To Get The Data URL
   reader.readAsDataURL(this.files[0]);
 });
+
+// To Generate Randoms Link For The Video
+const totalCharacters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ01234567890123456789012345" + "678901234567890123456789!@#$%&*()_-+=!@#$%&*()_-+=!@#$%&*()_-+=!@#$%&*()_-+=";
+var button = document.getElementsByClassName("generate-link-button");
+
+function randomsLinkGenerator() {
+  var generatedLink = "";
+  generaterLink.value = "";
+  for (var i = 0; i <= 16; i++) {
+    var randomsLink = Math.floor(Math.random() * totalCharacters.length + 1);
+    generatedLink += totalCharacters.charAt(randomsLink);
+  }
+  return generatedLink;
+}
+
+var generaterLink = document.getElementById("password-input");
+function generater_password_onclick() {
+  generaterLink.value = "https://www.youtube.com/" + randomsLinkGenerator();
+}
