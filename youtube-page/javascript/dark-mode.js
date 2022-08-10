@@ -10,6 +10,8 @@ function switchBetweenLightModeAndDarkMode() {
   sideBarIconsAndText();
   // Video Section Background And Text Color Change
   backgroundAndTextColorChange();
+  // Change Text Color In Upload Page When Dark Mode Turned On
+  textColorChange();
 }
 
 // Navigation Bar Navigation Bar Background Color Change

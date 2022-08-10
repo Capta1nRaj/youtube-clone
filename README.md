@@ -16,3 +16,5 @@ Features I Added In This:-
 
 Something I Want To Say:-
 Yeah, this is a rework project for my Portfolio. I may start working on this in future, but this was the end for it, because yeah, I told you, busy learning React.
+
+If you find any bugs in this feel or wanna suggest someting, or wanna contact me:- https://linktr.ee/capta1n_raj thanks :-)

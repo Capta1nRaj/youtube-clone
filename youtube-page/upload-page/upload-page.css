@@ -5,3 +5,26 @@
 .videos-section {
     display: none;
 }
+
+#myFileInput,
+.form-text {
+    transition: all 1.5s ease-in-out;
+}
+
+.form-text.dark-mode {
+    color: white;
+}
+
+#myFileInput.dark-mode {
+    color: white;
+}
+
+.form input {
+    margin-bottom: 20px;
+    transition: all 1.5s ease-in-out;
+}
+
+.form input.dark-mode {
+    background-color: black;
+    color: white;
+}

@@ -65,3 +65,18 @@ var generaterLink = document.getElementById("password-input");
 function generater_password_onclick() {
   generaterLink.value = "https://www.youtube.com/" + randomsLinkGenerator();
 }
+
+// Change Text Color When Turned On Dark Mode
+function textColorChange() {
+  var form_text_length = document.getElementsByClassName("form-text").length;
+  for (var i = 0; i < form_text_length; i++) {
+    document.getElementsByClassName("form-text")[i].classList.toggle("dark-mode");
+  }
+
+  document.getElementById("myFileInput").classList.toggle("dark-mode");
+
+  var collection = document.getElementsByTagName("input").length;
+  for (var i = 0; i < collection; i++) {
+    document.getElementsByTagName("input")[i].classList.toggle("dark-mode");
+  }
+}
