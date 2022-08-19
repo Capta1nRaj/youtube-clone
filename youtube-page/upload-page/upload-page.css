@@ -1,5 +1,6 @@
 #form {
     margin-top: 200px;
+    position: fixed;
 }
 
 .videos-section {
@@ -27,4 +28,14 @@
 .form input.dark-mode {
     background-color: black;
     color: white;
+}
+
+.video-link-form-container {
+    display: none;
+}
+
+#myFileInput {
+    position: absolute;
+    margin-left: -176px;
+    opacity: 0;
 }

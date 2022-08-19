@@ -62,7 +62,7 @@ function randomsLinkGenerator() {
 }
 
 var generaterLink = document.getElementById("password-input");
-function generater_password_onclick() {
+function generater_random_link_onclick() {
   generaterLink.value = "https://www.youtube.com/" + randomsLinkGenerator();
 }
 
