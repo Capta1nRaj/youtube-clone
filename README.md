@@ -4,7 +4,7 @@ YouTube Clone with Dark Mode, and Smooth Transitions, with a custom upload featu
 Note:- Upload Page not designed well because busy learning React, check this project if you think I can't make the page beautiful:- https://github.com/Capta1nRaj/karafuru-clone.
 
 Long Brief:-
-I have already made a YouTube clone which was my first ever project made with HTML, CSS, and JS/jQuery, you can have a look at it if you want:- https://github.com/Capta1nRaj/youtube-clone-old. The reason to recreate this is because of neat & clean & reusable code with Smooth Transitions, and Upload feature.
+I have already made a YouTube clone which was my first ever project made with HTML, CSS, and JS/jQuery, you can have a look at it if you want:- https://github.com/Capta1nRaj/youtube-clone-old(Private). The reason to recreate this is because of neat & clean & reusable code with Smooth Transitions, and Upload feature.
 
 Features I Added In This:-
 1. Responsive Design.
